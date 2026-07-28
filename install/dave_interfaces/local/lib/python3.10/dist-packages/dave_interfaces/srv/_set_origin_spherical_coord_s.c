@@ -1,0 +1,1 @@
+/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_generator_py/dave_interfaces/srv/_set_origin_spherical_coord_s.c

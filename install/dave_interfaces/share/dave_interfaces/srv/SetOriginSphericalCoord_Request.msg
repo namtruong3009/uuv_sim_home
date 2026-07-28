@@ -1,0 +1,1 @@
+/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetOriginSphericalCoord_Request.msg

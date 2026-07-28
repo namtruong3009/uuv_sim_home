@@ -1,0 +1,1 @@
+/home/namtruong/uuv_sim/src/uuv_simu/launch/main_bringup.launch.py

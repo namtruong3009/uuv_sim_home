@@ -1,0 +1,1 @@
+/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_generator_rs/dave_interfaces/rust/src/lib.rs

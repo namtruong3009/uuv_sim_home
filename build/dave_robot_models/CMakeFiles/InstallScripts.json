@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/namtruong/uuv_sim/build/dave_robot_models/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

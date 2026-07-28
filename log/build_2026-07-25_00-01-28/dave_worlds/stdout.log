@@ -1,0 +1,59 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/namtruong/uuv_sim/build/dave_worlds
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/ACT1951_1_Annual_2021.csv
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/camera_tutorial.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/dave_Santorini.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/dave_bimanual_example.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/dave_electrical_mating.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/dave_graded_seabed.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/dave_integrated.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/dave_multibeam_sonar.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/dave_ocean_models.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/dave_ocean_waves.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/dave_ocean_waves_mossy_ground.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/dave_ocean_waves_sonar.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/dave_ocean_waves_sonar_integrated.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/dave_ocean_waves_transient_current.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/dave_plug_and_socket.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/dvl_world.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/new_dvl.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/ocean_current_plugin.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/transientOceanCurrentDatabase.csv
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/worlds/usbl_tutorial.world
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/media/materials/textures/dirt_diffusespecular.png
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/media/materials/textures/flat_normal.png
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/media/meshes/Santorini_heightmap.tif
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/environment/dave_worlds.dsv
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/ament_index/resource_index/package_run_dependencies/dave_worlds
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/ament_index/resource_index/parent_prefix_path/dave_worlds
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/environment/ament_prefix_path.sh
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/environment/ament_prefix_path.dsv
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/environment/path.sh
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/environment/path.dsv
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/local_setup.bash
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/local_setup.sh
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/local_setup.zsh
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/local_setup.dsv
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/package.dsv
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/ament_index/resource_index/packages/dave_worlds
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/cmake/dave_worldsConfig.cmake
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/cmake/dave_worldsConfig-version.cmake
+-- Symlinking: /home/namtruong/uuv_sim/install/dave_worlds/share/dave_worlds/package.xml

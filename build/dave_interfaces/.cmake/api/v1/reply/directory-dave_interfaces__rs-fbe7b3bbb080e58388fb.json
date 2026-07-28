@@ -1,0 +1,19 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 11
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "dave_interfaces__rs",
+		"source" : "/home/namtruong/uuv_sim/build/dave_interfaces/dave_interfaces__rs"
+	}
+}

@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+launch/main_bringup.launch.py
+resource/uuv_simu
+uuv_simu/__init__.py
+uuv_simu.egg-info/PKG-INFO
+uuv_simu.egg-info/SOURCES.txt
+uuv_simu.egg-info/dependency_links.txt
+uuv_simu.egg-info/entry_points.txt
+uuv_simu.egg-info/requires.txt
+uuv_simu.egg-info/top_level.txt
+uuv_simu.egg-info/zip-safe

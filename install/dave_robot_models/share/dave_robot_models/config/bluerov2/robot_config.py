@@ -1,0 +1,1 @@
+/home/namtruong/uuv_sim/src/dave_robot_models/config/bluerov2/robot_config.py

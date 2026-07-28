@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/namtruong/uuv_sim/build/dave_interfaces/cmake_install.cmake",
+		"/home/namtruong/uuv_sim/build/dave_interfaces/dave_interfaces__py/cmake_install.cmake",
+		"/home/namtruong/uuv_sim/build/dave_interfaces/dave_interfaces__rs/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
