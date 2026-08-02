@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/uuv_simu/uuv_simu.egg-info/PKG-INFO
+writing dependency_links to ../../build/uuv_simu/uuv_simu.egg-info/dependency_links.txt
+writing requirements to ../../build/uuv_simu/uuv_simu.egg-info/requires.txt
+writing top-level names to ../../build/uuv_simu/uuv_simu.egg-info/top_level.txt
+reading manifest file '../../build/uuv_simu/uuv_simu.egg-info/SOURCES.txt'
+writing manifest file '../../build/uuv_simu/uuv_simu.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying package.xml -> /home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu
+copying launch/main_bringup.launch.py -> /home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/launch
+creating /home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/bridge
+copying bridge/bridge.yaml -> /home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/bridge
+running install_egg_info
+removing '/home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages/uuv_simu-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/uuv_simu/uuv_simu.egg-info to /home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages/uuv_simu-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/namtruong/uuv_sim_home/build/uuv_simu/install.log'

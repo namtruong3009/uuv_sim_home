@@ -3,6 +3,7 @@
 /home/namtruong/uuv_sim_home/install/uuv_simu/share/ament_index/resource_index/packages/uuv_simu
 /home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/package.xml
 /home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/launch/main_bringup.launch.py
+/home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/bridge/bridge.yaml
 /home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages/uuv_simu-0.0.0-py3.12.egg-info/SOURCES.txt
 /home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages/uuv_simu-0.0.0-py3.12.egg-info/dependency_links.txt
 /home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages/uuv_simu-0.0.0-py3.12.egg-info/requires.txt

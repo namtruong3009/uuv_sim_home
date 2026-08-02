@@ -7,6 +7,7 @@ setup.py
 ../../build/uuv_simu/uuv_simu.egg-info/requires.txt
 ../../build/uuv_simu/uuv_simu.egg-info/top_level.txt
 ../../build/uuv_simu/uuv_simu.egg-info/zip-safe
+bridge/bridge.yaml
 launch/main_bringup.launch.py
 resource/uuv_simu
 test/test_copyright.py

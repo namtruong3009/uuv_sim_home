@@ -1,0 +1,61 @@
+[0.020s] Invoking command in '/home/namtruong/uuv_sim_home/build/dave_robot_models': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/dave_robot_models -- -j16 -l16
+[0.057s] Invoked command in '/home/namtruong/uuv_sim_home/build/dave_robot_models' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/dave_robot_models -- -j16 -l16
+[0.067s] Invoking command in '/home/namtruong/uuv_sim_home/build/dave_robot_models': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/namtruong/uuv_sim_home/build/dave_robot_models
+[0.077s] -- Install configuration: ""
+[0.077s] -- Execute custom install script
+[0.077s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/lib/dave_robot_models/ardusub_manual_control.py
+[0.078s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/lib/dave_robot_models/keyboard_publisher.py
+[0.078s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/lib/dave_robot_models/ws_to_joy.py
+[0.079s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/description/bluerov2/model.config
+[0.080s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/description/bluerov2/model.sdf
+[0.080s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/description/bluerov2_heavy/model.config
+[0.080s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/description/bluerov2_heavy/model.sdf
+[0.081s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/description/bluerov2_heavy_multibeam_sonar/model.config
+[0.081s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/description/bluerov2_heavy_multibeam_sonar/model.sdf
+[0.081s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/description/glider_slocum/model.config
+[0.082s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/description/glider_slocum/model.sdf
+[0.082s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/description/rexrov/model.config
+[0.082s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/description/rexrov/model.sdf
+[0.083s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/launch/bluerov_teleop.launch.py
+[0.083s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/launch/upload_robot.launch.py
+[0.083s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/bluerov2/bluerov2.dae
+[0.084s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/bluerov2_heavy/bluerov2_heavy.dae
+[0.084s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/glider_slocum/COLLISION-Slocum-Glider.dae
+[0.084s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/glider_slocum/Slocum-Glider-LeftFin.dae
+[0.084s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/glider_slocum/Slocum-Glider-Propeller.dae
+[0.084s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/glider_slocum/Slocum-Glider-RightFin.dae
+[0.084s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/glider_slocum/Slocum-Glider-TopRudder.dae
+[0.084s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/glider_slocum/Slocum-Glider.dae
+[0.084s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/glider_slocum/Slocum-Glider.png
+[0.084s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/rexrov/RexROV_no_props.dae
+[0.085s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/rexrov/RexROV_no_props.stl
+[0.085s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/rexrov/collision.blend
+[0.085s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/rexrov/prop.dae
+[0.085s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/t200/ccw_prop.dae
+[0.085s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/meshes/t200/cw_prop.dae
+[0.085s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/config/bluerov2/ardusub.parm
+[0.085s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/config/bluerov2/robot_config.py
+[0.085s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/config/bluerov2_heavy/ardusub.parm
+[0.085s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/config/bluerov2_heavy/robot_config.py
+[0.086s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/config/bluerov2_heavy_multibeam_sonar/ardusub.parm
+[0.086s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/config/bluerov2_heavy_multibeam_sonar/robot_config.py
+[0.086s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/config/glider_slocum/robot_config.py
+[0.086s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/config/mavros/mavros.yaml
+[0.086s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/config/rexrov/robot_config.py
+[0.086s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/environment/dave_robot_models.dsv
+[0.086s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/ament_index/resource_index/package_run_dependencies/dave_robot_models
+[0.086s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/ament_index/resource_index/parent_prefix_path/dave_robot_models
+[0.086s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/environment/ament_prefix_path.sh
+[0.087s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/environment/ament_prefix_path.dsv
+[0.087s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/environment/path.sh
+[0.089s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/environment/path.dsv
+[0.089s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/local_setup.bash
+[0.089s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/local_setup.sh
+[0.089s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/local_setup.zsh
+[0.089s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/local_setup.dsv
+[0.090s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/package.dsv
+[0.098s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/ament_index/resource_index/packages/dave_robot_models
+[0.098s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/cmake/dave_robot_modelsConfig.cmake
+[0.098s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/cmake/dave_robot_modelsConfig-version.cmake
+[0.098s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/package.xml
+[0.120s] Invoked command in '/home/namtruong/uuv_sim_home/build/dave_robot_models' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/namtruong/uuv_sim_home/build/dave_robot_models

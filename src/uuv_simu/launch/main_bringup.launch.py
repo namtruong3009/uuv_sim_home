@@ -9,6 +9,8 @@ def generate_launch_description():
     ros_gz_sim_pkg = get_package_share_directory('ros_gz_sim')
     dave_robot_pkg = get_package_share_directory('dave_robot_models')
     dave_worlds_pkg = get_package_share_directory('dave_worlds')
+    my_pkg_dir = get_package_share_directory('uuv_simu')
+    bridge_yaml_path = os.path.join(my_pkg_dir, 'bridge', 'bridge.yaml')
     world_file = os.path.join(dave_worlds_pkg, 'worlds', 'dave_ocean_waves.world')
     gz_sim = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -30,19 +32,10 @@ def generate_launch_description():
         ],
         output='screen'
     )
-    # bridge = Node(
-    #     package="ros_gz_bridge",
-    #     executable="parameter_bridge",
-    #     arguments=[
-    #         "/sensor/multibeam_sonar/point_cloud@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked",
-    #         "/model/rexrov/odometry@nav_msgs/msg/Odometry[gz.msgs.Odometry",
-    #     ],
-    #     output="screen",
-    # )
     static_tf_sonar = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
-        arguments=['0.2', '0.0', '-0.13', '0.0', '0.0', '0.0', 'base_link', 'forward_sonar_optical_link'],
+        arguments=['0.2', '0.0', '-0.13', '0.0', '0.0', '0.0', 'base_link', 'rexrov/sonar_link/multibeam_sonar'],
         output='screen'
     )
     bridge_node = Node(
@@ -52,15 +45,32 @@ def generate_launch_description():
         output='screen',
         arguments=[
             '/rexrov/camera/image_raw@sensor_msgs/msg/Image[gz.msgs.Image',
-            '/sensor/multibeam_sonar/point_cloud@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
-            '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock'
+            '/rexrov/camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo',
         ]
+    )
+    rviz2_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        parameters=[{'use_sim_time': True}],
+        output='screen'
+    )
+    parameter_bridge = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        name='parameter_bridge',
+        parameters=[{
+            'config_file': bridge_yaml_path
+        }],
+        output='screen'
     )
 
     return LaunchDescription([
         gz_sim,
         spawn_robot,
-        bridge,
+        # bridge,
         static_tf_sonar,
-        bridge_node
+        bridge_node,
+        rviz2_node,
+        parameter_bridge
     ])
