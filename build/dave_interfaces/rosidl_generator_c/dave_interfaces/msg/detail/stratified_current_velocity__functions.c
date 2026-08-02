@@ -114,7 +114,7 @@ dave_interfaces__msg__StratifiedCurrentVelocity__copy(
 }
 
 dave_interfaces__msg__StratifiedCurrentVelocity *
-dave_interfaces__msg__StratifiedCurrentVelocity__create()
+dave_interfaces__msg__StratifiedCurrentVelocity__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   dave_interfaces__msg__StratifiedCurrentVelocity * msg = (dave_interfaces__msg__StratifiedCurrentVelocity *)allocator.allocate(sizeof(dave_interfaces__msg__StratifiedCurrentVelocity), allocator.state);
@@ -151,6 +151,9 @@ dave_interfaces__msg__StratifiedCurrentVelocity__Sequence__init(dave_interfaces_
   dave_interfaces__msg__StratifiedCurrentVelocity * data = NULL;
 
   if (size) {
+    if (size > SIZE_MAX / sizeof(dave_interfaces__msg__StratifiedCurrentVelocity)) {
+      return false;
+    }
     data = (dave_interfaces__msg__StratifiedCurrentVelocity *)allocator.zero_allocate(size, sizeof(dave_interfaces__msg__StratifiedCurrentVelocity), allocator.state);
     if (!data) {
       return false;
@@ -256,6 +259,9 @@ dave_interfaces__msg__StratifiedCurrentVelocity__Sequence__copy(
     return false;
   }
   if (output->capacity < input->size) {
+    if (input->size > SIZE_MAX / sizeof(dave_interfaces__msg__StratifiedCurrentVelocity)) {
+      return false;
+    }
     const size_t allocation_size =
       input->size * sizeof(dave_interfaces__msg__StratifiedCurrentVelocity);
     rcutils_allocator_t allocator = rcutils_get_default_allocator();

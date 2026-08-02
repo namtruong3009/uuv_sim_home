@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/namtruong/uuv_sim_home/build/dave_gz_model_plugins/libOceanCurrentModelPlugin.so" "TARGETS" "OceanCurrentModelPlugin" "DESTINATION" "lib/dave_gz_model_plugins")

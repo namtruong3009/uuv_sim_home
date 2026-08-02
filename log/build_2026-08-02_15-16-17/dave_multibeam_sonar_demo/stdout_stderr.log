@@ -1,0 +1,28 @@
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/namtruong/uuv_sim_home/build/dave_multibeam_sonar_demo
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/launch/multibeam_sonar_demo.launch.py
+-- Symlinking: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/rviz/multibeam_sonar.rviz
+-- Symlinking: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/environment/dave_multibeam_sonar_demo.dsv
+-- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/ament_index/resource_index/package_run_dependencies/dave_multibeam_sonar_demo
+-- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/ament_index/resource_index/parent_prefix_path/dave_multibeam_sonar_demo
+-- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/environment/path.sh
+-- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/environment/path.dsv
+-- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/local_setup.bash
+-- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/local_setup.sh
+-- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/local_setup.zsh
+-- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/local_setup.dsv
+-- Symlinking: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/package.dsv
+-- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/ament_index/resource_index/packages/dave_multibeam_sonar_demo
+-- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/cmake/dave_multibeam_sonar_demoConfig.cmake
+-- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/cmake/dave_multibeam_sonar_demoConfig-version.cmake
+-- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo/share/dave_multibeam_sonar_demo/package.xml

@@ -1,0 +1,645 @@
+[0.000000] (-) TimerEvent: {}
+[0.000419] (-) JobUnselected: {'identifier': 'dave_gz_model_plugins'}
+[0.000586] (-) JobUnselected: {'identifier': 'dave_gz_sensor_plugins'}
+[0.000807] (-) JobUnselected: {'identifier': 'dave_gz_world_plugins'}
+[0.000848] (-) JobUnselected: {'identifier': 'dave_interfaces'}
+[0.000909] (-) JobUnselected: {'identifier': 'dave_multibeam_sonar_demo'}
+[0.000938] (-) JobUnselected: {'identifier': 'dave_object_models'}
+[0.000952] (-) JobUnselected: {'identifier': 'dave_robot_models'}
+[0.000965] (-) JobUnselected: {'identifier': 'dave_ros_gz_plugins'}
+[0.000976] (-) JobUnselected: {'identifier': 'dave_worlds'}
+[0.000987] (-) JobUnselected: {'identifier': 'uuv_simu'}
+[0.001001] (multibeam_sonar_system) JobQueued: {'identifier': 'multibeam_sonar_system', 'dependencies': OrderedDict()}
+[0.001021] (multibeam_sonar) JobQueued: {'identifier': 'multibeam_sonar', 'dependencies': OrderedDict({'dave_interfaces': '/home/namtruong/uuv_sim_home/install/dave_interfaces'})}
+[0.001044] (multibeam_sonar_system) JobStarted: {'identifier': 'multibeam_sonar_system'}
+[0.007717] (multibeam_sonar) JobStarted: {'identifier': 'multibeam_sonar'}
+[0.014006] (multibeam_sonar_system) JobProgress: {'identifier': 'multibeam_sonar_system', 'progress': 'cmake'}
+[0.014840] (multibeam_sonar_system) JobProgress: {'identifier': 'multibeam_sonar_system', 'progress': 'build'}
+[0.015628] (multibeam_sonar_system) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/namtruong/uuv_sim_home/build/multibeam_sonar_system', '--', '-j16', '-l16'], 'cwd': '/home/namtruong/uuv_sim_home/build/multibeam_sonar_system', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'RSYNC_PROXY': 'localhost:1080', 'HTTPS_PROXY': 'http://localhost:3128', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'no_proxy': 'localhost,127.0.0.1,::1,*.local,.local,169.254.0.0/16,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16', 'AI_AGENT': 'github_copilot_vscode_agent', 'GIT_SSH_COMMAND': "ssh -o ProxyCommand='socat - PROXY:localhost:%h:%p,proxyport=3128'", 'USER': 'namtruong', 'SANDBOX_RUNTIME': '1', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'CLAUDE_CODE_HOST_SOCKS_PROXY_PORT': '45559', 'GIT_EDITOR': ':', 'all_proxy': 'socks5h://localhost:1080', 'GIO_MODULE_DIR': '/home/namtruong/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/254/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'DOCKER_HTTPS_PROXY': 'http://localhost:3128', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'COPILOT_AGENT': '1', 'HOME': '/home/namtruong', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/namtruong/.vscode/tmp/tmp_vscode_1', 'TERM_PROGRAM_VERSION': '1.131.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/254/usr/lib/x86_64-linux-gnu/gtk-3.0', 'NO_PROXY': 'localhost,127.0.0.1,::1,*.local,.local,169.254.0.0/16,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/namtruong/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/254/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/254/usr/share/code/code', 'MANAGERPID': '1529', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2260', 'BUNDLED_DEBUGPY_PATH': '/home/namtruong/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3068', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'TMPDIR': '/home/namtruong/.vscode/tmp/tmp_vscode_1', 'https_proxy': 'http://localhost:3128', 'CLAUDE_CODE_HOST_HTTP_PROXY_PORT': '34801', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'namtruong', 'ALL_PROXY': 'socks5h://localhost:1080', 'http_proxy': 'http://localhost:3128', 'JOURNAL_STREAM': '10:16073', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'namtruong', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'grpc_proxy': 'socks5h://localhost:1080', 'FC_FONTATIONS': '1', 'HISTCONTROL': 'ignorespace', 'WINDOWPATH': '2', 'PATH': '/home/namtruong/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/namtruong/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/namtruong/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts:/snap/code/254/usr/share/code/resources/app/node_modules.asar.unpacked/@vscode/ripgrep-universal/bin/linux-x64', 'SESSION_MANAGER': 'local/namtruong-ASUS-TUF-Gaming-A15-FA507RE-FA507RE:@/tmp/.ICE-unix/2216,unix/namtruong-ASUS-TUF-Gaming-A15-FA507RE-FA507RE:/tmp/.ICE-unix/2216', 'GTK_EXE_PREFIX': '/snap/code/254/usr', 'INVOCATION_ID': '78dcd73ca6a2499fb64a4d3d46caa013', 'XDG_MENU_PREFIX': 'gnome-', 'ftp_proxy': 'socks5h://localhost:1080', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/254/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/namtruong/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b774a82eed318078.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/namtruong/.config/Code/User/workspaceStorage/486cbd49010a24ff560c69cb52be87bb/ms-python.python/pythonrc.py', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/namtruong/snap/code/254/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-2d5c663e92.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/namtruong/snap/code/254/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'CLOUDSDK_PROXY_TYPE': 'https', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'CLOUDSDK_PROXY_ADDRESS': 'localhost', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'CLOUDSDK_PROXY_PORT': '3128', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/namtruong/uuv_sim_home/build/multibeam_sonar_system', 'CLAUDE_TMPDIR': '/home/namtruong/.vscode/tmp/tmp_vscode_1', 'GIT_MERGE_AUTOEDIT': 'no', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'COPILOT_DEBUG_NONCE': 'd71f670f3ae235346a50e087a7cfc4cd', 'FTP_PROXY': 'socks5h://localhost:1080', 'XDG_DATA_DIRS': '/home/namtruong/snap/code/254/.local/share:/home/namtruong/snap/code/254:/snap/code/254/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://localhost:3128', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'DOCKER_HTTP_PROXY': 'http://localhost:3128', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'GRPC_PROXY': 'socks5h://localhost:1080'}), 'shell': False}
+[0.020429] (multibeam_sonar) JobProgress: {'identifier': 'multibeam_sonar', 'progress': 'cmake'}
+[0.021094] (multibeam_sonar) JobProgress: {'identifier': 'multibeam_sonar', 'progress': 'build'}
+[0.021609] (multibeam_sonar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/namtruong/uuv_sim_home/build/multibeam_sonar', '--', '-j16', '-l16'], 'cwd': '/home/namtruong/uuv_sim_home/build/multibeam_sonar', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'RSYNC_PROXY': 'localhost:1080', 'HTTPS_PROXY': 'http://localhost:3128', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'no_proxy': 'localhost,127.0.0.1,::1,*.local,.local,169.254.0.0/16,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16', 'AI_AGENT': 'github_copilot_vscode_agent', 'GIT_SSH_COMMAND': "ssh -o ProxyCommand='socat - PROXY:localhost:%h:%p,proxyport=3128'", 'USER': 'namtruong', 'SANDBOX_RUNTIME': '1', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'CLAUDE_CODE_HOST_SOCKS_PROXY_PORT': '45559', 'GIT_EDITOR': ':', 'all_proxy': 'socks5h://localhost:1080', 'GIO_MODULE_DIR': '/home/namtruong/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/254/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'DOCKER_HTTPS_PROXY': 'http://localhost:3128', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'COPILOT_AGENT': '1', 'HOME': '/home/namtruong', 'CHROME_DESKTOP': 'code.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/namtruong/.vscode/tmp/tmp_vscode_1', 'TERM_PROGRAM_VERSION': '1.131.0', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/254/usr/lib/x86_64-linux-gnu/gtk-3.0', 'NO_PROXY': 'localhost,127.0.0.1,::1,*.local,.local,169.254.0.0/16,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16', 'XDG_DATA_HOME_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE': '/home/namtruong/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/254/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/254/usr/share/code/code', 'MANAGERPID': '1529', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2260', 'BUNDLED_DEBUGPY_PATH': '/home/namtruong/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3068', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'TMPDIR': '/home/namtruong/.vscode/tmp/tmp_vscode_1', 'https_proxy': 'http://localhost:3128', 'CLAUDE_CODE_HOST_HTTP_PROXY_PORT': '34801', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'namtruong', 'ALL_PROXY': 'socks5h://localhost:1080', 'http_proxy': 'http://localhost:3128', 'JOURNAL_STREAM': '10:16073', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'namtruong', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'grpc_proxy': 'socks5h://localhost:1080', 'FC_FONTATIONS': '1', 'HISTCONTROL': 'ignorespace', 'WINDOWPATH': '2', 'PATH': '/home/namtruong/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/namtruong/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/namtruong/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts:/snap/code/254/usr/share/code/resources/app/node_modules.asar.unpacked/@vscode/ripgrep-universal/bin/linux-x64', 'SESSION_MANAGER': 'local/namtruong-ASUS-TUF-Gaming-A15-FA507RE-FA507RE:@/tmp/.ICE-unix/2216,unix/namtruong-ASUS-TUF-Gaming-A15-FA507RE-FA507RE:/tmp/.ICE-unix/2216', 'GTK_EXE_PREFIX': '/snap/code/254/usr', 'INVOCATION_ID': '78dcd73ca6a2499fb64a4d3d46caa013', 'XDG_MENU_PREFIX': 'gnome-', 'ftp_proxy': 'socks5h://localhost:1080', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/254/usr/lib/locale', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/namtruong/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b774a82eed318078.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/namtruong/.config/Code/User/workspaceStorage/486cbd49010a24ff560c69cb52be87bb/ms-python.python/pythonrc.py', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XDG_DATA_HOME': '/home/namtruong/snap/code/254/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-2d5c663e92.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/namtruong/snap/code/254/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/namtruong/uuv_sim_home/install/dave_interfaces:/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'CLOUDSDK_PROXY_TYPE': 'https', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'CLOUDSDK_PROXY_ADDRESS': 'localhost', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'CLOUDSDK_PROXY_PORT': '3128', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/namtruong/uuv_sim_home/build/multibeam_sonar', 'CLAUDE_TMPDIR': '/home/namtruong/.vscode/tmp/tmp_vscode_1', 'GIT_MERGE_AUTOEDIT': 'no', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'COPILOT_DEBUG_NONCE': 'd71f670f3ae235346a50e087a7cfc4cd', 'FTP_PROXY': 'socks5h://localhost:1080', 'XDG_DATA_DIRS': '/home/namtruong/snap/code/254/.local/share:/home/namtruong/snap/code/254:/snap/code/254/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://localhost:3128', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'DOCKER_HTTP_PROXY': 'http://localhost:3128', 'CMAKE_PREFIX_PATH': '/home/namtruong/uuv_sim_home/install/dave_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'GRPC_PROXY': 'socks5h://localhost:1080'}), 'shell': False}
+[0.049261] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.054383] (multibeam_sonar) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099535] (-) TimerEvent: {}
+[0.199801] (-) TimerEvent: {}
+[0.300053] (-) TimerEvent: {}
+[0.302459] (multibeam_sonar_system) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.305541] (multibeam_sonar) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.322121] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[0.322670] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[0.325239] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.325451] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.326456] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.327874] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sim8 -- found version 8.11.0\n'}
+[0.328456] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sim8\n'}
+[0.330084] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[0.330273] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of sdformat14\n'}
+[0.334800] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.336175] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[0.336454] (multibeam_sonar) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[0.341978] (multibeam_sonar_system) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[0.352643] (multibeam_sonar) StdoutLine: {'line': b'--   Found tinyxml2, version 10.0.0\n'}
+[0.358664] (multibeam_sonar_system) StdoutLine: {'line': b'--   Found uuid, version 2.39.3\n'}
+[0.395929] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[0.396192] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[0.398797] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.398997] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[0.399113] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.399607] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[0.400105] (-) TimerEvent: {}
+[0.400483] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.400681] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.400800] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[0.402207] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5-profiler -- found version 5.8.0\n'}
+[0.402425] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-profiler\n'}
+[0.403657] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.2.1\n'}
+[0.403845] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[0.405168] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[0.405326] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[0.405770] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.405935] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2\n'}
+[0.406061] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-utils2> component [cli]\n'}
+[0.406857] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[0.407011] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[0.407385] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.408273] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [loader]\n'}
+[0.408608] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2-cli -- found version 2.2.1\n'}
+[0.408820] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-utils2-cli\n'}
+[0.409706] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [register]\n'}
+[0.409995] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-plugin2-loader -- found version 2.0.4\n'}
+[0.410193] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-loader\n'}
+[0.410822] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [register]\n'}
+[0.411980] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-plugin2-register -- found version 2.0.4\n'}
+[0.412170] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-register\n'}
+[0.413131] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-plugin2-register -- found version 2.0.4\n'}
+[0.413355] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-register\n'}
+[0.414678] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[0.414847] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering8\n'}
+[0.415471] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.5.0\n'}
+[0.415608] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13\n'}
+[0.417400] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[0.417539] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[0.417953] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.418543] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-math7> component [eigen3]\n'}
+[0.421308] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-math7-eigen3 -- found version 7.6.0\n'}
+[0.421525] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7-eigen3\n'}
+[0.432251] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[0.432784] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[0.432996] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.433283] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.433405] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.440957] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[0.443228] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5-graphics -- found version 5.8.0\n'}
+[0.443443] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-graphics\n'}
+[0.443757] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[0.450737] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found GzAssimp: TRUE (found version "5.3.0") \n'}
+[0.451410] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[0.453910] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5-events -- found version 5.8.0\n'}
+[0.454077] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-events\n'}
+[0.454413] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[0.454860] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-common5> component [geospatial]\n'}
+[0.457617] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5-geospatial -- found version 5.8.0\n'}
+[0.457931] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-geospatial\n'}
+[0.458354] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[0.458772] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[0.460124] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[0.460345] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[0.460786] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.460936] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [all]\n'}
+[0.462751] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for all libraries of gz-plugin2 -- found version 2.0.4\n'}
+[0.463316] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[0.465339] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-plugin2-loader -- found version 2.0.4\n'}
+[0.465532] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2-loader\n'}
+[0.467039] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.487067] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL \n'}
+[0.488003] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-rendering8> component [ogre]\n'}
+[0.489972] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-rendering8-ogre -- found version 8.2.3\n'}
+[0.490580] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering8-ogre\n'}
+[0.493254] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-rendering8> component [ogre2]\n'}
+[0.495206] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-rendering8-ogre2 -- found version 8.2.3\n'}
+[0.495416] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering8-ogre2\n'}
+[0.499731] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sim8 -- found version 8.11.0\n'}
+[0.499973] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sim8\n'}
+[0.500195] (-) TimerEvent: {}
+[0.501444] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[0.501595] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of sdformat14\n'}
+[0.507434] (multibeam_sonar_system) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[0.526706] (multibeam_sonar_system) StdoutLine: {'line': b'--   Found tinyxml2, version 10.0.0\n'}
+[0.568952] (multibeam_sonar) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") \n'}
+[0.571274] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[0.571646] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.572704] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[0.574661] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.5.0\n'}
+[0.574886] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13\n'}
+[0.583163] (multibeam_sonar) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[0.588621] (multibeam_sonar) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[0.600303] (-) TimerEvent: {}
+[0.606174] (multibeam_sonar) StdoutLine: {'line': b'--   Found libzmq, version 4.3.5\n'}
+[0.661224] (multibeam_sonar) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[0.667634] (multibeam_sonar) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[0.685818] (multibeam_sonar) StdoutLine: {'line': b'--   Found uuid, version 2.39.3\n'}
+[0.700409] (-) TimerEvent: {}
+[0.721332] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") \n'}
+[0.729499] (multibeam_sonar) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[0.729896] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.732337] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[0.732542] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs10\n'}
+[0.736068] (multibeam_sonar_system) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[0.741905] (multibeam_sonar_system) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[0.755624] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.755938] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[0.760841] (multibeam_sonar_system) StdoutLine: {'line': b'--   Found libzmq, version 4.3.5\n'}
+[0.764118] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-transport13> component [log]\n'}
+[0.765989] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-transport13-log -- found version 13.5.0\n'}
+[0.766244] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13-log\n'}
+[0.766731] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-transport13> component [parameters]\n'}
+[0.768742] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-transport13-parameters -- found version 13.5.0\n'}
+[0.768982] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13-parameters\n'}
+[0.769924] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[0.772634] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[0.772759] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[0.773132] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.773558] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.775646] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.777304] (multibeam_sonar) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[0.785055] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-common5> component [av]\n'}
+[0.787532] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5-av -- found version 5.8.0\n'}
+[0.787687] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-av\n'}
+[0.793473] (multibeam_sonar) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[0.800515] (-) TimerEvent: {}
+[0.810639] (multibeam_sonar) StdoutLine: {'line': b'--   Found libswscale, version 7.5.100\n'}
+[0.816192] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[0.824770] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.827238] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[0.827513] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-msgs10\n'}
+[0.850888] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.851336] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[0.857010] (multibeam_sonar) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[0.859487] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-transport13> component [log]\n'}
+[0.861373] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-transport13-log -- found version 13.5.0\n'}
+[0.861804] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13-log\n'}
+[0.862213] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-transport13> component [parameters]\n'}
+[0.863161] (multibeam_sonar) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[0.863865] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-transport13-parameters -- found version 13.5.0\n'}
+[0.864015] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-transport13-parameters\n'}
+[0.864966] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[0.865370] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[0.865527] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[0.865892] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[0.866072] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.866250] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.875209] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-common5> component [av]\n'}
+[0.878018] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5-av -- found version 5.8.0\n'}
+[0.878239] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-av\n'}
+[0.881853] (multibeam_sonar) StdoutLine: {'line': b'--   Found libavdevice, version 60.3.100\n'}
+[0.884219] (multibeam_sonar_system) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[0.900618] (-) TimerEvent: {}
+[0.902534] (multibeam_sonar_system) StdoutLine: {'line': b'--   Found libswscale, version 7.5.100\n'}
+[0.941484] (multibeam_sonar) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[0.947381] (multibeam_sonar) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[0.950415] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[0.956617] (multibeam_sonar_system) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[0.966838] (multibeam_sonar) StdoutLine: {'line': b'--   Found libavformat, version 60.16.100\n'}
+[0.976001] (multibeam_sonar_system) StdoutLine: {'line': b'--   Found libavdevice, version 60.3.100\n'}
+[1.000729] (-) TimerEvent: {}
+[1.017477] (multibeam_sonar) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[1.023878] (multibeam_sonar) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[1.036976] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[1.042835] (multibeam_sonar) StdoutLine: {'line': b'--   Found libavcodec, version 60.31.102\n'}
+[1.043114] (multibeam_sonar_system) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[1.061525] (multibeam_sonar_system) StdoutLine: {'line': b'--   Found libavformat, version 60.16.100\n'}
+[1.091189] (multibeam_sonar) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[1.097159] (multibeam_sonar) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[1.100822] (-) TimerEvent: {}
+[1.111464] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[1.115998] (multibeam_sonar) StdoutLine: {'line': b'--   Found libavutil, version 58.29.100\n'}
+[1.117435] (multibeam_sonar_system) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[1.136916] (multibeam_sonar_system) StdoutLine: {'line': b'--   Found libavcodec, version 60.31.102\n'}
+[1.161144] (multibeam_sonar) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[1.161998] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[1.164967] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5-events -- found version 5.8.0\n'}
+[1.165300] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-events\n'}
+[1.165628] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.166398] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[1.169133] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5-graphics -- found version 5.8.0\n'}
+[1.169363] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-graphics\n'}
+[1.169771] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.176411] (multibeam_sonar) StdoutLine: {'line': b'-- Found GzAssimp: TRUE (found version "5.3.0") \n'}
+[1.176930] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-common5> component [io]\n'}
+[1.179631] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5-io -- found version 5.8.0\n'}
+[1.179826] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-io\n'}
+[1.180396] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[1.182955] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5-profiler -- found version 5.8.0\n'}
+[1.183335] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-profiler\n'}
+[1.186326] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-fuel_tools9 -- found version 9.1.1\n'}
+[1.186576] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-fuel_tools9\n'}
+[1.186809] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[1.193126] (multibeam_sonar_system) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[1.200937] (-) TimerEvent: {}
+[1.213260] (multibeam_sonar_system) StdoutLine: {'line': b'--   Found libavutil, version 58.29.100\n'}
+[1.261150] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[1.261827] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[1.262046] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[1.262174] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-common5> component [io]\n'}
+[1.264363] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5-io -- found version 5.8.0\n'}
+[1.264557] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-io\n'}
+[1.265180] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-common5> component [profiler]\n'}
+[1.267682] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-fuel_tools9 -- found version 9.1.1\n'}
+[1.267961] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-fuel_tools9\n'}
+[1.297983] (multibeam_sonar) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "8.5.0")  \n'}
+[1.301037] (-) TimerEvent: {}
+[1.310898] (multibeam_sonar) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.331597] (multibeam_sonar) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.382875] (multibeam_sonar) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[1.384472] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "8.5.0")  \n'}
+[1.399310] (multibeam_sonar_system) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.401126] (-) TimerEvent: {}
+[1.404955] (multibeam_sonar) StdoutLine: {'line': b"-- Checking for module 'yaml-0.1'\n"}
+[1.419751] (multibeam_sonar_system) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.424509] (multibeam_sonar) StdoutLine: {'line': b'--   Found yaml-0.1, version 0.2.5\n'}
+[1.462835] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[1.469478] (multibeam_sonar) StdoutLine: {'line': b'-- Found YAML: TRUE  \n'}
+[1.475701] (multibeam_sonar) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.482948] (multibeam_sonar_system) StdoutLine: {'line': b"-- Checking for module 'yaml-0.1'\n"}
+[1.494768] (multibeam_sonar) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.501229] (-) TimerEvent: {}
+[1.502094] (multibeam_sonar_system) StdoutLine: {'line': b'--   Found yaml-0.1, version 0.2.5\n'}
+[1.537881] (multibeam_sonar) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[1.538370] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.538886] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.539059] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.539490] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.539666] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.539803] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.546881] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found YAML: TRUE  \n'}
+[1.548768] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-common5> component [testing]\n'}
+[1.551473] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5-testing -- found version 5.8.0\n'}
+[1.551729] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-testing\n'}
+[1.552779] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.553210] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.553375] (multibeam_sonar_system) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.555635] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-gui8 -- found version 8.4.0\n'}
+[1.555812] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-gui8\n'}
+[1.573604] (multibeam_sonar_system) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.585537] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.585978] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.586478] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.586911] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.587636] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.5.0\n'}
+[1.589694] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[1.589863] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering8\n'}
+[1.590287] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.590504] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7\n'}
+[1.590887] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.591054] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-math7> component [eigen3]\n'}
+[1.593880] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-math7-eigen3 -- found version 7.6.0\n'}
+[1.594105] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-math7-eigen3\n'}
+[1.601328] (-) TimerEvent: {}
+[1.604612] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.604910] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.605178] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.605584] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.605719] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.614253] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-common5> component [graphics]\n'}
+[1.614547] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-common5> component [events]\n'}
+[1.614672] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-common5> component [geospatial]\n'}
+[1.617000] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5-geospatial -- found version 5.8.0\n'}
+[1.617209] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-geospatial\n'}
+[1.617593] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.617985] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.618984] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.619151] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-plugin2\n'}
+[1.619470] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.619601] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-plugin2> component [all]\n'}
+[1.619841] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[1.620322] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.620851] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.621183] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5\n'}
+[1.621487] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.621677] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.621885] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.621995] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for all libraries of gz-plugin2 -- found version 2.0.4\n'}
+[1.622452] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.623659] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.631309] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-common5> component [testing]\n'}
+[1.633897] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5-testing -- found version 5.8.0\n'}
+[1.634183] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-common5-testing\n'}
+[1.635144] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.635568] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.637656] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-gui8 -- found version 8.4.0\n'}
+[1.637841] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-gui8\n'}
+[1.639903] (multibeam_sonar) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL \n'}
+[1.641164] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.667293] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-physics7 -- found version 7.6.0\n'}
+[1.667561] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7\n'}
+[1.667771] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.668187] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.668373] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.668608] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.668768] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.669031] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.669462] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.669640] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.670065] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.5.0\n'}
+[1.670347] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [heightmap]\n'}
+[1.670557] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[1.670945] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.671758] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-physics7-heightmap -- found version 7.6.0\n'}
+[1.671922] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-heightmap\n'}
+[1.672329] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.672754] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [mesh]\n'}
+[1.674188] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-physics7-mesh -- found version 7.6.0\n'}
+[1.674372] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-mesh\n'}
+[1.674736] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.675202] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [sdf]\n'}
+[1.676578] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-physics7-sdf -- found version 7.6.0\n'}
+[1.676746] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-sdf\n'}
+[1.677126] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[1.679083] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.679283] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8\n'}
+[1.697071] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-physics7 -- found version 7.6.0\n'}
+[1.697342] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7\n'}
+[1.697586] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.697938] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.698339] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.698675] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.699971] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [heightmap]\n'}
+[1.701300] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-physics7-heightmap -- found version 7.6.0\n'}
+[1.701447] (-) TimerEvent: {}
+[1.701581] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-heightmap\n'}
+[1.701972] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.702501] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [mesh]\n'}
+[1.702740] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.703207] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.703632] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.5.0\n'}
+[1.703884] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-physics7-mesh -- found version 7.6.0\n'}
+[1.704085] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[1.704183] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-mesh\n'}
+[1.704500] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.704612] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.704837] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-physics7> component [sdf]\n'}
+[1.704926] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[1.705517] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [air_pressure]\n'}
+[1.705966] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-physics7-sdf -- found version 7.6.0\n'}
+[1.706138] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-physics7-sdf\n'}
+[1.706502] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[1.706798] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-air_pressure -- found version 8.2.2\n'}
+[1.707059] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-air_pressure\n'}
+[1.707608] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [air_speed]\n'}
+[1.708071] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.708269] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8\n'}
+[1.708795] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-air_speed -- found version 8.2.2\n'}
+[1.708970] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-air_speed\n'}
+[1.709445] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [altimeter]\n'}
+[1.711024] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-altimeter -- found version 8.2.2\n'}
+[1.711247] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-altimeter\n'}
+[1.711787] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [imu]\n'}
+[1.713127] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-imu -- found version 8.2.2\n'}
+[1.713310] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-imu\n'}
+[1.713808] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [force_torque]\n'}
+[1.715138] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-force_torque -- found version 8.2.2\n'}
+[1.715387] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-force_torque\n'}
+[1.715886] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [logical_camera]\n'}
+[1.717012] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-logical_camera -- found version 8.2.2\n'}
+[1.717171] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-logical_camera\n'}
+[1.717856] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [magnetometer]\n'}
+[1.719083] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-magnetometer -- found version 8.2.2\n'}
+[1.719244] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-magnetometer\n'}
+[1.719787] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [navsat]\n'}
+[1.720961] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-navsat -- found version 8.2.2\n'}
+[1.721136] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-navsat\n'}
+[1.721593] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [dvl]\n'}
+[1.722903] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-dvl -- found version 8.2.2\n'}
+[1.723099] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-dvl\n'}
+[1.723584] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.723777] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8\n'}
+[1.731806] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.732209] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.732679] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.5.0\n'}
+[1.733067] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[1.733518] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.733900] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[1.734526] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [air_pressure]\n'}
+[1.735588] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-air_pressure -- found version 8.2.2\n'}
+[1.735756] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-air_pressure\n'}
+[1.736297] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [air_speed]\n'}
+[1.737373] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-air_speed -- found version 8.2.2\n'}
+[1.737566] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-air_speed\n'}
+[1.738105] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [altimeter]\n'}
+[1.739164] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-altimeter -- found version 8.2.2\n'}
+[1.739355] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-altimeter\n'}
+[1.739821] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [imu]\n'}
+[1.740817] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-imu -- found version 8.2.2\n'}
+[1.741010] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-imu\n'}
+[1.741544] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [force_torque]\n'}
+[1.742658] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-force_torque -- found version 8.2.2\n'}
+[1.742855] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-force_torque\n'}
+[1.743365] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [logical_camera]\n'}
+[1.744388] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-logical_camera -- found version 8.2.2\n'}
+[1.744776] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-logical_camera\n'}
+[1.745163] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [magnetometer]\n'}
+[1.746350] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-magnetometer -- found version 8.2.2\n'}
+[1.746506] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-magnetometer\n'}
+[1.747048] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [navsat]\n'}
+[1.748116] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-navsat -- found version 8.2.2\n'}
+[1.748266] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.748389] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-navsat\n'}
+[1.748562] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.748840] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [dvl]\n'}
+[1.748996] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.5.0\n'}
+[1.749446] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[1.749842] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.749999] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-dvl -- found version 8.2.2\n'}
+[1.750247] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-dvl\n'}
+[1.750425] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[1.750561] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rendering]\n'}
+[1.750694] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.750868] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8\n'}
+[1.751746] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-rendering -- found version 8.2.2\n'}
+[1.751928] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-rendering\n'}
+[1.753268] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rendering]\n'}
+[1.753606] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [lidar]\n'}
+[1.754603] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-lidar -- found version 8.2.2\n'}
+[1.754766] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-lidar\n'}
+[1.755184] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.755743] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [gpu_lidar]\n'}
+[1.756904] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-gpu_lidar -- found version 8.2.2\n'}
+[1.757086] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-gpu_lidar\n'}
+[1.757464] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.757971] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [camera]\n'}
+[1.759207] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-camera -- found version 8.2.2\n'}
+[1.759507] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-camera\n'}
+[1.759748] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.760357] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [boundingbox_camera]\n'}
+[1.761436] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-boundingbox_camera -- found version 8.2.2\n'}
+[1.761622] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-boundingbox_camera\n'}
+[1.762224] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [segmentation_camera]\n'}
+[1.763404] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-segmentation_camera -- found version 8.2.2\n'}
+[1.763555] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-segmentation_camera\n'}
+[1.763982] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [depth_camera]\n'}
+[1.765270] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-depth_camera -- found version 8.2.2\n'}
+[1.765637] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-depth_camera\n'}
+[1.766098] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.766967] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rgbd_camera]\n'}
+[1.768225] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-rgbd_camera -- found version 8.2.2\n'}
+[1.768456] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-rgbd_camera\n'}
+[1.768843] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.769539] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [thermal_camera]\n'}
+[1.770723] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-thermal_camera -- found version 8.2.2\n'}
+[1.770883] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-thermal_camera\n'}
+[1.771303] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.771975] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [wide_angle_camera]\n'}
+[1.773260] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8-wide_angle_camera -- found version 8.2.2\n'}
+[1.773667] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-wide_angle_camera\n'}
+[1.774789] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[1.775183] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.775364] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.775778] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.775945] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.776296] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.5.0\n'}
+[1.776737] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[1.777155] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-msgs10 -- found version 10.3.2\n'}
+[1.777627] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for sdformat14 -- found version 14.9.0\n'}
+[1.777893] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rendering]\n'}
+[1.779065] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-rendering -- found version 8.2.2\n'}
+[1.779292] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-rendering\n'}
+[1.780699] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rendering]\n'}
+[1.780897] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [lidar]\n'}
+[1.781754] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-lidar -- found version 8.2.2\n'}
+[1.782065] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-lidar\n'}
+[1.782547] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.783323] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [gpu_lidar]\n'}
+[1.784520] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-gpu_lidar -- found version 8.2.2\n'}
+[1.784718] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-gpu_lidar\n'}
+[1.785150] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.785864] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [camera]\n'}
+[1.786852] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-camera -- found version 8.2.2\n'}
+[1.787001] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-camera\n'}
+[1.787680] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.788335] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [boundingbox_camera]\n'}
+[1.789539] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-boundingbox_camera -- found version 8.2.2\n'}
+[1.789706] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-boundingbox_camera\n'}
+[1.790230] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [segmentation_camera]\n'}
+[1.791346] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-segmentation_camera -- found version 8.2.2\n'}
+[1.791555] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-segmentation_camera\n'}
+[1.792176] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [depth_camera]\n'}
+[1.793299] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-depth_camera -- found version 8.2.2\n'}
+[1.793449] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-depth_camera\n'}
+[1.793973] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.794595] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [rgbd_camera]\n'}
+[1.795783] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-rgbd_camera -- found version 8.2.2\n'}
+[1.795980] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-rgbd_camera\n'}
+[1.796367] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.796970] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [thermal_camera]\n'}
+[1.798157] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-thermal_camera -- found version 8.2.2\n'}
+[1.798297] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-thermal_camera\n'}
+[1.798647] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.799335] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for <gz-sensors8> component [wide_angle_camera]\n'}
+[1.800607] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8-wide_angle_camera -- found version 8.2.2\n'}
+[1.800827] (multibeam_sonar_system) StdoutLine: {'line': b'-- Searching for dependencies of gz-sensors8-wide_angle_camera\n'}
+[1.801524] (-) TimerEvent: {}
+[1.801979] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.802419] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[1.802602] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[1.802814] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering8\n'}
+[1.802999] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.803228] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-math7 -- found version 7.6.0\n'}
+[1.803577] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.803782] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-common5 -- found version 5.8.0\n'}
+[1.804627] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-plugin2 -- found version 2.0.4\n'}
+[1.804782] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-utils2 -- found version 2.2.1\n'}
+[1.806984] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-rendering8> component [ogre]\n'}
+[1.809493] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-rendering8-ogre -- found version 8.2.3\n'}
+[1.810250] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering8-ogre\n'}
+[1.813265] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for <gz-rendering8> component [ogre2]\n'}
+[1.815272] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-rendering8-ogre2 -- found version 8.2.3\n'}
+[1.815474] (multibeam_sonar) StdoutLine: {'line': b'-- Searching for dependencies of gz-rendering8-ogre2\n'}
+[1.820419] (multibeam_sonar) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.5.0\n'}
+[1.824437] (multibeam_sonar) StdoutLine: {'line': b'-- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.832786] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.841118] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sim8 -- found version 8.11.0\n'}
+[1.841576] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-sensors8 -- found version 8.2.2\n'}
+[1.841990] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-rendering8 -- found version 8.2.3\n'}
+[1.842428] (multibeam_sonar_system) StdoutLine: {'line': b'-- Looking for gz-transport13 -- found version 13.5.0\n'}
+[1.847043] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.890117] (multibeam_sonar) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.901634] (-) TimerEvent: {}
+[1.912414] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.914626] (multibeam_sonar) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.936274] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.943131] (multibeam_sonar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.963349] (multibeam_sonar_system) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.972627] (multibeam_sonar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.991485] (multibeam_sonar_system) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.001735] (-) TimerEvent: {}
+[2.089479] (multibeam_sonar) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.095288] (multibeam_sonar) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.102036] (-) TimerEvent: {}
+[2.107098] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.113283] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.202155] (-) TimerEvent: {}
+[2.232459] (multibeam_sonar) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[2.246042] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[2.258871] (multibeam_sonar) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.272368] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.294550] (multibeam_sonar) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.302277] (-) TimerEvent: {}
+[2.309713] (multibeam_sonar_system) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.402388] (-) TimerEvent: {}
+[2.427960] (multibeam_sonar) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[2.445965] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[2.502486] (-) TimerEvent: {}
+[2.516644] (multibeam_sonar) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[2.527152] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[2.554954] (multibeam_sonar) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[2.560513] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[2.571092] (multibeam_sonar) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.6.0") \n'}
+[2.573369] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.6.0") \n'}
+[2.576448] (multibeam_sonar) StdoutLine: {'line': b'-- Found marine_acoustic_msgs: 2.1.0 (/opt/ros/jazzy/share/marine_acoustic_msgs/cmake)\n'}
+[2.577706] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found marine_acoustic_msgs: 2.1.0 (/opt/ros/jazzy/share/marine_acoustic_msgs/cmake)\n'}
+[2.602583] (-) TimerEvent: {}
+[2.604349] (multibeam_sonar) StdoutLine: {'line': b'-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)\n'}
+[2.604565] (multibeam_sonar_system) StdoutLine: {'line': b'-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)\n'}
+[2.608069] (multibeam_sonar) StdoutLine: {'line': b'-- CUDA Toolkit not found or disabled: using CPU fallback implementation\n'}
+[2.608303] (multibeam_sonar_system) StdoutLine: {'line': b'-- CUDA Toolkit not found or disabled: using CPU fallback implementation\n'}
+[2.702680] (-) TimerEvent: {}
+[2.727051] (multibeam_sonar) StdoutLine: {'line': b'-- Configuring done (2.7s)\n'}
+[2.734118] (multibeam_sonar) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:80 (add_library):\n'}
+[2.734345] (multibeam_sonar) StderrLine: {'line': b'  Cannot find source file:\n'}
+[2.734457] (multibeam_sonar) StderrLine: {'line': b'\n'}
+[2.734554] (multibeam_sonar) StderrLine: {'line': b'    sonar_calculation_cpu.cc\n'}
+[2.734686] (multibeam_sonar) StderrLine: {'line': b'\n'}
+[2.734907] (multibeam_sonar) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm\n'}
+[2.735154] (multibeam_sonar) StderrLine: {'line': b'  .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90\n'}
+[2.735377] (multibeam_sonar) StderrLine: {'line': b'  .f95 .f03 .hip .ispc\n'}
+[2.735703] (multibeam_sonar) StderrLine: {'line': b'\n'}
+[2.735868] (multibeam_sonar) StderrLine: {'line': b'\x1b[0m\n'}
+[2.741260] (multibeam_sonar) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:80 (add_library):\n'}
+[2.741479] (multibeam_sonar) StderrLine: {'line': b'  No SOURCES given to target: multibeam_sonar\n'}
+[2.741570] (multibeam_sonar) StderrLine: {'line': b'\n'}
+[2.741640] (multibeam_sonar) StderrLine: {'line': b'\x1b[0m\n'}
+[2.741704] (multibeam_sonar) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[2.766999] (multibeam_sonar) StderrLine: {'line': b'gmake: *** [Makefile:226: cmake_check_build_system] Error 1\n'}
+[2.769770] (multibeam_sonar) CommandEnded: {'returncode': 2}
+[2.781622] (multibeam_sonar) JobEnded: {'identifier': 'multibeam_sonar', 'rc': 2}
+[2.802775] (-) TimerEvent: {}
+[2.843421] (multibeam_sonar_system) StdoutLine: {'line': b'-- Configuring done (2.8s)\n'}
+[2.855033] (multibeam_sonar_system) StderrLine: {'line': b'\x1b[31mCMake Error at /home/namtruong/uuv_sim_home/src/multibeam_sonar/CMakeLists.txt:80 (add_library):\n'}
+[2.855293] (multibeam_sonar_system) StderrLine: {'line': b'  Cannot find source file:\n'}
+[2.855410] (multibeam_sonar_system) StderrLine: {'line': b'\n'}
+[2.855515] (multibeam_sonar_system) StderrLine: {'line': b'    sonar_calculation_cpu.cc\n'}
+[2.855616] (multibeam_sonar_system) StderrLine: {'line': b'\n'}
+[2.855716] (multibeam_sonar_system) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm\n'}
+[2.855817] (multibeam_sonar_system) StderrLine: {'line': b'  .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90\n'}
+[2.855914] (multibeam_sonar_system) StderrLine: {'line': b'  .f95 .f03 .hip .ispc\n'}
+[2.856072] (multibeam_sonar_system) StderrLine: {'line': b'\n'}
+[2.856222] (multibeam_sonar_system) StderrLine: {'line': b'\x1b[0m\n'}
+[2.859461] (multibeam_sonar_system) StderrLine: {'line': b'\x1b[31mCMake Error at /home/namtruong/uuv_sim_home/src/multibeam_sonar/CMakeLists.txt:80 (add_library):\n'}
+[2.859627] (multibeam_sonar_system) StderrLine: {'line': b'  No SOURCES given to target: multibeam_sonar\n'}
+[2.859738] (multibeam_sonar_system) StderrLine: {'line': b'\n'}
+[2.859818] (multibeam_sonar_system) StderrLine: {'line': b'\x1b[0m\n'}
+[2.859889] (multibeam_sonar_system) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[2.879545] (multibeam_sonar_system) StderrLine: {'line': b'gmake: *** [Makefile:226: cmake_check_build_system] Error 1\n'}
+[2.881987] (multibeam_sonar_system) JobEnded: {'identifier': 'multibeam_sonar_system', 'rc': 'SIGINT'}
+[2.892698] (-) EventReactorShutdown: {}

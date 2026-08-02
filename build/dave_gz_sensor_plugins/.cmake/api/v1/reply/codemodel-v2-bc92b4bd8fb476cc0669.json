@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-68fdb263bb834bba6de7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "dave_gz_sensor_plugins",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "UnderwaterCamera::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UnderwaterCamera-57050ccabcb96d21203b.json",
+					"name" : "UnderwaterCamera",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "UsblTransceiver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UsblTransceiver-e3347460827925fae8a3.json",
+					"name" : "UsblTransceiver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "UsblTransponder::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UsblTransponder-e67e77a93e7bc2afa70a.json",
+					"name" : "UsblTransponder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dave_gz_sensor_plugins_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dave_gz_sensor_plugins_uninstall-2cada76c25be2d100244.json",
+					"name" : "dave_gz_sensor_plugins_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sea_pressure_sensor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sea_pressure_sensor-7837b888a64a260cb810.json",
+					"name" : "sea_pressure_sensor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-3f905b1c9564956a0e53.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/namtruong/uuv_sim_home/build/dave_gz_sensor_plugins",
+		"source" : "/home/namtruong/uuv_sim_home/src/dave_gz_sensor_plugins"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

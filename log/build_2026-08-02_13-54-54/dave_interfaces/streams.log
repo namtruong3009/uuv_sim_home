@@ -1,0 +1,727 @@
+[0.026s] Invoking command in '/home/namtruong/uuv_sim_home/build/dave_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/namtruong/uuv_sim_home/src/dave_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/namtruong/uuv_sim_home/install/dave_interfaces
+[0.082s] -- The C compiler identification is GNU 13.3.0
+[0.137s] -- The CXX compiler identification is GNU 13.3.0
+[0.153s] -- Detecting C compiler ABI info
+[0.239s] -- Detecting C compiler ABI info - done
+[0.246s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.247s] -- Detecting C compile features
+[0.247s] -- Detecting C compile features - done
+[0.255s] -- Detecting CXX compiler ABI info
+[0.353s] -- Detecting CXX compiler ABI info - done
+[0.361s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.362s] -- Detecting CXX compile features
+[0.362s] -- Detecting CXX compile features - done
+[0.366s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.522s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.603s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.655s] -- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.710s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.728s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.751s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.778s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.868s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.873s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.989s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.020s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.052s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.150s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.166s] -- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.182s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.208s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.218s] -- Looking for gz-msgs10 -- found version 10.3.2
+[1.219s] -- Searching for dependencies of gz-msgs10
+[1.342s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") 
+[1.345s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.345s] -- Searching for dependencies of gz-utils2
+[1.348s] -- Looking for gz-math7 -- found version 7.6.0
+[1.348s] -- Searching for dependencies of gz-math7
+[1.348s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.355s] -- Checking for module 'tinyxml2'
+[1.373s] --   Found tinyxml2, version 10.0.0
+[2.057s] -- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.843s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.140s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.145s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[3.270s] -- Found PythonExtra: /usr/bin/python3  
+[3.662s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[3.765s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.778s] -- Configuring done (3.7s)
+[3.842s] -- Generating done (0.1s)
+[3.854s] -- Build files have been written to: /home/namtruong/uuv_sim_home/build/dave_interfaces
+[3.870s] Invoked command in '/home/namtruong/uuv_sim_home/build/dave_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/namtruong/uuv_sim_home/src/dave_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/namtruong/uuv_sim_home/install/dave_interfaces
+[3.871s] Invoking command in '/home/namtruong/uuv_sim_home/build/dave_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/dave_interfaces -- -j16 -l16
+[3.935s] [  1%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[3.935s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[3.944s] [  2%] Built target ament_cmake_python_symlink_dave_interfaces
+[4.131s] running egg_info
+[4.132s] creating dave_interfaces.egg-info
+[4.148s] writing dave_interfaces.egg-info/PKG-INFO
+[4.148s] writing dependency_links to dave_interfaces.egg-info/dependency_links.txt
+[4.149s] writing top-level names to dave_interfaces.egg-info/top_level.txt
+[4.149s] writing manifest file 'dave_interfaces.egg-info/SOURCES.txt'
+[4.198s] reading manifest file 'dave_interfaces.egg-info/SOURCES.txt'
+[4.198s] writing manifest file 'dave_interfaces.egg-info/SOURCES.txt'
+[4.231s] [  2%] Built target ament_cmake_python_build_dave_interfaces_egg
+[4.669s] [  2%] Built target dave_interfaces__rosidl_generator_type_description
+[4.682s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.694s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.752s] [  3%] Built target dave_interfaces__rs
+[6.074s] [  3%] Built target dave_interfaces__cpp
+[6.378s] [  4%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/usbl_command__description.c.o[0m
+[6.378s] [  4%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/usbl_response__functions.c.o[0m
+[6.378s] [  5%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/usbl_response__type_support.c.o[0m
+[6.378s] [  5%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/location__functions.c.o[0m
+[6.378s] [  5%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/location__type_support.c.o[0m
+[6.378s] [  5%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/dvl_beam__description.c.o[0m
+[6.379s] [  6%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/dvl__description.c.o[0m
+[6.380s] [  7%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/dvl_beam__functions.c.o[0m
+[6.380s] [  8%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/usbl_command__functions.c.o[0m
+[6.380s] [  9%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/usbl_response__description.c.o[0m
+[6.380s] [ 10%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/dvl__type_support.c.o[0m
+[6.380s] [ 10%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/location__description.c.o[0m
+[6.385s] [ 11%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/usbl_command__type_support.c.o[0m
+[6.385s] [ 11%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/dvl_target__description.c.o[0m
+[6.385s] [ 11%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/dvl__functions.c.o[0m
+[6.385s] [ 11%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/dvl_beam__type_support.c.o[0m
+[6.425s] [ 11%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/dvl_target__functions.c.o[0m
+[6.429s] [ 12%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/stratified_current_velocity__description.c.o[0m
+[6.429s] [ 12%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/dvl_target__type_support.c.o[0m
+[6.435s] [ 13%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/stratified_current_database__description.c.o[0m
+[6.435s] [ 13%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/stratified_current_velocity__type_support.c.o[0m
+[6.438s] [ 14%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/stratified_current_velocity__functions.c.o[0m
+[6.438s] [ 15%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_origin_spherical_coord__description.c.o[0m
+[6.439s] [ 15%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/stratified_current_database__type_support.c.o[0m
+[6.439s] [ 15%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/msg/detail/stratified_current_database__functions.c.o[0m
+[6.443s] [ 16%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_origin_spherical_coord__functions.c.o[0m
+[6.448s] [ 17%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/get_origin_spherical_coord__functions.c.o[0m
+[6.448s] [ 17%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/get_origin_spherical_coord__description.c.o[0m
+[6.449s] [ 17%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_origin_spherical_coord__type_support.c.o[0m
+[6.453s] [ 18%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/get_origin_spherical_coord__type_support.c.o[0m
+[6.455s] [ 18%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/transform_to_spherical_coord__description.c.o[0m
+[6.472s] [ 19%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/transform_to_spherical_coord__functions.c.o[0m
+[6.474s] [ 19%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/transform_to_spherical_coord__type_support.c.o[0m
+[6.483s] [ 19%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/transform_from_spherical_coord__functions.c.o[0m
+[6.483s] [ 20%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/transform_from_spherical_coord__description.c.o[0m
+[6.497s] [ 21%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/transform_from_spherical_coord__type_support.c.o[0m
+[6.507s] [ 21%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/get_current_model__description.c.o[0m
+[6.507s] [ 21%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/get_current_model__type_support.c.o[0m
+[6.508s] [ 22%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/get_current_model__functions.c.o[0m
+[6.509s] [ 22%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_current_model__description.c.o[0m
+[6.512s] [ 22%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_current_model__type_support.c.o[0m
+[6.512s] [ 23%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_current_model__functions.c.o[0m
+[6.523s] [ 24%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_current_direction__description.c.o[0m
+[6.525s] [ 24%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_current_direction__functions.c.o[0m
+[6.529s] [ 25%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_current_direction__type_support.c.o[0m
+[6.533s] [ 25%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_current_velocity__description.c.o[0m
+[6.547s] [ 26%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_current_velocity__functions.c.o[0m
+[6.551s] [ 26%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_current_velocity__type_support.c.o[0m
+[6.560s] [ 27%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_stratified_current_velocity__description.c.o[0m
+[6.568s] [ 27%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_stratified_current_velocity__functions.c.o[0m
+[6.568s] [ 27%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_stratified_current_direction__description.c.o[0m
+[6.569s] [ 28%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_stratified_current_velocity__type_support.c.o[0m
+[6.577s] [ 28%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_stratified_current_direction__type_support.c.o[0m
+[6.582s] [ 29%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dave_interfaces/srv/detail/set_stratified_current_direction__functions.c.o[0m
+[6.660s] [ 30%] [32m[1mLinking C shared library libdave_interfaces__rosidl_generator_c.so[0m
+[6.713s] [ 30%] Built target dave_interfaces__rosidl_generator_c
+[6.725s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[6.725s] [ 32%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[6.726s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.726s] [ 33%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.726s] [ 33%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.726s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.727s] [ 34%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/msg/dvl__type_support.cpp.o[0m
+[7.727s] [ 34%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/msg/location__type_support.cpp.o[0m
+[7.727s] [ 34%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/msg/usbl_response__type_support.cpp.o[0m
+[7.729s] [ 34%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/msg/dvl_beam__type_support.cpp.o[0m
+[7.729s] [ 36%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/msg/usbl_command__type_support.cpp.o[0m
+[7.729s] [ 36%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/msg/dvl_target__type_support.cpp.o[0m
+[7.737s] [ 37%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/msg/stratified_current_database__type_support.cpp.o[0m
+[7.738s] [ 37%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/msg/stratified_current_velocity__type_support.cpp.o[0m
+[7.746s] [ 37%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/srv/set_origin_spherical_coord__type_support.cpp.o[0m
+[7.767s] [ 38%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/srv/get_origin_spherical_coord__type_support.cpp.o[0m
+[7.771s] [ 38%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/srv/transform_to_spherical_coord__type_support.cpp.o[0m
+[7.808s] [ 39%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/srv/transform_from_spherical_coord__type_support.cpp.o[0m
+[7.808s] [ 39%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/srv/get_current_model__type_support.cpp.o[0m
+[7.823s] [ 39%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/srv/set_current_direction__type_support.cpp.o[0m
+[7.826s] [ 40%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/srv/set_current_model__type_support.cpp.o[0m
+[7.831s] [ 41%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/srv/set_current_velocity__type_support.cpp.o[0m
+[7.842s] [ 41%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/srv/set_stratified_current_velocity__type_support.cpp.o[0m
+[7.849s] [ 42%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dave_interfaces/srv/set_stratified_current_direction__type_support.cpp.o[0m
+[7.893s] [ 43%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/msg/usbl_response__type_support.cpp.o[0m
+[7.895s] [ 44%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/msg/dvl_target__type_support.cpp.o[0m
+[7.900s] [ 44%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/msg/location__type_support.cpp.o[0m
+[7.900s] [ 44%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/msg/stratified_current_velocity__type_support.cpp.o[0m
+[7.900s] [ 44%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/msg/usbl_command__type_support.cpp.o[0m
+[7.903s] [ 44%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/msg/dvl_beam__type_support.cpp.o[0m
+[7.903s] [ 45%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/msg/dvl__type_support.cpp.o[0m
+[7.909s] [ 46%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/msg/stratified_current_database__type_support.cpp.o[0m
+[7.913s] [ 46%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/srv/set_origin_spherical_coord__type_support.cpp.o[0m
+[7.916s] [ 47%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/srv/get_origin_spherical_coord__type_support.cpp.o[0m
+[7.929s] [ 47%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/srv/transform_to_spherical_coord__type_support.cpp.o[0m
+[7.938s] [ 47%] [32m[1mLinking CXX shared library libdave_interfaces__rosidl_typesupport_c.so[0m
+[8.066s] [ 47%] Built target dave_interfaces__rosidl_typesupport_c
+[8.102s] [ 48%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/srv/transform_from_spherical_coord__type_support.cpp.o[0m
+[8.368s] [ 48%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/srv/get_current_model__type_support.cpp.o[0m
+[8.397s] [ 49%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/srv/set_current_model__type_support.cpp.o[0m
+[8.418s] [ 49%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/srv/set_current_direction__type_support.cpp.o[0m
+[8.427s] [ 50%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/srv/set_current_velocity__type_support.cpp.o[0m
+[8.431s] [ 50%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/srv/set_stratified_current_velocity__type_support.cpp.o[0m
+[8.435s] [ 51%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dave_interfaces/srv/set_stratified_current_direction__type_support.cpp.o[0m
+[8.633s] [ 52%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/msg/detail/dvl__type_support.cpp.o[0m
+[8.634s] [ 52%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/msg/detail/location__type_support.cpp.o[0m
+[8.636s] [ 52%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/msg/detail/usbl_command__type_support.cpp.o[0m
+[8.638s] [ 52%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/msg/detail/dvl_beam__type_support.cpp.o[0m
+[8.639s] [ 53%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/msg/detail/usbl_response__type_support.cpp.o[0m
+[8.644s] [ 54%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/msg/detail/dvl_target__type_support.cpp.o[0m
+[8.678s] [ 55%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/msg/detail/usbl_command__type_support.c.o[0m
+[8.776s] [ 55%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/msg/detail/usbl_response__type_support.c.o[0m
+[8.853s] [ 55%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/msg/detail/stratified_current_velocity__type_support.cpp.o[0m
+[8.912s] [ 56%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/msg/detail/location__type_support.c.o[0m
+[8.990s] [ 56%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/msg/detail/dvl__type_support.c.o[0m
+[9.012s] [ 57%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/msg/detail/stratified_current_database__type_support.cpp.o[0m
+[9.028s] [ 57%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/srv/detail/set_origin_spherical_coord__type_support.cpp.o[0m
+[9.037s] [ 58%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/srv/detail/get_origin_spherical_coord__type_support.cpp.o[0m
+[9.060s] [ 58%] [32m[1mLinking CXX shared library libdave_interfaces__rosidl_typesupport_cpp.so[0m
+[9.065s] [ 59%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/msg/detail/dvl_target__type_support.c.o[0m
+[9.066s] [ 59%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/msg/detail/dvl_beam__type_support.c.o[0m
+[9.067s] [ 59%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/srv/detail/transform_to_spherical_coord__type_support.cpp.o[0m
+[9.117s] [ 60%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/srv/detail/transform_from_spherical_coord__type_support.cpp.o[0m
+[9.133s] [ 61%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/msg/detail/stratified_current_database__type_support.c.o[0m
+[9.143s] [ 61%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/msg/detail/stratified_current_velocity__type_support.c.o[0m
+[9.147s] [ 61%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/srv/detail/set_origin_spherical_coord__type_support.c.o[0m
+[9.154s] [ 61%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/srv/detail/get_current_model__type_support.cpp.o[0m
+[9.160s] [ 62%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/srv/detail/set_current_model__type_support.cpp.o[0m
+[9.164s] [ 63%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/srv/detail/get_origin_spherical_coord__type_support.c.o[0m
+[9.169s] [ 63%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/srv/detail/set_current_direction__type_support.cpp.o[0m
+[9.227s] [ 63%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/srv/detail/transform_to_spherical_coord__type_support.c.o[0m
+[9.245s] [ 64%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/srv/detail/transform_from_spherical_coord__type_support.c.o[0m
+[9.263s] [ 65%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/srv/detail/set_current_velocity__type_support.cpp.o[0m
+[9.295s] [ 65%] Built target dave_interfaces__rosidl_typesupport_cpp
+[9.303s] [ 65%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/srv/detail/set_stratified_current_velocity__type_support.cpp.o[0m
+[9.328s] [ 65%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/srv/detail/get_current_model__type_support.c.o[0m
+[9.368s] [ 66%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/srv/detail/set_current_model__type_support.c.o[0m
+[9.387s] [ 67%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dave_interfaces/srv/detail/set_stratified_current_direction__type_support.cpp.o[0m
+[9.404s] [ 67%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/srv/detail/set_current_direction__type_support.c.o[0m
+[9.475s] [ 67%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/srv/detail/set_stratified_current_velocity__type_support.c.o[0m
+[9.480s] [ 68%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/srv/detail/set_current_velocity__type_support.c.o[0m
+[9.500s] [ 69%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/msg/detail/dds_fastrtps/usbl_command__type_support.cpp.o[0m
+[9.516s] [ 69%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/msg/detail/dds_fastrtps/usbl_response__type_support.cpp.o[0m
+[9.612s] [ 70%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/msg/detail/dds_fastrtps/location__type_support.cpp.o[0m
+[9.622s] [ 71%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dave_interfaces/srv/detail/set_stratified_current_direction__type_support.c.o[0m
+[9.644s] [ 71%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/msg/detail/dds_fastrtps/dvl__type_support.cpp.o[0m
+[9.686s] [ 72%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/msg/detail/dds_fastrtps/dvl_beam__type_support.cpp.o[0m
+[9.737s] [ 73%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/msg/detail/dds_fastrtps/stratified_current_velocity__type_support.cpp.o[0m
+[9.740s] [ 73%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/msg/detail/dds_fastrtps/dvl_target__type_support.cpp.o[0m
+[9.758s] [ 73%] [32m[1mLinking C shared library libdave_interfaces__rosidl_typesupport_introspection_c.so[0m
+[9.762s] [ 73%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/msg/detail/dds_fastrtps/stratified_current_database__type_support.cpp.o[0m
+[9.798s] [ 75%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/msg/detail/usbl_command__type_support_c.cpp.o[0m
+[9.798s] [ 75%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/srv/detail/dds_fastrtps/set_origin_spherical_coord__type_support.cpp.o[0m
+[9.798s] [ 75%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/msg/detail/usbl_response__type_support_c.cpp.o[0m
+[9.822s] [ 75%] Built target dave_interfaces__rosidl_typesupport_introspection_c
+[9.830s] [ 75%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/msg/detail/location__type_support_c.cpp.o[0m
+[9.841s] [ 76%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/msg/detail/dvl__type_support_c.cpp.o[0m
+[9.914s] [ 76%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/srv/detail/dds_fastrtps/get_origin_spherical_coord__type_support.cpp.o[0m
+[9.966s] [ 76%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/msg/detail/dvl_beam__type_support_c.cpp.o[0m
+[10.145s] [ 76%] [32m[1mLinking CXX shared library libdave_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[10.273s] [ 77%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/srv/detail/dds_fastrtps/transform_to_spherical_coord__type_support.cpp.o[0m
+[10.325s] [ 77%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/srv/detail/dds_fastrtps/transform_from_spherical_coord__type_support.cpp.o[0m
+[10.375s] [ 77%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/msg/detail/dvl_target__type_support_c.cpp.o[0m
+[10.467s] [ 78%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/msg/detail/stratified_current_velocity__type_support_c.cpp.o[0m
+[10.482s] [ 78%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/msg/detail/stratified_current_database__type_support_c.cpp.o[0m
+[10.511s] [ 78%] Built target dave_interfaces__rosidl_typesupport_introspection_cpp
+[10.529s] [ 79%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/srv/detail/set_origin_spherical_coord__type_support_c.cpp.o[0m
+[10.662s] [ 80%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/srv/detail/dds_fastrtps/get_current_model__type_support.cpp.o[0m
+[10.677s] [ 81%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/srv/detail/transform_to_spherical_coord__type_support_c.cpp.o[0m
+[10.680s] [ 81%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/srv/detail/get_origin_spherical_coord__type_support_c.cpp.o[0m
+[10.742s] [ 81%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/srv/detail/dds_fastrtps/set_current_model__type_support.cpp.o[0m
+[10.744s] [ 81%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/srv/detail/transform_from_spherical_coord__type_support_c.cpp.o[0m
+[10.759s] [ 82%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/srv/detail/dds_fastrtps/set_current_direction__type_support.cpp.o[0m
+[10.779s] [ 82%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/srv/detail/dds_fastrtps/set_current_velocity__type_support.cpp.o[0m
+[10.831s] [ 83%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/srv/detail/dds_fastrtps/set_stratified_current_velocity__type_support.cpp.o[0m
+[10.847s] [ 84%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/srv/detail/get_current_model__type_support_c.cpp.o[0m
+[10.884s] [ 84%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/srv/detail/set_current_model__type_support_c.cpp.o[0m
+[11.100s] [ 85%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/srv/detail/set_current_direction__type_support_c.cpp.o[0m
+[11.185s] [ 85%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dave_interfaces/srv/detail/dds_fastrtps/set_stratified_current_direction__type_support.cpp.o[0m
+[11.301s] [ 85%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/srv/detail/set_current_velocity__type_support_c.cpp.o[0m
+[11.303s] [ 85%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/srv/detail/set_stratified_current_direction__type_support_c.cpp.o[0m
+[11.308s] [ 86%] [32mBuilding CXX object CMakeFiles/dave_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dave_interfaces/srv/detail/set_stratified_current_velocity__type_support_c.cpp.o[0m
+[11.900s] [ 87%] [32m[1mLinking CXX shared library libdave_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.960s] [ 88%] [32m[1mLinking CXX shared library libdave_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[12.015s] [ 88%] Built target dave_interfaces__rosidl_typesupport_fastrtps_cpp
+[12.050s] [ 88%] Built target dave_interfaces__rosidl_typesupport_fastrtps_c
+[12.075s] [ 88%] Built target dave_interfaces
+[12.099s] [ 88%] [34m[1mGenerating Python code for ROS interfaces[0m
+[14.547s] [ 88%] Built target dave_interfaces__py
+[14.575s] [ 89%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/msg/_dvl_beam_s.c.o[0m
+[14.575s] [ 89%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/msg/_usbl_command_s.c.o[0m
+[14.575s] [ 89%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/msg/_stratified_current_velocity_s.c.o[0m
+[14.575s] [ 90%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/msg/_stratified_current_database_s.c.o[0m
+[14.575s] [ 90%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/msg/_location_s.c.o[0m
+[14.575s] [ 89%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/msg/_dvl_s.c.o[0m
+[14.576s] [ 92%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/msg/_dvl_target_s.c.o[0m
+[14.576s] [ 92%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/msg/_usbl_response_s.c.o[0m
+[14.576s] [ 92%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_set_origin_spherical_coord_s.c.o[0m
+[14.580s] [ 93%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_transform_from_spherical_coord_s.c.o[0m
+[14.581s] [ 94%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_get_current_model_s.c.o[0m
+[14.581s] [ 94%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_get_origin_spherical_coord_s.c.o[0m
+[14.581s] [ 95%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_set_current_model_s.c.o[0m
+[14.581s] [ 95%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_transform_to_spherical_coord_s.c.o[0m
+[14.583s] [ 95%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_set_current_direction_s.c.o[0m
+[14.585s] [ 96%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_set_current_velocity_s.c.o[0m
+[14.788s] [ 97%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_set_stratified_current_direction_s.c.o[0m
+[14.791s] [ 97%] [32mBuilding C object CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_set_stratified_current_velocity_s.c.o[0m
+[14.931s] [ 97%] [32m[1mLinking C shared library libdave_interfaces__rosidl_generator_py.so[0m
+[14.987s] [ 97%] Built target dave_interfaces__rosidl_generator_py
+[15.008s] [ 97%] [32mBuilding C object CMakeFiles/dave_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/dave_interfaces/_dave_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[15.009s] [ 97%] [32mBuilding C object CMakeFiles/dave_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/dave_interfaces/_dave_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[15.009s] [ 97%] [32mBuilding C object CMakeFiles/dave_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/dave_interfaces/_dave_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[15.189s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/dave_interfaces/dave_interfaces_s__rosidl_typesupport_c.so[0m
+[15.195s] [ 99%] [32m[1mLinking C shared module rosidl_generator_py/dave_interfaces/dave_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[15.197s] [100%] [32m[1mLinking C shared module rosidl_generator_py/dave_interfaces/dave_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[15.226s] [100%] Built target dave_interfaces_s__rosidl_typesupport_c
+[15.232s] [100%] Built target dave_interfaces_s__rosidl_typesupport_fastrtps_c
+[15.233s] [100%] Built target dave_interfaces_s__rosidl_typesupport_introspection_c
+[15.248s] Invoked command in '/home/namtruong/uuv_sim_home/build/dave_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/dave_interfaces -- -j16 -l16
+[15.249s] Invoking command in '/home/namtruong/uuv_sim_home/build/dave_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/namtruong/uuv_sim_home/build/dave_interfaces
+[15.259s] -- Install configuration: ""
+[15.259s] -- Execute custom install script
+[15.260s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/ament_index/resource_index/rosidl_interfaces/dave_interfaces
+[15.272s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/UsblCommand.json
+[15.282s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/UsblResponse.json
+[15.292s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/Location.json
+[15.302s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/DVL.json
+[15.313s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/DVLBeam.json
+[15.325s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/DVLTarget.json
+[15.336s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/StratifiedCurrentVelocity.json
+[15.347s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/StratifiedCurrentDatabase.json
+[15.357s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetOriginSphericalCoord.json
+[15.369s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/GetOriginSphericalCoord.json
+[15.378s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/TransformToSphericalCoord.json
+[15.389s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/TransformFromSphericalCoord.json
+[15.399s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/GetCurrentModel.json
+[15.410s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetCurrentModel.json
+[15.420s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetCurrentDirection.json
+[15.430s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetCurrentVelocity.json
+[15.441s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetStratifiedCurrentVelocity.json
+[15.450s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetStratifiedCurrentDirection.json
+[15.461s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl__functions.h
+[15.471s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl__struct.h
+[15.483s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl__type_support.h
+[15.493s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_beam__functions.h
+[15.504s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_beam__struct.h
+[15.515s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_beam__type_support.h
+[15.525s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_target__functions.h
+[15.537s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_target__struct.h
+[15.547s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_target__type_support.h
+[15.556s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/location__functions.h
+[15.567s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/location__struct.h
+[15.577s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/location__type_support.h
+[15.587s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_database__functions.h
+[15.598s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_database__struct.h
+[15.608s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_database__type_support.h
+[15.618s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_velocity__functions.h
+[15.629s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_velocity__struct.h
+[15.640s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_velocity__type_support.h
+[15.651s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_command__functions.h
+[15.661s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_command__struct.h
+[15.671s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_command__type_support.h
+[15.682s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_response__functions.h
+[15.693s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_response__struct.h
+[15.703s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_response__type_support.h
+[15.714s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/dvl.h
+[15.725s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/dvl_beam.h
+[15.736s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/dvl_target.h
+[15.748s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/location.h
+[15.761s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/rosidl_generator_c__visibility_control.h
+[15.771s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/stratified_current_database.h
+[15.782s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/stratified_current_velocity.h
+[15.792s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/usbl_command.h
+[15.802s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/usbl_response.h
+[15.814s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_current_model__functions.h
+[15.824s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_current_model__struct.h
+[15.833s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_current_model__type_support.h
+[15.843s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_origin_spherical_coord__functions.h
+[15.854s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_origin_spherical_coord__struct.h
+[15.863s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_origin_spherical_coord__type_support.h
+[15.873s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_direction__functions.h
+[15.882s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_direction__struct.h
+[15.891s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_direction__type_support.h
+[15.900s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_model__functions.h
+[15.910s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_model__struct.h
+[15.921s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_model__type_support.h
+[15.932s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_velocity__functions.h
+[15.943s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_velocity__struct.h
+[15.953s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_velocity__type_support.h
+[15.964s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_origin_spherical_coord__functions.h
+[15.975s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_origin_spherical_coord__struct.h
+[15.986s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_origin_spherical_coord__type_support.h
+[15.997s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_direction__functions.h
+[16.006s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_direction__struct.h
+[16.017s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_direction__type_support.h
+[16.027s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_velocity__functions.h
+[16.038s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_velocity__struct.h
+[16.050s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_velocity__type_support.h
+[16.061s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_from_spherical_coord__functions.h
+[16.071s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_from_spherical_coord__struct.h
+[16.081s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_from_spherical_coord__type_support.h
+[16.090s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_to_spherical_coord__functions.h
+[16.100s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_to_spherical_coord__struct.h
+[16.111s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_to_spherical_coord__type_support.h
+[16.121s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/get_current_model.h
+[16.132s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/get_origin_spherical_coord.h
+[16.143s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/set_current_direction.h
+[16.154s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/set_current_model.h
+[16.164s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/set_current_velocity.h
+[16.174s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/set_origin_spherical_coord.h
+[16.185s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/set_stratified_current_direction.h
+[16.196s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/set_stratified_current_velocity.h
+[16.208s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/transform_from_spherical_coord.h
+[16.218s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/transform_to_spherical_coord.h
+[16.229s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/environment/library_path.sh
+[16.239s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/environment/library_path.dsv
+[16.250s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl__rosidl_typesupport_fastrtps_c.h
+[16.259s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_beam__rosidl_typesupport_fastrtps_c.h
+[16.269s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_target__rosidl_typesupport_fastrtps_c.h
+[16.280s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/location__rosidl_typesupport_fastrtps_c.h
+[16.290s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_database__rosidl_typesupport_fastrtps_c.h
+[16.299s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_velocity__rosidl_typesupport_fastrtps_c.h
+[16.309s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_command__rosidl_typesupport_fastrtps_c.h
+[16.319s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_response__rosidl_typesupport_fastrtps_c.h
+[16.330s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[16.340s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_current_model__rosidl_typesupport_fastrtps_c.h
+[16.349s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_origin_spherical_coord__rosidl_typesupport_fastrtps_c.h
+[16.360s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_direction__rosidl_typesupport_fastrtps_c.h
+[16.370s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_model__rosidl_typesupport_fastrtps_c.h
+[16.380s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_velocity__rosidl_typesupport_fastrtps_c.h
+[16.390s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_origin_spherical_coord__rosidl_typesupport_fastrtps_c.h
+[16.400s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_direction__rosidl_typesupport_fastrtps_c.h
+[16.410s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_velocity__rosidl_typesupport_fastrtps_c.h
+[16.421s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_from_spherical_coord__rosidl_typesupport_fastrtps_c.h
+[16.431s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_to_spherical_coord__rosidl_typesupport_fastrtps_c.h
+[16.443s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl__builder.hpp
+[16.453s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl__struct.hpp
+[16.464s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl__traits.hpp
+[16.474s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl__type_support.hpp
+[16.485s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_beam__builder.hpp
+[16.495s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_beam__struct.hpp
+[16.506s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_beam__traits.hpp
+[16.516s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_beam__type_support.hpp
+[16.525s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_target__builder.hpp
+[16.536s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_target__struct.hpp
+[16.547s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_target__traits.hpp
+[16.558s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_target__type_support.hpp
+[16.569s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/location__builder.hpp
+[16.579s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/location__struct.hpp
+[16.590s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/location__traits.hpp
+[16.601s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/location__type_support.hpp
+[16.612s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_database__builder.hpp
+[16.623s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_database__struct.hpp
+[16.633s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_database__traits.hpp
+[16.644s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_database__type_support.hpp
+[16.654s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_velocity__builder.hpp
+[16.664s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_velocity__struct.hpp
+[16.674s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_velocity__traits.hpp
+[16.683s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_velocity__type_support.hpp
+[16.693s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_command__builder.hpp
+[16.705s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_command__struct.hpp
+[16.716s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_command__traits.hpp
+[16.727s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_command__type_support.hpp
+[16.738s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_response__builder.hpp
+[16.748s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_response__struct.hpp
+[16.758s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_response__traits.hpp
+[16.767s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_response__type_support.hpp
+[16.779s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/dvl.hpp
+[16.789s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/dvl_beam.hpp
+[16.799s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/dvl_target.hpp
+[16.809s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/location.hpp
+[16.820s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[16.830s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/stratified_current_database.hpp
+[16.842s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/stratified_current_velocity.hpp
+[16.851s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/usbl_command.hpp
+[16.861s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/usbl_response.hpp
+[16.871s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_current_model__builder.hpp
+[16.882s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_current_model__struct.hpp
+[16.892s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_current_model__traits.hpp
+[16.901s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_current_model__type_support.hpp
+[16.912s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_origin_spherical_coord__builder.hpp
+[16.923s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_origin_spherical_coord__struct.hpp
+[16.933s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_origin_spherical_coord__traits.hpp
+[16.943s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_origin_spherical_coord__type_support.hpp
+[16.953s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_direction__builder.hpp
+[16.964s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_direction__struct.hpp
+[16.975s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_direction__traits.hpp
+[16.986s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_direction__type_support.hpp
+[16.995s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_model__builder.hpp
+[17.005s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_model__struct.hpp
+[17.016s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_model__traits.hpp
+[17.025s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_model__type_support.hpp
+[17.034s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_velocity__builder.hpp
+[17.043s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_velocity__struct.hpp
+[17.053s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_velocity__traits.hpp
+[17.063s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_velocity__type_support.hpp
+[17.073s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_origin_spherical_coord__builder.hpp
+[17.083s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_origin_spherical_coord__struct.hpp
+[17.092s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_origin_spherical_coord__traits.hpp
+[17.101s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_origin_spherical_coord__type_support.hpp
+[17.112s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_direction__builder.hpp
+[17.123s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_direction__struct.hpp
+[17.133s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_direction__traits.hpp
+[17.144s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_direction__type_support.hpp
+[17.155s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_velocity__builder.hpp
+[17.165s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_velocity__struct.hpp
+[17.175s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_velocity__traits.hpp
+[17.187s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_velocity__type_support.hpp
+[17.197s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_from_spherical_coord__builder.hpp
+[17.208s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_from_spherical_coord__struct.hpp
+[17.217s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_from_spherical_coord__traits.hpp
+[17.227s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_from_spherical_coord__type_support.hpp
+[17.238s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_to_spherical_coord__builder.hpp
+[17.249s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_to_spherical_coord__struct.hpp
+[17.260s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_to_spherical_coord__traits.hpp
+[17.271s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_to_spherical_coord__type_support.hpp
+[17.280s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/get_current_model.hpp
+[17.291s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/get_origin_spherical_coord.hpp
+[17.301s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/set_current_direction.hpp
+[17.312s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/set_current_model.hpp
+[17.322s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/set_current_velocity.hpp
+[17.332s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/set_origin_spherical_coord.hpp
+[17.342s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/set_stratified_current_direction.hpp
+[17.354s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/set_stratified_current_velocity.hpp
+[17.364s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/transform_from_spherical_coord.hpp
+[17.374s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/transform_to_spherical_coord.hpp
+[17.386s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl__rosidl_typesupport_fastrtps_cpp.hpp
+[17.396s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_beam__rosidl_typesupport_fastrtps_cpp.hpp
+[17.406s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_target__rosidl_typesupport_fastrtps_cpp.hpp
+[17.417s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/location__rosidl_typesupport_fastrtps_cpp.hpp
+[17.428s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_database__rosidl_typesupport_fastrtps_cpp.hpp
+[17.438s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_velocity__rosidl_typesupport_fastrtps_cpp.hpp
+[17.449s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_command__rosidl_typesupport_fastrtps_cpp.hpp
+[17.460s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_response__rosidl_typesupport_fastrtps_cpp.hpp
+[17.471s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[17.480s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_current_model__rosidl_typesupport_fastrtps_cpp.hpp
+[17.491s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_origin_spherical_coord__rosidl_typesupport_fastrtps_cpp.hpp
+[17.501s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_direction__rosidl_typesupport_fastrtps_cpp.hpp
+[17.511s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_model__rosidl_typesupport_fastrtps_cpp.hpp
+[17.520s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_velocity__rosidl_typesupport_fastrtps_cpp.hpp
+[17.530s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_origin_spherical_coord__rosidl_typesupport_fastrtps_cpp.hpp
+[17.541s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_direction__rosidl_typesupport_fastrtps_cpp.hpp
+[17.550s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_velocity__rosidl_typesupport_fastrtps_cpp.hpp
+[17.561s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_from_spherical_coord__rosidl_typesupport_fastrtps_cpp.hpp
+[17.571s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_to_spherical_coord__rosidl_typesupport_fastrtps_cpp.hpp
+[17.583s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl__rosidl_typesupport_introspection_c.h
+[17.593s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_beam__rosidl_typesupport_introspection_c.h
+[17.604s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_target__rosidl_typesupport_introspection_c.h
+[17.614s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/location__rosidl_typesupport_introspection_c.h
+[17.624s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_database__rosidl_typesupport_introspection_c.h
+[17.634s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_velocity__rosidl_typesupport_introspection_c.h
+[17.644s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_command__rosidl_typesupport_introspection_c.h
+[17.655s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_response__rosidl_typesupport_introspection_c.h
+[17.665s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[17.675s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_current_model__rosidl_typesupport_introspection_c.h
+[17.685s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_origin_spherical_coord__rosidl_typesupport_introspection_c.h
+[17.695s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_direction__rosidl_typesupport_introspection_c.h
+[17.706s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_model__rosidl_typesupport_introspection_c.h
+[17.717s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_velocity__rosidl_typesupport_introspection_c.h
+[17.727s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_origin_spherical_coord__rosidl_typesupport_introspection_c.h
+[17.738s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_direction__rosidl_typesupport_introspection_c.h
+[17.748s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_velocity__rosidl_typesupport_introspection_c.h
+[17.758s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_from_spherical_coord__rosidl_typesupport_introspection_c.h
+[17.768s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_to_spherical_coord__rosidl_typesupport_introspection_c.h
+[17.778s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl__rosidl_typesupport_introspection_cpp.hpp
+[17.787s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_beam__rosidl_typesupport_introspection_cpp.hpp
+[17.796s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/dvl_target__rosidl_typesupport_introspection_cpp.hpp
+[17.806s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/location__rosidl_typesupport_introspection_cpp.hpp
+[17.816s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_database__rosidl_typesupport_introspection_cpp.hpp
+[17.826s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/stratified_current_velocity__rosidl_typesupport_introspection_cpp.hpp
+[17.835s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_command__rosidl_typesupport_introspection_cpp.hpp
+[17.845s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/msg/detail/usbl_response__rosidl_typesupport_introspection_cpp.hpp
+[17.854s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_current_model__rosidl_typesupport_introspection_cpp.hpp
+[17.864s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/get_origin_spherical_coord__rosidl_typesupport_introspection_cpp.hpp
+[17.875s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_direction__rosidl_typesupport_introspection_cpp.hpp
+[17.886s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_model__rosidl_typesupport_introspection_cpp.hpp
+[17.898s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_current_velocity__rosidl_typesupport_introspection_cpp.hpp
+[17.907s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_origin_spherical_coord__rosidl_typesupport_introspection_cpp.hpp
+[17.916s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_direction__rosidl_typesupport_introspection_cpp.hpp
+[17.926s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/set_stratified_current_velocity__rosidl_typesupport_introspection_cpp.hpp
+[17.935s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_from_spherical_coord__rosidl_typesupport_introspection_cpp.hpp
+[17.945s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/include/dave_interfaces/dave_interfaces/srv/detail/transform_to_spherical_coord__rosidl_typesupport_introspection_cpp.hpp
+[17.955s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/environment/pythonpath.sh
+[17.966s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/environment/pythonpath.dsv
+[17.976s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[17.986s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[17.996s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[18.006s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[18.017s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/__init__.py
+[18.027s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/_dave_interfaces_s.ep.rosidl_typesupport_c.c
+[18.038s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/_dave_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[18.049s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/_dave_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[18.060s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_c.so
+[18.069s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[18.080s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_introspection_c.so
+[18.090s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/__init__.py
+[18.100s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_dvl.py
+[18.110s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_dvl_beam.py
+[18.120s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_dvl_beam_s.c
+[18.130s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_dvl_s.c
+[18.140s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_dvl_target.py
+[18.150s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_dvl_target_s.c
+[18.160s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_location.py
+[18.169s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_location_s.c
+[18.180s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_stratified_current_database.py
+[18.190s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_stratified_current_database_s.c
+[18.201s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_stratified_current_velocity.py
+[18.212s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_stratified_current_velocity_s.c
+[18.222s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_usbl_command.py
+[18.232s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_usbl_command_s.c
+[18.241s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_usbl_response.py
+[18.251s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_usbl_response_s.c
+[18.262s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/__init__.py
+[18.273s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_get_current_model.py
+[18.282s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_get_current_model_s.c
+[18.292s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_get_origin_spherical_coord.py
+[18.303s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_get_origin_spherical_coord_s.c
+[18.313s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_current_direction.py
+[18.324s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_current_direction_s.c
+[18.334s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_current_model.py
+[18.345s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_current_model_s.c
+[18.356s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_current_velocity.py
+[18.367s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_current_velocity_s.c
+[18.377s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_origin_spherical_coord.py
+[18.389s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_origin_spherical_coord_s.c
+[18.399s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_stratified_current_direction.py
+[18.410s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_stratified_current_direction_s.c
+[18.421s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_stratified_current_velocity.py
+[18.433s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_stratified_current_velocity_s.c
+[18.444s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_transform_from_spherical_coord.py
+[18.454s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_transform_from_spherical_coord_s.c
+[18.464s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_transform_to_spherical_coord.py
+[18.474s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_transform_to_spherical_coord_s.c
+[18.484s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[18.484s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_introspection_c.so
+[18.484s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/dave_interfaces_s__rosidl_typesupport_c.so
+[18.485s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/ament_index/resource_index/rust_packages/dave_interfaces
+[18.496s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/rust/Cargo.toml
+[18.507s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/rust/build.rs
+[18.517s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/rust/src/lib.rs
+[18.527s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/rust/src/msg.rs
+[18.538s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/rust/src/msg/rmw.rs
+[18.548s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/rust/src/srv.rs
+[18.559s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/rust/src/srv/rmw.rs
+[18.571s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/UsblCommand.idl
+[18.583s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/UsblResponse.idl
+[18.593s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/Location.idl
+[18.604s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/DVL.idl
+[18.614s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/DVLBeam.idl
+[18.625s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/DVLTarget.idl
+[18.634s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/StratifiedCurrentVelocity.idl
+[18.644s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/StratifiedCurrentDatabase.idl
+[18.654s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetOriginSphericalCoord.idl
+[18.664s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/GetOriginSphericalCoord.idl
+[18.675s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/TransformToSphericalCoord.idl
+[18.685s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/TransformFromSphericalCoord.idl
+[18.697s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/GetCurrentModel.idl
+[18.706s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetCurrentModel.idl
+[18.716s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetCurrentDirection.idl
+[18.725s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetCurrentVelocity.idl
+[18.736s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetStratifiedCurrentVelocity.idl
+[18.746s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetStratifiedCurrentDirection.idl
+[18.755s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/UsblCommand.msg
+[18.765s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/UsblResponse.msg
+[18.774s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/Location.msg
+[18.784s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/DVL.msg
+[18.793s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/DVLBeam.msg
+[18.804s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/DVLTarget.msg
+[18.814s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/StratifiedCurrentVelocity.msg
+[18.824s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/msg/StratifiedCurrentDatabase.msg
+[18.833s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetOriginSphericalCoord.srv
+[18.842s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/GetOriginSphericalCoord.srv
+[18.852s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/TransformToSphericalCoord.srv
+[18.862s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/TransformFromSphericalCoord.srv
+[18.873s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/GetCurrentModel.srv
+[18.884s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetCurrentModel.srv
+[18.894s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetCurrentDirection.srv
+[18.903s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetCurrentVelocity.srv
+[18.913s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetStratifiedCurrentVelocity.srv
+[18.925s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/srv/SetStratifiedCurrentDirection.srv
+[18.936s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/package.xml
+[18.948s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/ament_index/resource_index/package_run_dependencies/dave_interfaces
+[18.958s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/ament_index/resource_index/parent_prefix_path/dave_interfaces
+[18.968s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/environment/ament_prefix_path.sh
+[18.979s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/environment/ament_prefix_path.dsv
+[18.990s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/environment/path.sh
+[19.000s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/environment/path.dsv
+[19.010s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/local_setup.bash
+[19.020s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/local_setup.sh
+[19.032s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/local_setup.zsh
+[19.044s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/local_setup.dsv
+[19.054s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/package.dsv
+[19.065s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/ament_index/resource_index/packages/dave_interfaces
+[19.075s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/rosidl_cmake-extras.cmake
+[19.086s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[19.096s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[19.107s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[19.117s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[19.128s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[19.140s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[19.149s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[19.159s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfacesConfig.cmake
+[19.169s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfacesConfig-version.cmake
+[19.180s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/package.xml
+[19.180s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_generator_c.so
+[19.182s] -- Set non-toolchain portion of runtime path of "/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_generator_c.so" to ""
+[19.182s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_fastrtps_c.so
+[19.183s] -- Set non-toolchain portion of runtime path of "/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[19.183s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[19.184s] -- Set non-toolchain portion of runtime path of "/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[19.184s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_introspection_c.so
+[19.185s] -- Set non-toolchain portion of runtime path of "/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[19.185s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_c.so
+[19.185s] -- Set non-toolchain portion of runtime path of "/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_c.so" to ""
+[19.185s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_introspection_cpp.so
+[19.187s] -- Set non-toolchain portion of runtime path of "/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[19.187s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_cpp.so
+[19.188s] -- Set non-toolchain portion of runtime path of "/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_typesupport_cpp.so" to ""
+[19.257s] Listing '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces'...
+[19.257s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/__init__.py'...
+[19.257s] Listing '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg'...
+[19.257s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/__init__.py'...
+[19.257s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_dvl.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_dvl_beam.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_dvl_target.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_location.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_stratified_current_database.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_stratified_current_velocity.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_usbl_command.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/msg/_usbl_response.py'...
+[19.258s] Listing '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/__init__.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_get_current_model.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_get_origin_spherical_coord.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_current_direction.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_current_model.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_current_velocity.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_origin_spherical_coord.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_stratified_current_direction.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_set_stratified_current_velocity.py'...
+[19.258s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_transform_from_spherical_coord.py'...
+[19.259s] Compiling '/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages/dave_interfaces/srv/_transform_to_spherical_coord.py'...
+[19.262s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_generator_py.so
+[19.264s] -- Set non-toolchain portion of runtime path of "/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/libdave_interfaces__rosidl_generator_py.so" to ""
+[19.264s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_generator_cExport.cmake
+[19.264s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_generator_cExport-noconfig.cmake
+[19.264s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[19.264s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[19.264s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_generator_cppExport.cmake
+[19.264s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[19.264s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[19.265s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[19.265s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[19.265s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_cExport.cmake
+[19.265s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[19.265s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[19.265s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[19.265s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_cppExport.cmake
+[19.265s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/dave_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[19.265s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_generator_pyExport.cmake
+[19.266s] -- Installing: /home/namtruong/uuv_sim_home/install/dave_interfaces/share/dave_interfaces/cmake/export_dave_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[19.268s] Invoked command in '/home/namtruong/uuv_sim_home/build/dave_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/namtruong/uuv_sim_home/build/dave_interfaces

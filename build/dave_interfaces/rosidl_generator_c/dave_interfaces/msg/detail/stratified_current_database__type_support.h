@@ -2,6 +2,9 @@
 // with input from dave_interfaces:msg/StratifiedCurrentDatabase.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "dave_interfaces/msg/stratified_current_database.h"
+
+
 #ifndef DAVE_INTERFACES__MSG__DETAIL__STRATIFIED_CURRENT_DATABASE__TYPE_SUPPORT_H_
 #define DAVE_INTERFACES__MSG__DETAIL__STRATIFIED_CURRENT_DATABASE__TYPE_SUPPORT_H_
 
@@ -24,7 +27,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   dave_interfaces,
   msg,
   StratifiedCurrentDatabase
-)();
+)(void);
 
 #ifdef __cplusplus
 }

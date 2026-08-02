@@ -2,6 +2,9 @@
 // with input from dave_interfaces:msg/StratifiedCurrentDatabase.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "dave_interfaces/msg/stratified_current_database.h"
+
+
 #ifndef DAVE_INTERFACES__MSG__DETAIL__STRATIFIED_CURRENT_DATABASE__FUNCTIONS_H_
 #define DAVE_INTERFACES__MSG__DETAIL__STRATIFIED_CURRENT_DATABASE__FUNCTIONS_H_
 
@@ -13,6 +16,12 @@ extern "C"
 #include <stdbool.h>
 #include <stdlib.h>
 
+#include "rosidl_runtime_c/action_type_support_struct.h"
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_runtime_c/service_type_support_struct.h"
+#include "rosidl_runtime_c/type_description/type_description__struct.h"
+#include "rosidl_runtime_c/type_description/type_source__struct.h"
+#include "rosidl_runtime_c/type_hash.h"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "dave_interfaces/msg/rosidl_generator_c__visibility_control.h"
 
@@ -53,7 +62,7 @@ dave_interfaces__msg__StratifiedCurrentDatabase__fini(dave_interfaces__msg__Stra
  */
 ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
 dave_interfaces__msg__StratifiedCurrentDatabase *
-dave_interfaces__msg__StratifiedCurrentDatabase__create();
+dave_interfaces__msg__StratifiedCurrentDatabase__create(void);
 
 /// Destroy msg/StratifiedCurrentDatabase message.
 /**
@@ -92,6 +101,30 @@ bool
 dave_interfaces__msg__StratifiedCurrentDatabase__copy(
   const dave_interfaces__msg__StratifiedCurrentDatabase * input,
   dave_interfaces__msg__StratifiedCurrentDatabase * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_type_hash_t *
+dave_interfaces__msg__StratifiedCurrentDatabase__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeDescription *
+dave_interfaces__msg__StratifiedCurrentDatabase__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeSource *
+dave_interfaces__msg__StratifiedCurrentDatabase__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+dave_interfaces__msg__StratifiedCurrentDatabase__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of msg/StratifiedCurrentDatabase messages.
 /**

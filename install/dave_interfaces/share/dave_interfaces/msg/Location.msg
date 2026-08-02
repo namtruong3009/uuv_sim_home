@@ -1,1 +1,1 @@
-/home/namtruong/uuv_sim/src/dave_interfaces/msg/Location.msg
+/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/Location.msg

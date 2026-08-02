@@ -1,1 +1,1 @@
-/home/namtruong/uuv_sim/build/dave_worlds/ament_cmake_environment_hooks/local_setup.bash
+/home/namtruong/uuv_sim_home/build/dave_worlds/ament_cmake_environment_hooks/local_setup.bash

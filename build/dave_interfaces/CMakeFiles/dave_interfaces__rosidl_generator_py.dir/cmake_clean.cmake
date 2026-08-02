@@ -35,8 +35,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_transform_from_spherical_coord_s.c.o.d"
   "CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_transform_to_spherical_coord_s.c.o"
   "CMakeFiles/dave_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dave_interfaces/srv/_transform_to_spherical_coord_s.c.o.d"
-  "rosidl_generator_py/dave_interfaces/libdave_interfaces__rosidl_generator_py.pdb"
-  "rosidl_generator_py/dave_interfaces/libdave_interfaces__rosidl_generator_py.so"
+  "libdave_interfaces__rosidl_generator_py.pdb"
+  "libdave_interfaces__rosidl_generator_py.so"
 )
 
 # Per-language clean rules from dependency scanning.

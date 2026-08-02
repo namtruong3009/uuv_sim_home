@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "multibeam_sonar",
+		"source" : "/home/namtruong/uuv_sim_home/src/multibeam_sonar"
+	}
+}

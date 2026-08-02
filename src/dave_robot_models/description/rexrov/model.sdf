@@ -272,7 +272,7 @@
           <mesh>
             <scale>1 1 1</scale>
             <!-- Mesh is actually for a Nortek DVL1000-4000m for now -->
-            <uri>file:///home/namtruong/uuv_sim/src/dave_robot_models/meshes/rexrov/RexROV_no_props.dae</uri>
+            <uri>model://dave_robot_models/meshes/rexrov/RexROV_no_props.dae</uri>
           </mesh>
         </geometry>
         <transparency>0</transparency>
@@ -859,11 +859,7 @@
       filename="gz-sim-joint-state-publisher-system"
       name="gz::sim::systems::JointStatePublisher">
     </plugin>
-
-    <plugin
-      filename="libignition-gazebo-dvl-system.so"
-      name="ignition::gazebo::systems::DopplerVelocityLog">
-    </plugin>
+    
     <plugin
       filename="gz-sim-navsat-system"
       name="gz::sim::systems::NavSat">
@@ -880,6 +876,85 @@
       <standard_pressure>101.325</standard_pressure>
       <kPa_per_meter>9.80638</kPa_per_meter>
     </plugin>
+    <link name="sonar_link">
+      <pose> 0.2 0.0 -0.13 0 0 0</pose>
+      <sensor name="multibeam_sonar" type="custom" gz:type="multibeam_sonar">
+        <always_on>true</always_on>
+        <update_rate>30.0</update_rate>
+        <topic>/sensor/multibeam_sonar</topic>
+        <visualize>true</visualize>
+        <gz:multibeam_sonar>
+          <ray degrees="false">
+            <scan>
+              <horizontal>
+                <beams>512</beams>
+                <min_angle>-1.13447</min_angle>
+                <max_angle>1.13447</max_angle>
+              </horizontal>
+              <vertical>
+                <rays>300</rays>
+                <min_angle>-0.10472</min_angle>
+                <max_angle>0.10472</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.1</min>
+              <max>10.0</max>
+            </range>
+          </ray>
+          <spec>
+            <verticalFOV>12</verticalFOV>
+            <sonarFreq>900e3</sonarFreq>
+            <bandwidth>29.9e3</bandwidth>
+            <soundSpeed>1500</soundSpeed>
+            <sourceLevel>220</sourceLevel>
+            <maxDistance>10</maxDistance>
+            <constantReflectivity>false</constantReflectivity>
+            <raySkips>10</raySkips>
+            <sensorGain>0.02</sensorGain>
+            <plotScaler>10</plotScaler>
+            <writeLog>true</writeLog>
+            <debugFlag>true</debugFlag>
+            <writeFrameInterval>5</writeFrameInterval>
+            <blazingSonarImage>true</blazingSonarImage>
+            <pointCloudTopicName>point_cloud</pointCloudTopicName>
+            <sonarImageRawTopicName>sonar_image_raw</sonarImageRawTopicName>
+            <sonarImageTopicName>sonar_image</sonarImageTopicName>
+            <frameName>forward_sonar_optical_link</frameName>
+          </spec>
+        </gz:multibeam_sonar>
+      </sensor>
+    </link>
+    <joint name="sonar_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>sonar_link</child>
+    </joint>
+    <link name="camera1_link">
+      <pose>1.5 0.0 0.2 0 0 0</pose>
+      <sensor name="underwater_camera" type="camera">
+        <always_on>1</always_on>
+        <update_rate>30.0</update_rate>
+        <visualize>true</visualize>
+        <topic>/rexrov/camera/image_raw</topic>
+        <camera>
+          <horizontal_fov>1.05</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>100.0</far>
+          </clip>
+        </camera>
+      </sensor>
+    </link>
+    <joint name="camera1_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>camera1_link</child>
+    </joint>
+    
     <!-- Dave Transient Current Plugin -->
     <!-- <plugin
       filename="OceanCurrentModelPlugin"

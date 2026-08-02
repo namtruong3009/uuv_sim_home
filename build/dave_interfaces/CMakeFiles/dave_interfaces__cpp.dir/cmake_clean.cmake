@@ -36,6 +36,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/dave_interfaces/msg/dvl_beam.hpp"
   "rosidl_generator_cpp/dave_interfaces/msg/dvl_target.hpp"
   "rosidl_generator_cpp/dave_interfaces/msg/location.hpp"
+  "rosidl_generator_cpp/dave_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp"
   "rosidl_generator_cpp/dave_interfaces/msg/stratified_current_database.hpp"
   "rosidl_generator_cpp/dave_interfaces/msg/stratified_current_velocity.hpp"
   "rosidl_generator_cpp/dave_interfaces/msg/usbl_command.hpp"

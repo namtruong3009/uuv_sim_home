@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-e64199fd39248eceb22a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "dave_ros_gz_plugins",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "DVLBridge::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DVLBridge-76f131113619d570a8c5.json",
+					"name" : "DVLBridge",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OceanCurrentPlugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OceanCurrentPlugin-1e29240f0f93c16b9626.json",
+					"name" : "OceanCurrentPlugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SphericalCoords::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SphericalCoords-8ee503b5316d9d11c027.json",
+					"name" : "SphericalCoords",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dave_ros_gz_plugins_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dave_ros_gz_plugins_uninstall-7a53967b443839b2a68a.json",
+					"name" : "dave_ros_gz_plugins_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-0fb0481caf0f4d24d41b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/namtruong/uuv_sim_home/build/dave_ros_gz_plugins",
+		"source" : "/home/namtruong/uuv_sim_home/src/dave_ros_gz_plugins"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

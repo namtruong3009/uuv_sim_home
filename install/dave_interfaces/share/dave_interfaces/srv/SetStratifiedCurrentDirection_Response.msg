@@ -1,1 +1,0 @@
-/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetStratifiedCurrentDirection_Response.msg

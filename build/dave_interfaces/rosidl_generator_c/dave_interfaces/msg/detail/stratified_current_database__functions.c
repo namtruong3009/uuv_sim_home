@@ -349,7 +349,7 @@ dave_interfaces__msg__StratifiedCurrentDatabase__copy(
 }
 
 dave_interfaces__msg__StratifiedCurrentDatabase *
-dave_interfaces__msg__StratifiedCurrentDatabase__create()
+dave_interfaces__msg__StratifiedCurrentDatabase__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   dave_interfaces__msg__StratifiedCurrentDatabase * msg = (dave_interfaces__msg__StratifiedCurrentDatabase *)allocator.allocate(sizeof(dave_interfaces__msg__StratifiedCurrentDatabase), allocator.state);
@@ -386,6 +386,9 @@ dave_interfaces__msg__StratifiedCurrentDatabase__Sequence__init(dave_interfaces_
   dave_interfaces__msg__StratifiedCurrentDatabase * data = NULL;
 
   if (size) {
+    if (size > SIZE_MAX / sizeof(dave_interfaces__msg__StratifiedCurrentDatabase)) {
+      return false;
+    }
     data = (dave_interfaces__msg__StratifiedCurrentDatabase *)allocator.zero_allocate(size, sizeof(dave_interfaces__msg__StratifiedCurrentDatabase), allocator.state);
     if (!data) {
       return false;
@@ -491,6 +494,9 @@ dave_interfaces__msg__StratifiedCurrentDatabase__Sequence__copy(
     return false;
   }
   if (output->capacity < input->size) {
+    if (input->size > SIZE_MAX / sizeof(dave_interfaces__msg__StratifiedCurrentDatabase)) {
+      return false;
+    }
     const size_t allocation_size =
       input->size * sizeof(dave_interfaces__msg__StratifiedCurrentDatabase);
     rcutils_allocator_t allocator = rcutils_get_default_allocator();

@@ -117,7 +117,7 @@ dave_interfaces__msg__DVLBeam__copy(
 }
 
 dave_interfaces__msg__DVLBeam *
-dave_interfaces__msg__DVLBeam__create()
+dave_interfaces__msg__DVLBeam__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   dave_interfaces__msg__DVLBeam * msg = (dave_interfaces__msg__DVLBeam *)allocator.allocate(sizeof(dave_interfaces__msg__DVLBeam), allocator.state);
@@ -154,6 +154,9 @@ dave_interfaces__msg__DVLBeam__Sequence__init(dave_interfaces__msg__DVLBeam__Seq
   dave_interfaces__msg__DVLBeam * data = NULL;
 
   if (size) {
+    if (size > SIZE_MAX / sizeof(dave_interfaces__msg__DVLBeam)) {
+      return false;
+    }
     data = (dave_interfaces__msg__DVLBeam *)allocator.zero_allocate(size, sizeof(dave_interfaces__msg__DVLBeam), allocator.state);
     if (!data) {
       return false;
@@ -259,6 +262,9 @@ dave_interfaces__msg__DVLBeam__Sequence__copy(
     return false;
   }
   if (output->capacity < input->size) {
+    if (input->size > SIZE_MAX / sizeof(dave_interfaces__msg__DVLBeam)) {
+      return false;
+    }
     const size_t allocation_size =
       input->size * sizeof(dave_interfaces__msg__DVLBeam);
     rcutils_allocator_t allocator = rcutils_get_default_allocator();

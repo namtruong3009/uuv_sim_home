@@ -1,0 +1,42 @@
+[0.017s] Invoking command in '/home/namtruong/uuv_sim_home/build/multibeam_sonar_system': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/multibeam_sonar_system -- -j16 -l16
+[0.091s] [ 66%] Built target multibeam_sonar
+[0.125s] [100%] Built target multibeam_sonar_system
+[0.141s] Invoked command in '/home/namtruong/uuv_sim_home/build/multibeam_sonar_system' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/multibeam_sonar_system -- -j16 -l16
+[0.142s] Invoking command in '/home/namtruong/uuv_sim_home/build/multibeam_sonar_system': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/namtruong/uuv_sim_home/build/multibeam_sonar_system
+[0.150s] -- Install configuration: ""
+[0.151s] -- Execute custom install script
+[0.151s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/lib/multibeam_sonar/libmultibeam_sonar.so
+[0.151s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar/environment/multibeam_sonar.dsv
+[0.151s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/ament_index/resource_index/package_run_dependencies/multibeam_sonar
+[0.151s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/ament_index/resource_index/parent_prefix_path/multibeam_sonar
+[0.151s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar/environment/ament_prefix_path.sh
+[0.152s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar/environment/ament_prefix_path.dsv
+[0.152s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar/environment/path.sh
+[0.152s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar/environment/path.dsv
+[0.152s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar/local_setup.bash
+[0.152s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar/local_setup.sh
+[0.152s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar/local_setup.zsh
+[0.152s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar/local_setup.dsv
+[0.153s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar/package.dsv
+[0.153s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/ament_index/resource_index/packages/multibeam_sonar
+[0.153s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar/cmake/multibeam_sonarConfig.cmake
+[0.153s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar/cmake/multibeam_sonarConfig-version.cmake
+[0.153s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar/package.xml
+[0.153s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/lib/multibeam_sonar_system/libmultibeam_sonar_system.so
+[0.153s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar_system/environment/multibeam_sonar_system.dsv
+[0.154s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/ament_index/resource_index/package_run_dependencies/multibeam_sonar_system
+[0.154s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/ament_index/resource_index/parent_prefix_path/multibeam_sonar_system
+[0.154s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar_system/environment/ament_prefix_path.sh
+[0.154s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar_system/environment/ament_prefix_path.dsv
+[0.154s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar_system/environment/path.sh
+[0.154s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar_system/environment/path.dsv
+[0.155s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar_system/local_setup.bash
+[0.155s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar_system/local_setup.sh
+[0.155s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar_system/local_setup.zsh
+[0.155s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar_system/local_setup.dsv
+[0.155s] -- Symlinking: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar_system/package.dsv
+[0.165s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/ament_index/resource_index/packages/multibeam_sonar_system
+[0.165s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar_system/cmake/multibeam_sonar_systemConfig.cmake
+[0.165s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar_system/cmake/multibeam_sonar_systemConfig-version.cmake
+[0.166s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar_system/share/multibeam_sonar_system/package.xml
+[0.312s] Invoked command in '/home/namtruong/uuv_sim_home/build/multibeam_sonar_system' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/namtruong/uuv_sim_home/build/multibeam_sonar_system

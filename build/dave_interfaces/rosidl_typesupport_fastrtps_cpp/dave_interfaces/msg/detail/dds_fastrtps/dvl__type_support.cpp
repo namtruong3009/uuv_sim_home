@@ -2,8 +2,10 @@
 // with input from dave_interfaces:msg/DVL.idl
 // generated code does not contain a copyright notice
 #include "dave_interfaces/msg/detail/dvl__rosidl_typesupport_fastrtps_cpp.hpp"
+#include "dave_interfaces/msg/detail/dvl__functions.h"
 #include "dave_interfaces/msg/detail/dvl__struct.hpp"
 
+#include <cstddef>
 #include <limits>
 #include <stdexcept>
 #include <string>
@@ -11,6 +13,7 @@
 #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
+#include "rosidl_typesupport_fastrtps_cpp/serialization_helpers.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
 #include "fastcdr/Cdr.h"
 
@@ -33,6 +36,17 @@ size_t get_serialized_size(
   size_t current_alignment);
 size_t
 max_serialized_size_Header(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+bool cdr_serialize_key(
+  const std_msgs::msg::Header &,
+  eprosima::fastcdr::Cdr &);
+size_t get_serialized_size_key(
+  const std_msgs::msg::Header &,
+  size_t current_alignment);
+size_t
+max_serialized_size_key_Header(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
@@ -60,6 +74,17 @@ max_serialized_size_DVLTarget(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
+bool cdr_serialize_key(
+  const dave_interfaces::msg::DVLTarget &,
+  eprosima::fastcdr::Cdr &);
+size_t get_serialized_size_key(
+  const dave_interfaces::msg::DVLTarget &,
+  size_t current_alignment);
+size_t
+max_serialized_size_key_DVLTarget(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
 }  // namespace typesupport_fastrtps_cpp
 }  // namespace msg
 }  // namespace dave_interfaces
@@ -81,6 +106,17 @@ size_t get_serialized_size(
   size_t current_alignment);
 size_t
 max_serialized_size_TwistWithCovariance(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+bool cdr_serialize_key(
+  const geometry_msgs::msg::TwistWithCovariance &,
+  eprosima::fastcdr::Cdr &);
+size_t get_serialized_size_key(
+  const geometry_msgs::msg::TwistWithCovariance &,
+  size_t current_alignment);
+size_t
+max_serialized_size_key_TwistWithCovariance(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
@@ -108,6 +144,17 @@ max_serialized_size_DVLBeam(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
+bool cdr_serialize_key(
+  const dave_interfaces::msg::DVLBeam &,
+  eprosima::fastcdr::Cdr &);
+size_t get_serialized_size_key(
+  const dave_interfaces::msg::DVLBeam &,
+  size_t current_alignment);
+size_t
+max_serialized_size_key_DVLBeam(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
 }  // namespace typesupport_fastrtps_cpp
 }  // namespace msg
 }  // namespace dave_interfaces
@@ -122,6 +169,7 @@ namespace msg
 namespace typesupport_fastrtps_cpp
 {
 
+
 bool
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_dave_interfaces
 cdr_serialize(
@@ -132,16 +180,20 @@ cdr_serialize(
   std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.header,
     cdr);
+
   // Member: type
   cdr << ros_message.type;
+
   // Member: target
   dave_interfaces::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.target,
     cdr);
+
   // Member: velocity
   geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.velocity,
     cdr);
+
   // Member: beams
   {
     size_t size = ros_message.beams.size();
@@ -152,6 +204,7 @@ cdr_serialize(
         cdr);
     }
   }
+
   return true;
 }
 
@@ -183,9 +236,9 @@ cdr_deserialize(
     size_t size = static_cast<size_t>(cdrSize);
 
     // Check there are at least 'size' remaining bytes in the CDR stream before resizing
-    auto old_state = cdr.getState();
+    auto old_state = cdr.get_state();
     bool correct_size = cdr.jump(size);
-    cdr.setState(old_state);
+    cdr.set_state(old_state);
     if (!correct_size) {
       fprintf(stderr, "sequence size exceeds remaining buffer\n");
       return false;
@@ -201,6 +254,7 @@ cdr_deserialize(
   return true;
 }  // NOLINT(readability/fn_size)
 
+
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_dave_interfaces
 get_serialized_size(
@@ -215,31 +269,30 @@ get_serialized_size(
   (void)wchar_size;
 
   // Member: header
-
   current_alignment +=
     std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.header, current_alignment);
+
   // Member: type
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message.type.size() + 1);
-  // Member: target
 
+  // Member: target
   current_alignment +=
     dave_interfaces::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.target, current_alignment);
-  // Member: velocity
 
+  // Member: velocity
   current_alignment +=
     geometry_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.velocity, current_alignment);
+
   // Member: beams
   {
     size_t array_size = ros_message.beams.size();
-
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment +=
         dave_interfaces::msg::typesupport_fastrtps_cpp::get_serialized_size(
@@ -249,6 +302,7 @@ get_serialized_size(
 
   return current_alignment - initial_alignment;
 }
+
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_dave_interfaces
@@ -269,12 +323,9 @@ max_serialized_size_DVL(
   full_bounded = true;
   is_plain = true;
 
-
   // Member: header
   {
     size_t array_size = 1;
-
-
     last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
@@ -288,11 +339,9 @@ max_serialized_size_DVL(
       is_plain &= inner_is_plain;
     }
   }
-
   // Member: type
   {
     size_t array_size = 1;
-
     full_bounded = false;
     is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
@@ -301,12 +350,9 @@ max_serialized_size_DVL(
         1;
     }
   }
-
   // Member: target
   {
     size_t array_size = 1;
-
-
     last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
@@ -320,12 +366,9 @@ max_serialized_size_DVL(
       is_plain &= inner_is_plain;
     }
   }
-
   // Member: velocity
   {
     size_t array_size = 1;
-
-
     last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
@@ -339,7 +382,6 @@ max_serialized_size_DVL(
       is_plain &= inner_is_plain;
     }
   }
-
   // Member: beams
   {
     size_t array_size = 0;
@@ -347,8 +389,6 @@ max_serialized_size_DVL(
     is_plain = false;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-
-
     last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
@@ -378,6 +418,212 @@ max_serialized_size_DVL(
 
   return ret_val;
 }
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_dave_interfaces
+cdr_serialize_key(
+  const dave_interfaces::msg::DVL & ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Member: header
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize_key(
+    ros_message.header,
+    cdr);
+
+  // Member: type
+  cdr << ros_message.type;
+
+  // Member: target
+  dave_interfaces::msg::typesupport_fastrtps_cpp::cdr_serialize_key(
+    ros_message.target,
+    cdr);
+
+  // Member: velocity
+  geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize_key(
+    ros_message.velocity,
+    cdr);
+
+  // Member: beams
+  {
+    size_t size = ros_message.beams.size();
+    cdr << static_cast<uint32_t>(size);
+    for (size_t i = 0; i < size; i++) {
+      dave_interfaces::msg::typesupport_fastrtps_cpp::cdr_serialize_key(
+        ros_message.beams[i],
+        cdr);
+    }
+  }
+
+  return true;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_dave_interfaces
+get_serialized_size_key(
+  const dave_interfaces::msg::DVL & ros_message,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Member: header
+  current_alignment +=
+    std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
+    ros_message.header, current_alignment);
+
+  // Member: type
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.type.size() + 1);
+
+  // Member: target
+  current_alignment +=
+    dave_interfaces::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
+    ros_message.target, current_alignment);
+
+  // Member: velocity
+  current_alignment +=
+    geometry_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
+    ros_message.velocity, current_alignment);
+
+  // Member: beams
+  {
+    size_t array_size = ros_message.beams.size();
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        dave_interfaces::msg::typesupport_fastrtps_cpp::get_serialized_size_key(
+        ros_message.beams[index], current_alignment);
+    }
+  }
+
+  return current_alignment - initial_alignment;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_dave_interfaces
+max_serialized_size_key_DVL(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+
+  // Member: header
+  {
+    size_t array_size = 1;
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        std_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_key_Header(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Member: type
+  {
+    size_t array_size = 1;
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
+  // Member: target
+  {
+    size_t array_size = 1;
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        dave_interfaces::msg::typesupport_fastrtps_cpp::max_serialized_size_key_DVLTarget(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Member: velocity
+  {
+    size_t array_size = 1;
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        geometry_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_key_TwistWithCovariance(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Member: beams
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        dave_interfaces::msg::typesupport_fastrtps_cpp::max_serialized_size_key_DVLBeam(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = dave_interfaces::msg::DVL;
+    is_plain =
+      (
+      offsetof(DataType, beams) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
+}
+
 
 static bool _DVL__cdr_serialize(
   const void * untyped_ros_message,
@@ -428,13 +674,17 @@ static message_type_support_callbacks_t _DVL__callbacks = {
   _DVL__cdr_serialize,
   _DVL__cdr_deserialize,
   _DVL__get_serialized_size,
-  _DVL__max_serialized_size
+  _DVL__max_serialized_size,
+  nullptr
 };
 
 static rosidl_message_type_support_t _DVL__handle = {
   rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
   &_DVL__callbacks,
   get_message_typesupport_handle_function,
+  &dave_interfaces__msg__DVL__get_type_hash,
+  &dave_interfaces__msg__DVL__get_type_description,
+  &dave_interfaces__msg__DVL__get_type_description_sources,
 };
 
 }  // namespace typesupport_fastrtps_cpp

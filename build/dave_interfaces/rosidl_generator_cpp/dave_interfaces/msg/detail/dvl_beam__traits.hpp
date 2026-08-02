@@ -2,6 +2,9 @@
 // with input from dave_interfaces:msg/DVLBeam.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "dave_interfaces/msg/dvl_beam.hpp"
+
+
 #ifndef DAVE_INTERFACES__MSG__DETAIL__DVL_BEAM__TRAITS_HPP_
 #define DAVE_INTERFACES__MSG__DETAIL__DVL_BEAM__TRAITS_HPP_
 

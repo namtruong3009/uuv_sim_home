@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-9175556f7bfd9f1df6a2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "dave_gz_world_plugins",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "OceanCurrentWorldPlugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OceanCurrentWorldPlugin-920287933617d1015d4d.json",
+					"name" : "OceanCurrentWorldPlugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dave_gz_world_plugins-msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dave_gz_world_plugins-msgs-bd5fa8fcac932031e6f1.json",
+					"name" : "dave_gz_world_plugins-msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dave_gz_world_plugins_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dave_gz_world_plugins_uninstall-9c94b06f60b616394e12.json",
+					"name" : "dave_gz_world_plugins_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gauss_markov_process::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gauss_markov_process-13925e95c19e92a0813f.json",
+					"name" : "gauss_markov_process",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tidal_oscillation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tidal_oscillation-87a65664fbeec81c75af.json",
+					"name" : "tidal_oscillation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-503e2e57c566102c910c.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/namtruong/uuv_sim_home/build/dave_gz_world_plugins",
+		"source" : "/home/namtruong/uuv_sim_home/src/dave_gz_world_plugins"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,1 @@
+/home/namtruong/uuv_sim_home/build/multibeam_sonar_system/ament_cmake_environment_hooks/local_setup.zsh

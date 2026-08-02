@@ -1,1 +1,0 @@
-/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_generator_py/dave_interfaces/msg/_dvl.py

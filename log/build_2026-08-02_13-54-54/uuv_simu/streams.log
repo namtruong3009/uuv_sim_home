@@ -1,0 +1,24 @@
+[0.912s] Invoking command in '/home/namtruong/uuv_sim_home/build/uuv_simu': CMAKE_PREFIX_PATH=/home/namtruong/uuv_sim_home/install/dave_robot_models:/home/namtruong/uuv_sim_home/install/dave_worlds:/home/namtruong/uuv_sim_home/install/dave_object_models:/home/namtruong/uuv_sim_home/install/dave_gz_sensor_plugins:/home/namtruong/uuv_sim_home/install/dave_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/namtruong/uuv_sim_home/build/uuv_simu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/namtruong/uuv_sim_home/build/uuv_simu/build --no-deps symlink_data
+[1.168s] running develop
+[1.327s] running egg_info
+[1.327s] creating uuv_simu.egg-info
+[1.341s] writing uuv_simu.egg-info/PKG-INFO
+[1.342s] writing dependency_links to uuv_simu.egg-info/dependency_links.txt
+[1.342s] writing requirements to uuv_simu.egg-info/requires.txt
+[1.342s] writing top-level names to uuv_simu.egg-info/top_level.txt
+[1.342s] writing manifest file 'uuv_simu.egg-info/SOURCES.txt'
+[1.371s] reading manifest file 'uuv_simu.egg-info/SOURCES.txt'
+[1.372s] writing manifest file 'uuv_simu.egg-info/SOURCES.txt'
+[1.388s] running build_ext
+[1.388s] Creating /home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages/uuv-simu.egg-link (link to .)
+[1.388s] 
+[1.388s] Installed /home/namtruong/uuv_sim_home/build/uuv_simu
+[1.389s] running symlink_data
+[1.389s] creating /home/namtruong/uuv_sim_home/install/uuv_simu/share/ament_index
+[1.389s] creating /home/namtruong/uuv_sim_home/install/uuv_simu/share/ament_index/resource_index
+[1.389s] creating /home/namtruong/uuv_sim_home/install/uuv_simu/share/ament_index/resource_index/packages
+[1.389s] symbolically linking /home/namtruong/uuv_sim_home/build/uuv_simu/resource/uuv_simu -> /home/namtruong/uuv_sim_home/install/uuv_simu/share/ament_index/resource_index/packages
+[1.389s] symbolically linking /home/namtruong/uuv_sim_home/build/uuv_simu/package.xml -> /home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu
+[1.389s] creating /home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/launch
+[1.389s] symbolically linking /home/namtruong/uuv_sim_home/build/uuv_simu/launch/main_bringup.launch.py -> /home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/launch
+[1.421s] Invoked command in '/home/namtruong/uuv_sim_home/build/uuv_simu' returned '0': CMAKE_PREFIX_PATH=/home/namtruong/uuv_sim_home/install/dave_robot_models:/home/namtruong/uuv_sim_home/install/dave_worlds:/home/namtruong/uuv_sim_home/install/dave_object_models:/home/namtruong/uuv_sim_home/install/dave_gz_sensor_plugins:/home/namtruong/uuv_sim_home/install/dave_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/namtruong/uuv_sim_home/build/uuv_simu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/namtruong/uuv_sim_home/build/uuv_simu/build --no-deps symlink_data

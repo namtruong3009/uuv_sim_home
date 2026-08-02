@@ -1,1 +1,1 @@
-/home/namtruong/uuv_sim/src/uuv_simu/launch/main_bringup.launch.py
+/home/namtruong/uuv_sim_home/src/uuv_simu/launch/main_bringup.launch.py

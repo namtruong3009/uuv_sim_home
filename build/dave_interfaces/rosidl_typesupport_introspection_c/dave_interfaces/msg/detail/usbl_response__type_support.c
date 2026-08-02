@@ -41,6 +41,7 @@ static rosidl_typesupport_introspection_c__MessageMember dave_interfaces__msg__U
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -58,6 +59,7 @@ static rosidl_typesupport_introspection_c__MessageMember dave_interfaces__msg__U
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -75,6 +77,7 @@ static rosidl_typesupport_introspection_c__MessageMember dave_interfaces__msg__U
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -94,6 +97,7 @@ static const rosidl_typesupport_introspection_c__MessageMembers dave_interfaces_
   "UsblResponse",  // message name
   3,  // number of fields
   sizeof(dave_interfaces__msg__UsblResponse),
+  false,  // has_any_key_member_
   dave_interfaces__msg__UsblResponse__rosidl_typesupport_introspection_c__UsblResponse_message_member_array,  // message members
   dave_interfaces__msg__UsblResponse__rosidl_typesupport_introspection_c__UsblResponse_init_function,  // function to initialize message memory (memory has to be allocated)
   dave_interfaces__msg__UsblResponse__rosidl_typesupport_introspection_c__UsblResponse_fini_function  // function to terminate message instance (will not free memory)
@@ -105,6 +109,9 @@ static rosidl_message_type_support_t dave_interfaces__msg__UsblResponse__rosidl_
   0,
   &dave_interfaces__msg__UsblResponse__rosidl_typesupport_introspection_c__UsblResponse_message_members,
   get_message_typesupport_handle_function,
+  &dave_interfaces__msg__UsblResponse__get_type_hash,
+  &dave_interfaces__msg__UsblResponse__get_type_description,
+  &dave_interfaces__msg__UsblResponse__get_type_description_sources,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_dave_interfaces

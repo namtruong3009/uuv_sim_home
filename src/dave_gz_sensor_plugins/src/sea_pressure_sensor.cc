@@ -5,7 +5,7 @@
 #include <gz/math/Pose3.hh>
 #include <gz/math/Vector3.hh>
 #include <gz/msgs/Utility.hh>
-#include <ignition/plugin/Register.hh>
+#include <gz/sim/System.hh>
 #include <gz/sim/System.hh>
 #include <gz/sim/World.hh>
 #include <gz/sim/components/CustomSensor.hh>
@@ -19,9 +19,11 @@
 #include <memory>
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/fluid_pressure.hpp>
+#include <gz/plugin/Register.hh>
 
-IGNITION_ADD_PLUGIN(
-  dave_gz_sensor_plugins::SubseaPressureSensorPlugin, ignition::gazebo::System,
+GZ_ADD_PLUGIN(
+  dave_gz_sensor_plugins::SubseaPressureSensorPlugin, 
+  gz::sim::System,
   dave_gz_sensor_plugins::SubseaPressureSensorPlugin::ISystemConfigure,
   dave_gz_sensor_plugins::SubseaPressureSensorPlugin::ISystemPreUpdate,
   dave_gz_sensor_plugins::SubseaPressureSensorPlugin::ISystemPostUpdate)

@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/namtruong/uuv_sim/install/dave_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/namtruong/uuv_sim_home/install/dave_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -128,7 +128,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/namtruong/uuv_sim/install/dave_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/namtruong/uuv_sim_home/install/dave_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +186,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/namtruong/uuv_sim/install/dave_interfaces/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/namtruong/uuv_sim_home/install/dave_interfaces/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +256,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/namtruong/uuv_sim/install/dave_interfaces/${destination}")
+      set(destination "/home/namtruong/uuv_sim_home/install/dave_interfaces/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -297,7 +297,7 @@ function(_ament_cmake_symlink_install_create_symlink absolute_file symlink)
   endif()
 
   execute_process(
-    COMMAND "/home/namtruong/.local/lib/python3.10/site-packages/cmake/data/bin/cmake" "-E" "create_symlink"
+    COMMAND "/usr/bin/cmake" "-E" "create_symlink"
       "${absolute_file}"
       "${symlink}"
   )
@@ -315,290 +315,287 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
-# install(DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_generator_c/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_generator_c/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.h")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/UsblCommand.json" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/UsblCommand.json" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/dave_interfaces/environment")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/dave_interfaces/environment")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/UsblResponse.json" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/UsblResponse.json" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/dave_interfaces/environment")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/dave_interfaces/environment")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/Location.json" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/Location.json" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_typesupport_fastrtps_c/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_typesupport_fastrtps_c/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/DVL.json" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/DVL.json" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_generator_cpp/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_generator_cpp/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.hpp")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/DVLBeam.json" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/DVLBeam.json" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_typesupport_fastrtps_cpp/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_typesupport_fastrtps_cpp/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/DVLTarget.json" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/DVLTarget.json" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_typesupport_introspection_c/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_typesupport_introspection_c/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.h")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/StratifiedCurrentVelocity.json" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/StratifiedCurrentVelocity.json" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_typesupport_introspection_cpp/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_typesupport_introspection_cpp/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.hpp")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/StratifiedCurrentDatabase.json" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/msg/StratifiedCurrentDatabase.json" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/dave_interfaces/environment")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/dave_interfaces/environment")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/SetOriginSphericalCoord.json" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/SetOriginSphericalCoord.json" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/dave_interfaces/environment")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/dave_interfaces/environment")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/GetOriginSphericalCoord.json" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/GetOriginSphericalCoord.json" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_python/dave_interfaces/dave_interfaces.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/dave_interfaces-0.0.0-py3.10.egg-info")
-ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_python/dave_interfaces/dave_interfaces.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/dave_interfaces-0.0.0-py3.10.egg-info")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/TransformToSphericalCoord.json" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/TransformToSphericalCoord.json" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_generator_py/dave_interfaces/" "DESTINATION" "local/lib/python3.10/dist-packages/dave_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_generator_py/dave_interfaces/" "DESTINATION" "local/lib/python3.10/dist-packages/dave_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/TransformFromSphericalCoord.json" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/TransformFromSphericalCoord.json" "DESTINATION" "share/dave_interfaces/srv")
 
-# install("TARGETS" "dave_interfaces__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/dave_interfaces")
-include("/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/GetCurrentModel.json" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/GetCurrentModel.json" "DESTINATION" "share/dave_interfaces/srv")
 
-# install("TARGETS" "dave_interfaces__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/dave_interfaces")
-include("/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/SetCurrentModel.json" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/SetCurrentModel.json" "DESTINATION" "share/dave_interfaces/srv")
 
-# install("TARGETS" "dave_interfaces__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/dave_interfaces")
-include("/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/SetCurrentDirection.json" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/SetCurrentDirection.json" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/rust_packages/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/rust_packages")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/rust_packages/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/rust_packages")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/SetCurrentVelocity.json" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/SetCurrentVelocity.json" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_generator_rs/dave_interfaces/rust" "DESTINATION" "share/dave_interfaces")
-ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_generator_rs/dave_interfaces/rust" "DESTINATION" "share/dave_interfaces")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/SetStratifiedCurrentVelocity.json" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/SetStratifiedCurrentVelocity.json" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/UsblCommand.idl" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/UsblCommand.idl" "DESTINATION" "share/dave_interfaces/msg")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/SetStratifiedCurrentDirection.json" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_type_description/dave_interfaces/srv/SetStratifiedCurrentDirection.json" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/UsblResponse.idl" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/UsblResponse.idl" "DESTINATION" "share/dave_interfaces/msg")
+# install(DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_c/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim_home/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_c/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.h")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/Location.idl" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/Location.idl" "DESTINATION" "share/dave_interfaces/msg")
+# install(FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/dave_interfaces/environment")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/dave_interfaces/environment")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/DVL.idl" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/DVL.idl" "DESTINATION" "share/dave_interfaces/msg")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/dave_interfaces/environment")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/dave_interfaces/environment")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/DVLBeam.idl" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/DVLBeam.idl" "DESTINATION" "share/dave_interfaces/msg")
+# install(DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_typesupport_fastrtps_c/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim_home/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_typesupport_fastrtps_c/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/DVLTarget.idl" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/DVLTarget.idl" "DESTINATION" "share/dave_interfaces/msg")
+# install(DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_cpp/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim_home/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_cpp/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.hpp")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/StratifiedCurrentVelocity.idl" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/StratifiedCurrentVelocity.idl" "DESTINATION" "share/dave_interfaces/msg")
+# install(DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_typesupport_fastrtps_cpp/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim_home/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_typesupport_fastrtps_cpp/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/StratifiedCurrentDatabase.idl" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/StratifiedCurrentDatabase.idl" "DESTINATION" "share/dave_interfaces/msg")
+# install(DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_typesupport_introspection_c/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim_home/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_typesupport_introspection_c/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.h")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetOriginSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetOriginSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
+# install(DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_typesupport_introspection_cpp/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim_home/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_typesupport_introspection_cpp/dave_interfaces/" "DESTINATION" "include/dave_interfaces/dave_interfaces" "PATTERN" "*.hpp")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/GetOriginSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/GetOriginSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/dave_interfaces/environment")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/dave_interfaces/environment")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/TransformToSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/TransformToSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/dave_interfaces/environment")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/dave_interfaces/environment")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/TransformFromSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/TransformFromSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
+# install(DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_python/dave_interfaces/dave_interfaces.egg-info/" "DESTINATION" "lib/python3.12/site-packages/dave_interfaces-0.0.0-py3.12.egg-info")
+ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim_home/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_python/dave_interfaces/dave_interfaces.egg-info/" "DESTINATION" "lib/python3.12/site-packages/dave_interfaces-0.0.0-py3.12.egg-info")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/GetCurrentModel.idl" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/GetCurrentModel.idl" "DESTINATION" "share/dave_interfaces/srv")
+# install(DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_py/dave_interfaces/" "DESTINATION" "lib/python3.12/site-packages/dave_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim_home/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_py/dave_interfaces/" "DESTINATION" "lib/python3.12/site-packages/dave_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetCurrentModel.idl" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetCurrentModel.idl" "DESTINATION" "share/dave_interfaces/srv")
+# install("TARGETS" "dave_interfaces_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.12/site-packages/dave_interfaces")
+include("/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetCurrentDirection.idl" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetCurrentDirection.idl" "DESTINATION" "share/dave_interfaces/srv")
+# install("TARGETS" "dave_interfaces_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/dave_interfaces")
+include("/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetCurrentVelocity.idl" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetCurrentVelocity.idl" "DESTINATION" "share/dave_interfaces/srv")
+# install("TARGETS" "dave_interfaces_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/dave_interfaces")
+include("/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetStratifiedCurrentVelocity.idl" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetStratifiedCurrentVelocity.idl" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/rust_packages/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/rust_packages")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/rust_packages/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/rust_packages")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetStratifiedCurrentDirection.idl" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetStratifiedCurrentDirection.idl" "DESTINATION" "share/dave_interfaces/srv")
+# install(DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_rs/dave_interfaces/rust" "DESTINATION" "share/dave_interfaces")
+ament_cmake_symlink_install_directory("/home/namtruong/uuv_sim_home/src/dave_interfaces" DIRECTORY "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_generator_rs/dave_interfaces/rust" "DESTINATION" "share/dave_interfaces")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/UsblCommand.msg" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/UsblCommand.msg" "DESTINATION" "share/dave_interfaces/msg")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/UsblCommand.idl" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/UsblCommand.idl" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/UsblResponse.msg" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/UsblResponse.msg" "DESTINATION" "share/dave_interfaces/msg")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/UsblResponse.idl" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/UsblResponse.idl" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/Location.msg" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/Location.msg" "DESTINATION" "share/dave_interfaces/msg")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/Location.idl" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/Location.idl" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/DVL.msg" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/DVL.msg" "DESTINATION" "share/dave_interfaces/msg")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/DVL.idl" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/DVL.idl" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/DVLBeam.msg" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/DVLBeam.msg" "DESTINATION" "share/dave_interfaces/msg")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/DVLBeam.idl" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/DVLBeam.idl" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/DVLTarget.msg" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/DVLTarget.msg" "DESTINATION" "share/dave_interfaces/msg")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/DVLTarget.idl" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/DVLTarget.idl" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/StratifiedCurrentVelocity.msg" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/StratifiedCurrentVelocity.msg" "DESTINATION" "share/dave_interfaces/msg")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/StratifiedCurrentVelocity.idl" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/StratifiedCurrentVelocity.idl" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/StratifiedCurrentDatabase.msg" "DESTINATION" "share/dave_interfaces/msg")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/msg/StratifiedCurrentDatabase.msg" "DESTINATION" "share/dave_interfaces/msg")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/StratifiedCurrentDatabase.idl" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/msg/StratifiedCurrentDatabase.idl" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/SetOriginSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/SetOriginSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetOriginSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetOriginSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetOriginSphericalCoord_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetOriginSphericalCoord_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/GetOriginSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/GetOriginSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetOriginSphericalCoord_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetOriginSphericalCoord_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/TransformToSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/TransformToSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/GetOriginSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/GetOriginSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/TransformFromSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/TransformFromSphericalCoord.idl" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/GetOriginSphericalCoord_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/GetOriginSphericalCoord_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/GetCurrentModel.idl" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/GetCurrentModel.idl" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/GetOriginSphericalCoord_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/GetOriginSphericalCoord_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetCurrentModel.idl" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetCurrentModel.idl" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/TransformToSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/TransformToSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetCurrentDirection.idl" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetCurrentDirection.idl" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/TransformToSphericalCoord_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/TransformToSphericalCoord_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetCurrentVelocity.idl" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetCurrentVelocity.idl" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/TransformToSphericalCoord_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/TransformToSphericalCoord_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetStratifiedCurrentVelocity.idl" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetStratifiedCurrentVelocity.idl" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/TransformFromSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/TransformFromSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetStratifiedCurrentDirection.idl" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_adapter/dave_interfaces/srv/SetStratifiedCurrentDirection.idl" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/TransformFromSphericalCoord_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/TransformFromSphericalCoord_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/UsblCommand.msg" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/UsblCommand.msg" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/TransformFromSphericalCoord_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/TransformFromSphericalCoord_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/UsblResponse.msg" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/UsblResponse.msg" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/GetCurrentModel.srv" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/GetCurrentModel.srv" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/Location.msg" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/Location.msg" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/GetCurrentModel_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/GetCurrentModel_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/DVL.msg" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/DVL.msg" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/GetCurrentModel_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/GetCurrentModel_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/DVLBeam.msg" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/DVLBeam.msg" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/SetCurrentModel.srv" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/SetCurrentModel.srv" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/DVLTarget.msg" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/DVLTarget.msg" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetCurrentModel_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetCurrentModel_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/StratifiedCurrentVelocity.msg" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/StratifiedCurrentVelocity.msg" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetCurrentModel_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetCurrentModel_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/StratifiedCurrentDatabase.msg" "DESTINATION" "share/dave_interfaces/msg")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/msg/StratifiedCurrentDatabase.msg" "DESTINATION" "share/dave_interfaces/msg")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/SetCurrentDirection.srv" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/SetCurrentDirection.srv" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/SetOriginSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/SetOriginSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetCurrentDirection_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetCurrentDirection_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/GetOriginSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/GetOriginSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetCurrentDirection_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetCurrentDirection_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/TransformToSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/TransformToSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/SetCurrentVelocity.srv" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/SetCurrentVelocity.srv" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/TransformFromSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/TransformFromSphericalCoord.srv" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetCurrentVelocity_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetCurrentVelocity_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/GetCurrentModel.srv" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/GetCurrentModel.srv" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetCurrentVelocity_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetCurrentVelocity_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/SetCurrentModel.srv" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/SetCurrentModel.srv" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/SetStratifiedCurrentVelocity.srv" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/SetStratifiedCurrentVelocity.srv" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/SetCurrentDirection.srv" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/SetCurrentDirection.srv" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetStratifiedCurrentVelocity_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetStratifiedCurrentVelocity_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/SetCurrentVelocity.srv" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/SetCurrentVelocity.srv" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetStratifiedCurrentVelocity_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetStratifiedCurrentVelocity_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/SetStratifiedCurrentVelocity.srv" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/SetStratifiedCurrentVelocity.srv" "DESTINATION" "share/dave_interfaces/srv")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/SetStratifiedCurrentDirection.srv" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/srv/SetStratifiedCurrentDirection.srv" "DESTINATION" "share/dave_interfaces/srv")
-
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetStratifiedCurrentDirection_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetStratifiedCurrentDirection_Request.msg" "DESTINATION" "share/dave_interfaces/srv")
-
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetStratifiedCurrentDirection_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/srv/SetStratifiedCurrentDirection_Response.msg" "DESTINATION" "share/dave_interfaces/srv")
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/SetStratifiedCurrentDirection.srv" "DESTINATION" "share/dave_interfaces/srv")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/srv/SetStratifiedCurrentDirection.srv" "DESTINATION" "share/dave_interfaces/srv")
 
 # install(FILES "package.xml" "DESTINATION" "share/dave_interfaces")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "package.xml" "DESTINATION" "share/dave_interfaces")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "package.xml" "DESTINATION" "share/dave_interfaces")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/dave_interfaces/environment")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/dave_interfaces/environment")
+# install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/dave_interfaces/environment")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/dave_interfaces/environment")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/dave_interfaces/environment")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/dave_interfaces/environment")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/dave_interfaces/environment")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/dave_interfaces/environment")
 
-# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/dave_interfaces/environment")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/dave_interfaces/environment")
+# install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/dave_interfaces/environment")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/dave_interfaces/environment")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/dave_interfaces/environment")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/dave_interfaces/environment")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/dave_interfaces/environment")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/dave_interfaces/environment")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/dave_interfaces")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/dave_interfaces")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/dave_interfaces")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/dave_interfaces")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/dave_interfaces")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/dave_interfaces")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/dave_interfaces")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/dave_interfaces")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/dave_interfaces")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/dave_interfaces")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/dave_interfaces")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/dave_interfaces")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/dave_interfaces")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/dave_interfaces")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/dave_interfaces")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/dave_interfaces")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/dave_interfaces")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/dave_interfaces")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/dave_interfaces")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/dave_interfaces")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/dave_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
 
-# install(FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_core/dave_interfacesConfig.cmake" "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_core/dave_interfacesConfig-version.cmake" "DESTINATION" "share/dave_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_core/dave_interfacesConfig.cmake" "/home/namtruong/uuv_sim/build/dave_interfaces/ament_cmake_core/dave_interfacesConfig-version.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_cmake/rosidl_cmake_aggregate_target-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/rosidl_cmake/rosidl_cmake_aggregate_target-extras.cmake" "DESTINATION" "share/dave_interfaces/cmake")
 
-# install(FILES "/home/namtruong/uuv_sim/src/dave_interfaces/package.xml" "DESTINATION" "share/dave_interfaces")
-ament_cmake_symlink_install_files("/home/namtruong/uuv_sim/src/dave_interfaces" FILES "/home/namtruong/uuv_sim/src/dave_interfaces/package.xml" "DESTINATION" "share/dave_interfaces")
+# install(FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_core/dave_interfacesConfig.cmake" "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_core/dave_interfacesConfig-version.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_core/dave_interfacesConfig.cmake" "/home/namtruong/uuv_sim_home/build/dave_interfaces/ament_cmake_core/dave_interfacesConfig-version.cmake" "DESTINATION" "share/dave_interfaces/cmake")
+
+# install(FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/package.xml" "DESTINATION" "share/dave_interfaces")
+ament_cmake_symlink_install_files("/home/namtruong/uuv_sim_home/src/dave_interfaces" FILES "/home/namtruong/uuv_sim_home/src/dave_interfaces/package.xml" "DESTINATION" "share/dave_interfaces")

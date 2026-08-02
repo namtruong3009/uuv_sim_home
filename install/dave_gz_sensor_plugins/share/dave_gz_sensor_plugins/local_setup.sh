@@ -1,1 +1,1 @@
-/home/namtruong/uuv_sim/build/dave_gz_sensor_plugins/ament_cmake_environment_hooks/local_setup.sh
+/home/namtruong/uuv_sim_home/build/dave_gz_sensor_plugins/ament_cmake_environment_hooks/local_setup.sh

@@ -1,1 +1,0 @@
-/home/namtruong/uuv_sim/src/uuv_simu/setup.py

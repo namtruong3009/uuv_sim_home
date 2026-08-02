@@ -88,7 +88,7 @@ dave_interfaces__srv__SetCurrentModel_Request__copy(
 }
 
 dave_interfaces__srv__SetCurrentModel_Request *
-dave_interfaces__srv__SetCurrentModel_Request__create()
+dave_interfaces__srv__SetCurrentModel_Request__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   dave_interfaces__srv__SetCurrentModel_Request * msg = (dave_interfaces__srv__SetCurrentModel_Request *)allocator.allocate(sizeof(dave_interfaces__srv__SetCurrentModel_Request), allocator.state);
@@ -125,6 +125,9 @@ dave_interfaces__srv__SetCurrentModel_Request__Sequence__init(dave_interfaces__s
   dave_interfaces__srv__SetCurrentModel_Request * data = NULL;
 
   if (size) {
+    if (size > SIZE_MAX / sizeof(dave_interfaces__srv__SetCurrentModel_Request)) {
+      return false;
+    }
     data = (dave_interfaces__srv__SetCurrentModel_Request *)allocator.zero_allocate(size, sizeof(dave_interfaces__srv__SetCurrentModel_Request), allocator.state);
     if (!data) {
       return false;
@@ -230,6 +233,9 @@ dave_interfaces__srv__SetCurrentModel_Request__Sequence__copy(
     return false;
   }
   if (output->capacity < input->size) {
+    if (input->size > SIZE_MAX / sizeof(dave_interfaces__srv__SetCurrentModel_Request)) {
+      return false;
+    }
     const size_t allocation_size =
       input->size * sizeof(dave_interfaces__srv__SetCurrentModel_Request);
     rcutils_allocator_t allocator = rcutils_get_default_allocator();
@@ -313,7 +319,7 @@ dave_interfaces__srv__SetCurrentModel_Response__copy(
 }
 
 dave_interfaces__srv__SetCurrentModel_Response *
-dave_interfaces__srv__SetCurrentModel_Response__create()
+dave_interfaces__srv__SetCurrentModel_Response__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   dave_interfaces__srv__SetCurrentModel_Response * msg = (dave_interfaces__srv__SetCurrentModel_Response *)allocator.allocate(sizeof(dave_interfaces__srv__SetCurrentModel_Response), allocator.state);
@@ -350,6 +356,9 @@ dave_interfaces__srv__SetCurrentModel_Response__Sequence__init(dave_interfaces__
   dave_interfaces__srv__SetCurrentModel_Response * data = NULL;
 
   if (size) {
+    if (size > SIZE_MAX / sizeof(dave_interfaces__srv__SetCurrentModel_Response)) {
+      return false;
+    }
     data = (dave_interfaces__srv__SetCurrentModel_Response *)allocator.zero_allocate(size, sizeof(dave_interfaces__srv__SetCurrentModel_Response), allocator.state);
     if (!data) {
       return false;
@@ -455,6 +464,9 @@ dave_interfaces__srv__SetCurrentModel_Response__Sequence__copy(
     return false;
   }
   if (output->capacity < input->size) {
+    if (input->size > SIZE_MAX / sizeof(dave_interfaces__srv__SetCurrentModel_Response)) {
+      return false;
+    }
     const size_t allocation_size =
       input->size * sizeof(dave_interfaces__srv__SetCurrentModel_Response);
     rcutils_allocator_t allocator = rcutils_get_default_allocator();
@@ -483,6 +495,294 @@ dave_interfaces__srv__SetCurrentModel_Response__Sequence__copy(
   output->size = input->size;
   for (size_t i = 0; i < input->size; ++i) {
     if (!dave_interfaces__srv__SetCurrentModel_Response__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
+
+// Include directives for member types
+// Member `info`
+#include "service_msgs/msg/detail/service_event_info__functions.h"
+// Member `request`
+// Member `response`
+// already included above
+// #include "dave_interfaces/srv/detail/set_current_model__functions.h"
+
+bool
+dave_interfaces__srv__SetCurrentModel_Event__init(dave_interfaces__srv__SetCurrentModel_Event * msg)
+{
+  if (!msg) {
+    return false;
+  }
+  // info
+  if (!service_msgs__msg__ServiceEventInfo__init(&msg->info)) {
+    dave_interfaces__srv__SetCurrentModel_Event__fini(msg);
+    return false;
+  }
+  // request
+  if (!dave_interfaces__srv__SetCurrentModel_Request__Sequence__init(&msg->request, 0)) {
+    dave_interfaces__srv__SetCurrentModel_Event__fini(msg);
+    return false;
+  }
+  // response
+  if (!dave_interfaces__srv__SetCurrentModel_Response__Sequence__init(&msg->response, 0)) {
+    dave_interfaces__srv__SetCurrentModel_Event__fini(msg);
+    return false;
+  }
+  return true;
+}
+
+void
+dave_interfaces__srv__SetCurrentModel_Event__fini(dave_interfaces__srv__SetCurrentModel_Event * msg)
+{
+  if (!msg) {
+    return;
+  }
+  // info
+  service_msgs__msg__ServiceEventInfo__fini(&msg->info);
+  // request
+  dave_interfaces__srv__SetCurrentModel_Request__Sequence__fini(&msg->request);
+  // response
+  dave_interfaces__srv__SetCurrentModel_Response__Sequence__fini(&msg->response);
+}
+
+bool
+dave_interfaces__srv__SetCurrentModel_Event__are_equal(const dave_interfaces__srv__SetCurrentModel_Event * lhs, const dave_interfaces__srv__SetCurrentModel_Event * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // info
+  if (!service_msgs__msg__ServiceEventInfo__are_equal(
+      &(lhs->info), &(rhs->info)))
+  {
+    return false;
+  }
+  // request
+  if (!dave_interfaces__srv__SetCurrentModel_Request__Sequence__are_equal(
+      &(lhs->request), &(rhs->request)))
+  {
+    return false;
+  }
+  // response
+  if (!dave_interfaces__srv__SetCurrentModel_Response__Sequence__are_equal(
+      &(lhs->response), &(rhs->response)))
+  {
+    return false;
+  }
+  return true;
+}
+
+bool
+dave_interfaces__srv__SetCurrentModel_Event__copy(
+  const dave_interfaces__srv__SetCurrentModel_Event * input,
+  dave_interfaces__srv__SetCurrentModel_Event * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // info
+  if (!service_msgs__msg__ServiceEventInfo__copy(
+      &(input->info), &(output->info)))
+  {
+    return false;
+  }
+  // request
+  if (!dave_interfaces__srv__SetCurrentModel_Request__Sequence__copy(
+      &(input->request), &(output->request)))
+  {
+    return false;
+  }
+  // response
+  if (!dave_interfaces__srv__SetCurrentModel_Response__Sequence__copy(
+      &(input->response), &(output->response)))
+  {
+    return false;
+  }
+  return true;
+}
+
+dave_interfaces__srv__SetCurrentModel_Event *
+dave_interfaces__srv__SetCurrentModel_Event__create(void)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  dave_interfaces__srv__SetCurrentModel_Event * msg = (dave_interfaces__srv__SetCurrentModel_Event *)allocator.allocate(sizeof(dave_interfaces__srv__SetCurrentModel_Event), allocator.state);
+  if (!msg) {
+    return NULL;
+  }
+  memset(msg, 0, sizeof(dave_interfaces__srv__SetCurrentModel_Event));
+  bool success = dave_interfaces__srv__SetCurrentModel_Event__init(msg);
+  if (!success) {
+    allocator.deallocate(msg, allocator.state);
+    return NULL;
+  }
+  return msg;
+}
+
+void
+dave_interfaces__srv__SetCurrentModel_Event__destroy(dave_interfaces__srv__SetCurrentModel_Event * msg)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  if (msg) {
+    dave_interfaces__srv__SetCurrentModel_Event__fini(msg);
+  }
+  allocator.deallocate(msg, allocator.state);
+}
+
+
+bool
+dave_interfaces__srv__SetCurrentModel_Event__Sequence__init(dave_interfaces__srv__SetCurrentModel_Event__Sequence * array, size_t size)
+{
+  if (!array) {
+    return false;
+  }
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  dave_interfaces__srv__SetCurrentModel_Event * data = NULL;
+
+  if (size) {
+    if (size > SIZE_MAX / sizeof(dave_interfaces__srv__SetCurrentModel_Event)) {
+      return false;
+    }
+    data = (dave_interfaces__srv__SetCurrentModel_Event *)allocator.zero_allocate(size, sizeof(dave_interfaces__srv__SetCurrentModel_Event), allocator.state);
+    if (!data) {
+      return false;
+    }
+    // initialize all array elements
+    size_t i;
+    for (i = 0; i < size; ++i) {
+      bool success = dave_interfaces__srv__SetCurrentModel_Event__init(&data[i]);
+      if (!success) {
+        break;
+      }
+    }
+    if (i < size) {
+      // if initialization failed finalize the already initialized array elements
+      for (; i > 0; --i) {
+        dave_interfaces__srv__SetCurrentModel_Event__fini(&data[i - 1]);
+      }
+      allocator.deallocate(data, allocator.state);
+      return false;
+    }
+  }
+  array->data = data;
+  array->size = size;
+  array->capacity = size;
+  return true;
+}
+
+void
+dave_interfaces__srv__SetCurrentModel_Event__Sequence__fini(dave_interfaces__srv__SetCurrentModel_Event__Sequence * array)
+{
+  if (!array) {
+    return;
+  }
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+
+  if (array->data) {
+    // ensure that data and capacity values are consistent
+    assert(array->capacity > 0);
+    // finalize all array elements
+    for (size_t i = 0; i < array->capacity; ++i) {
+      dave_interfaces__srv__SetCurrentModel_Event__fini(&array->data[i]);
+    }
+    allocator.deallocate(array->data, allocator.state);
+    array->data = NULL;
+    array->size = 0;
+    array->capacity = 0;
+  } else {
+    // ensure that data, size, and capacity values are consistent
+    assert(0 == array->size);
+    assert(0 == array->capacity);
+  }
+}
+
+dave_interfaces__srv__SetCurrentModel_Event__Sequence *
+dave_interfaces__srv__SetCurrentModel_Event__Sequence__create(size_t size)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  dave_interfaces__srv__SetCurrentModel_Event__Sequence * array = (dave_interfaces__srv__SetCurrentModel_Event__Sequence *)allocator.allocate(sizeof(dave_interfaces__srv__SetCurrentModel_Event__Sequence), allocator.state);
+  if (!array) {
+    return NULL;
+  }
+  bool success = dave_interfaces__srv__SetCurrentModel_Event__Sequence__init(array, size);
+  if (!success) {
+    allocator.deallocate(array, allocator.state);
+    return NULL;
+  }
+  return array;
+}
+
+void
+dave_interfaces__srv__SetCurrentModel_Event__Sequence__destroy(dave_interfaces__srv__SetCurrentModel_Event__Sequence * array)
+{
+  rcutils_allocator_t allocator = rcutils_get_default_allocator();
+  if (array) {
+    dave_interfaces__srv__SetCurrentModel_Event__Sequence__fini(array);
+  }
+  allocator.deallocate(array, allocator.state);
+}
+
+bool
+dave_interfaces__srv__SetCurrentModel_Event__Sequence__are_equal(const dave_interfaces__srv__SetCurrentModel_Event__Sequence * lhs, const dave_interfaces__srv__SetCurrentModel_Event__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!dave_interfaces__srv__SetCurrentModel_Event__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+dave_interfaces__srv__SetCurrentModel_Event__Sequence__copy(
+  const dave_interfaces__srv__SetCurrentModel_Event__Sequence * input,
+  dave_interfaces__srv__SetCurrentModel_Event__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    if (input->size > SIZE_MAX / sizeof(dave_interfaces__srv__SetCurrentModel_Event)) {
+      return false;
+    }
+    const size_t allocation_size =
+      input->size * sizeof(dave_interfaces__srv__SetCurrentModel_Event);
+    rcutils_allocator_t allocator = rcutils_get_default_allocator();
+    dave_interfaces__srv__SetCurrentModel_Event * data =
+      (dave_interfaces__srv__SetCurrentModel_Event *)allocator.reallocate(
+      output->data, allocation_size, allocator.state);
+    if (!data) {
+      return false;
+    }
+    // If reallocation succeeded, memory may or may not have been moved
+    // to fulfill the allocation request, invalidating output->data.
+    output->data = data;
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!dave_interfaces__srv__SetCurrentModel_Event__init(&output->data[i])) {
+        // If initialization of any new item fails, roll back
+        // all previously initialized items. Existing items
+        // in output are to be left unmodified.
+        for (; i-- > output->capacity; ) {
+          dave_interfaces__srv__SetCurrentModel_Event__fini(&output->data[i]);
+        }
+        return false;
+      }
+    }
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!dave_interfaces__srv__SetCurrentModel_Event__copy(
         &(input->data[i]), &(output->data[i])))
     {
       return false;

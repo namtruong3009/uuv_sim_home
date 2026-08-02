@@ -1,1 +1,1 @@
-/home/namtruong/uuv_sim/src/dave_robot_models/config/bluerov2_heavy_multibeam_sonar/robot_config.py
+/home/namtruong/uuv_sim_home/src/dave_robot_models/config/bluerov2_heavy_multibeam_sonar/robot_config.py

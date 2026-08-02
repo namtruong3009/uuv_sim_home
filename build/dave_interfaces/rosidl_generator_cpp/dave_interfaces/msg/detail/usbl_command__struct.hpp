@@ -2,6 +2,9 @@
 // with input from dave_interfaces:msg/UsblCommand.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "dave_interfaces/msg/usbl_command.hpp"
+
+
 #ifndef DAVE_INTERFACES__MSG__DETAIL__USBL_COMMAND__STRUCT_HPP_
 #define DAVE_INTERFACES__MSG__DETAIL__USBL_COMMAND__STRUCT_HPP_
 

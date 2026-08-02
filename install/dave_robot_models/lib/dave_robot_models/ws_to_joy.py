@@ -1,1 +1,1 @@
-/home/namtruong/uuv_sim/src/dave_robot_models/scripts/ws_to_joy.py
+/home/namtruong/uuv_sim_home/src/dave_robot_models/scripts/ws_to_joy.py

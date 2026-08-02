@@ -1,0 +1,2 @@
+prepend-non-duplicate;GZ_SIM_SYSTEM_PLUGIN_PATH;lib/multibeam_sonar_system/
+prepend-non-duplicate;LD_LIBRARY_PATH;lib/multibeam_sonar_system/

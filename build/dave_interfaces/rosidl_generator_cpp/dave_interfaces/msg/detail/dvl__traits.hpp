@@ -2,6 +2,9 @@
 // with input from dave_interfaces:msg/DVL.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "dave_interfaces/msg/dvl.hpp"
+
+
 #ifndef DAVE_INTERFACES__MSG__DETAIL__DVL__TRAITS_HPP_
 #define DAVE_INTERFACES__MSG__DETAIL__DVL__TRAITS_HPP_
 

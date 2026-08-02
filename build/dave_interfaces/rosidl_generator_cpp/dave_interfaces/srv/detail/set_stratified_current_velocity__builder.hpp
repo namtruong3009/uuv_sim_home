@@ -2,6 +2,9 @@
 // with input from dave_interfaces:srv/SetStratifiedCurrentVelocity.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "dave_interfaces/srv/set_stratified_current_velocity.hpp"
+
+
 #ifndef DAVE_INTERFACES__SRV__DETAIL__SET_STRATIFIED_CURRENT_VELOCITY__BUILDER_HPP_
 #define DAVE_INTERFACES__SRV__DETAIL__SET_STRATIFIED_CURRENT_VELOCITY__BUILDER_HPP_
 
@@ -139,6 +142,80 @@ inline
 auto build<::dave_interfaces::srv::SetStratifiedCurrentVelocity_Response>()
 {
   return dave_interfaces::srv::builder::Init_SetStratifiedCurrentVelocity_Response_success();
+}
+
+}  // namespace dave_interfaces
+
+
+namespace dave_interfaces
+{
+
+namespace srv
+{
+
+namespace builder
+{
+
+class Init_SetStratifiedCurrentVelocity_Event_response
+{
+public:
+  explicit Init_SetStratifiedCurrentVelocity_Event_response(::dave_interfaces::srv::SetStratifiedCurrentVelocity_Event & msg)
+  : msg_(msg)
+  {}
+  ::dave_interfaces::srv::SetStratifiedCurrentVelocity_Event response(::dave_interfaces::srv::SetStratifiedCurrentVelocity_Event::_response_type arg)
+  {
+    msg_.response = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::dave_interfaces::srv::SetStratifiedCurrentVelocity_Event msg_;
+};
+
+class Init_SetStratifiedCurrentVelocity_Event_request
+{
+public:
+  explicit Init_SetStratifiedCurrentVelocity_Event_request(::dave_interfaces::srv::SetStratifiedCurrentVelocity_Event & msg)
+  : msg_(msg)
+  {}
+  Init_SetStratifiedCurrentVelocity_Event_response request(::dave_interfaces::srv::SetStratifiedCurrentVelocity_Event::_request_type arg)
+  {
+    msg_.request = std::move(arg);
+    return Init_SetStratifiedCurrentVelocity_Event_response(msg_);
+  }
+
+private:
+  ::dave_interfaces::srv::SetStratifiedCurrentVelocity_Event msg_;
+};
+
+class Init_SetStratifiedCurrentVelocity_Event_info
+{
+public:
+  Init_SetStratifiedCurrentVelocity_Event_info()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_SetStratifiedCurrentVelocity_Event_request info(::dave_interfaces::srv::SetStratifiedCurrentVelocity_Event::_info_type arg)
+  {
+    msg_.info = std::move(arg);
+    return Init_SetStratifiedCurrentVelocity_Event_request(msg_);
+  }
+
+private:
+  ::dave_interfaces::srv::SetStratifiedCurrentVelocity_Event msg_;
+};
+
+}  // namespace builder
+
+}  // namespace srv
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::dave_interfaces::srv::SetStratifiedCurrentVelocity_Event>()
+{
+  return dave_interfaces::srv::builder::Init_SetStratifiedCurrentVelocity_Event_info();
 }
 
 }  // namespace dave_interfaces

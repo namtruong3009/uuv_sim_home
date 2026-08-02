@@ -1,0 +1,356 @@
+[0.093s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'dave_robot_models', 'dave_worlds', 'uuv_simu', '--cmake-args', '-DBUILD_TESTING=OFF']
+[0.093s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['dave_robot_models', 'dave_worlds', 'uuv_simu'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DBUILD_TESTING=OFF'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x70dff2950080>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x70dff33fd4f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x70dff33fd4f0>>)
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.127s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/namtruong/uuv_sim_home'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_model_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_model_plugins) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_model_plugins) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_model_plugins) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_model_plugins) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_model_plugins) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_model_plugins) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_model_plugins) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_model_plugins) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dave_gz_model_plugins' with type 'ros.ament_cmake' and name 'dave_gz_model_plugins'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_sensor_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_sensor_plugins) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_sensor_plugins) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_sensor_plugins) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_sensor_plugins) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_sensor_plugins) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_sensor_plugins) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_sensor_plugins) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_sensor_plugins) by extension 'ros'
+[0.153s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dave_gz_sensor_plugins' with type 'ros.ament_cmake' and name 'dave_gz_sensor_plugins'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_world_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_world_plugins) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_world_plugins) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_world_plugins) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_world_plugins) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_world_plugins) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_world_plugins) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_world_plugins) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_gz_world_plugins) by extension 'ros'
+[0.155s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dave_gz_world_plugins' with type 'ros.ament_cmake' and name 'dave_gz_world_plugins'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_interfaces) by extension 'ros'
+[0.156s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dave_interfaces' with type 'ros.ament_cmake' and name 'dave_interfaces'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_object_models) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_object_models) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_object_models) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_object_models) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_object_models) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_object_models) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_object_models) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_object_models) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_object_models) by extension 'ros'
+[0.157s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dave_object_models' with type 'ros.ament_cmake' and name 'dave_object_models'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_robot_models) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_robot_models) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_robot_models) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_robot_models) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_robot_models) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_robot_models) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_robot_models) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_robot_models) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_robot_models) by extension 'ros'
+[0.157s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dave_robot_models' with type 'ros.ament_cmake' and name 'dave_robot_models'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_ros_gz_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_ros_gz_plugins) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_ros_gz_plugins) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_ros_gz_plugins) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_ros_gz_plugins) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_ros_gz_plugins) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_ros_gz_plugins) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_ros_gz_plugins) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_ros_gz_plugins) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dave_ros_gz_plugins' with type 'ros.ament_cmake' and name 'dave_ros_gz_plugins'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_worlds) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_worlds) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_worlds) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_worlds) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_worlds) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_worlds) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_worlds) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_worlds) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/dave_worlds) by extension 'ros'
+[0.159s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dave_worlds' with type 'ros.ament_cmake' and name 'dave_worlds'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/multibeam_sonar' with type 'ros.ament_cmake' and name 'multibeam_sonar'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_demo) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_demo) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_demo) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_demo) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_demo) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_demo) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_demo) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_demo) by extension 'ros'
+[0.161s] DEBUG:colcon.colcon_core.package_identification:Package 'src/multibeam_sonar_demo' with type 'ros.ament_cmake' and name 'dave_multibeam_sonar_demo'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_system) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_system) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_system) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_system) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_system) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_system) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_system) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_system) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/multibeam_sonar_system) by extension 'ros'
+[0.162s] DEBUG:colcon.colcon_core.package_identification:Package 'src/multibeam_sonar_system' with type 'ros.ament_cmake' and name 'multibeam_sonar_system'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/uuv_simu) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/uuv_simu) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/uuv_simu) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/uuv_simu) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/uuv_simu) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/uuv_simu) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/uuv_simu) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/uuv_simu) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/uuv_simu) by extension 'ros'
+[0.163s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uuv_simu' with type 'ros.ament_python' and name 'uuv_simu'
+[0.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dave_interfaces' in 'src/dave_interfaces'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dave_multibeam_sonar_demo' in 'src/multibeam_sonar_demo'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dave_object_models' in 'src/dave_object_models'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'multibeam_sonar_system' in 'src/multibeam_sonar_system'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dave_gz_sensor_plugins' in 'src/dave_gz_sensor_plugins'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dave_gz_world_plugins' in 'src/dave_gz_world_plugins'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'multibeam_sonar' in 'src/multibeam_sonar'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dave_ros_gz_plugins' in 'src/dave_ros_gz_plugins'
+[0.180s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'dave_gz_model_plugins' in 'src/dave_gz_model_plugins'
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.182s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/namtruong/uuv_sim_home/install
+[0.184s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 325 installed packages in /opt/ros/jazzy
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.227s] Level 5:colcon.colcon_core.verb:set package 'dave_robot_models' build argument 'cmake_args' from command line to '['-DBUILD_TESTING=OFF']'
+[0.227s] Level 5:colcon.colcon_core.verb:set package 'dave_robot_models' build argument 'cmake_target' from command line to 'None'
+[0.227s] Level 5:colcon.colcon_core.verb:set package 'dave_robot_models' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.227s] Level 5:colcon.colcon_core.verb:set package 'dave_robot_models' build argument 'cmake_clean_cache' from command line to 'False'
+[0.227s] Level 5:colcon.colcon_core.verb:set package 'dave_robot_models' build argument 'cmake_clean_first' from command line to 'False'
+[0.227s] Level 5:colcon.colcon_core.verb:set package 'dave_robot_models' build argument 'cmake_force_configure' from command line to 'False'
+[0.227s] Level 5:colcon.colcon_core.verb:set package 'dave_robot_models' build argument 'ament_cmake_args' from command line to 'None'
+[0.227s] Level 5:colcon.colcon_core.verb:set package 'dave_robot_models' build argument 'catkin_cmake_args' from command line to 'None'
+[0.227s] Level 5:colcon.colcon_core.verb:set package 'dave_robot_models' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.227s] DEBUG:colcon.colcon_core.verb:Building package 'dave_robot_models' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/namtruong/uuv_sim_home/build/dave_robot_models', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DBUILD_TESTING=OFF'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/namtruong/uuv_sim_home/install/dave_robot_models', 'merge_install': False, 'path': '/home/namtruong/uuv_sim_home/src/dave_robot_models', 'symlink_install': False, 'test_result_base': None}
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'dave_worlds' build argument 'cmake_args' from command line to '['-DBUILD_TESTING=OFF']'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'dave_worlds' build argument 'cmake_target' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'dave_worlds' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'dave_worlds' build argument 'cmake_clean_cache' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'dave_worlds' build argument 'cmake_clean_first' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'dave_worlds' build argument 'cmake_force_configure' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'dave_worlds' build argument 'ament_cmake_args' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'dave_worlds' build argument 'catkin_cmake_args' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'dave_worlds' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.228s] DEBUG:colcon.colcon_core.verb:Building package 'dave_worlds' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/namtruong/uuv_sim_home/build/dave_worlds', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DBUILD_TESTING=OFF'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/namtruong/uuv_sim_home/install/dave_worlds', 'merge_install': False, 'path': '/home/namtruong/uuv_sim_home/src/dave_worlds', 'symlink_install': False, 'test_result_base': None}
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'uuv_simu' build argument 'cmake_args' from command line to '['-DBUILD_TESTING=OFF']'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'uuv_simu' build argument 'cmake_target' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'uuv_simu' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'uuv_simu' build argument 'cmake_clean_cache' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'uuv_simu' build argument 'cmake_clean_first' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'uuv_simu' build argument 'cmake_force_configure' from command line to 'False'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'uuv_simu' build argument 'ament_cmake_args' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'uuv_simu' build argument 'catkin_cmake_args' from command line to 'None'
+[0.228s] Level 5:colcon.colcon_core.verb:set package 'uuv_simu' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.228s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_simu' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/namtruong/uuv_sim_home/build/uuv_simu', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DBUILD_TESTING=OFF'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/namtruong/uuv_sim_home/install/uuv_simu', 'merge_install': False, 'path': '/home/namtruong/uuv_sim_home/src/uuv_simu', 'symlink_install': False, 'test_result_base': None}
+[0.228s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.229s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.229s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/namtruong/uuv_sim_home/src/dave_robot_models' with build type 'ament_cmake'
+[0.229s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/namtruong/uuv_sim_home/src/dave_robot_models'
+[0.231s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.232s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.232s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.237s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/namtruong/uuv_sim_home/src/dave_worlds' with build type 'ament_cmake'
+[0.237s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/namtruong/uuv_sim_home/src/dave_worlds'
+[0.237s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.237s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.244s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/namtruong/uuv_sim_home/build/dave_robot_models': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/namtruong/uuv_sim_home/src/dave_robot_models -DBUILD_TESTING=OFF -DCMAKE_INSTALL_PREFIX=/home/namtruong/uuv_sim_home/install/dave_robot_models
+[0.249s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/namtruong/uuv_sim_home/build/dave_worlds': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/dave_worlds -- -j16 -l16
+[0.297s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/namtruong/uuv_sim_home/build/dave_worlds' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/dave_worlds -- -j16 -l16
+[0.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/namtruong/uuv_sim_home/build/dave_worlds': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/namtruong/uuv_sim_home/build/dave_worlds
+[0.339s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dave_worlds)
+[0.339s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/namtruong/uuv_sim_home/build/dave_worlds' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/namtruong/uuv_sim_home/build/dave_worlds
+[0.341s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_worlds' for CMake module files
+[0.341s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_worlds' for CMake config files
+[0.342s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave_worlds', 'cmake_prefix_path')
+[0.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/hook/cmake_prefix_path.ps1'
+[0.343s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/hook/cmake_prefix_path.dsv'
+[0.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/hook/cmake_prefix_path.sh'
+[0.344s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_worlds/bin'
+[0.344s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_worlds/lib/pkgconfig/dave_worlds.pc'
+[0.345s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_worlds/lib/python3.12/site-packages'
+[0.345s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_worlds/bin'
+[0.345s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/package.ps1'
+[0.346s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/package.dsv'
+[0.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/package.sh'
+[0.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/package.bash'
+[0.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/package.zsh'
+[0.348s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/namtruong/uuv_sim_home/install/dave_worlds/share/colcon-core/packages/dave_worlds)
+[0.348s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dave_worlds)
+[0.349s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_worlds' for CMake module files
+[0.349s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_worlds' for CMake config files
+[0.350s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave_worlds', 'cmake_prefix_path')
+[0.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/hook/cmake_prefix_path.ps1'
+[0.350s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/hook/cmake_prefix_path.dsv'
+[0.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/hook/cmake_prefix_path.sh'
+[0.351s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_worlds/bin'
+[0.351s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_worlds/lib/pkgconfig/dave_worlds.pc'
+[0.351s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_worlds/lib/python3.12/site-packages'
+[0.351s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_worlds/bin'
+[0.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/package.ps1'
+[0.352s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/package.dsv'
+[0.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/package.sh'
+[0.353s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/package.bash'
+[0.353s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/package.zsh'
+[0.354s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/namtruong/uuv_sim_home/install/dave_worlds/share/colcon-core/packages/dave_worlds)
+[0.560s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/namtruong/uuv_sim_home/build/dave_robot_models' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/namtruong/uuv_sim_home/src/dave_robot_models -DBUILD_TESTING=OFF -DCMAKE_INSTALL_PREFIX=/home/namtruong/uuv_sim_home/install/dave_robot_models
+[0.561s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/namtruong/uuv_sim_home/build/dave_robot_models': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/dave_robot_models -- -j16 -l16
+[0.608s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/namtruong/uuv_sim_home/build/dave_robot_models' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/dave_robot_models -- -j16 -l16
+[0.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/namtruong/uuv_sim_home/build/dave_robot_models': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/namtruong/uuv_sim_home/build/dave_robot_models
+[0.640s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dave_robot_models)
+[0.641s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_robot_models' for CMake module files
+[0.641s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/namtruong/uuv_sim_home/build/dave_robot_models' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/namtruong/uuv_sim_home/build/dave_robot_models
+[0.641s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_robot_models' for CMake config files
+[0.642s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave_robot_models', 'cmake_prefix_path')
+[0.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/hook/cmake_prefix_path.ps1'
+[0.643s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/hook/cmake_prefix_path.dsv'
+[0.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/hook/cmake_prefix_path.sh'
+[0.644s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_robot_models/lib'
+[0.644s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_robot_models/bin'
+[0.644s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_robot_models/lib/pkgconfig/dave_robot_models.pc'
+[0.644s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_robot_models/lib/python3.12/site-packages'
+[0.645s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_robot_models/bin'
+[0.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/package.ps1'
+[0.645s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/package.dsv'
+[0.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/package.sh'
+[0.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/package.bash'
+[0.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/package.zsh'
+[0.647s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/namtruong/uuv_sim_home/install/dave_robot_models/share/colcon-core/packages/dave_robot_models)
+[0.647s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dave_robot_models)
+[0.647s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_robot_models' for CMake module files
+[0.648s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_robot_models' for CMake config files
+[0.649s] Level 1:colcon.colcon_core.shell:create_environment_hook('dave_robot_models', 'cmake_prefix_path')
+[0.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/hook/cmake_prefix_path.ps1'
+[0.649s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/hook/cmake_prefix_path.dsv'
+[0.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/hook/cmake_prefix_path.sh'
+[0.650s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_robot_models/lib'
+[0.650s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_robot_models/bin'
+[0.650s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_robot_models/lib/pkgconfig/dave_robot_models.pc'
+[0.651s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_robot_models/lib/python3.12/site-packages'
+[0.651s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/dave_robot_models/bin'
+[0.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/package.ps1'
+[0.652s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/package.dsv'
+[0.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/package.sh'
+[0.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/package.bash'
+[0.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/dave_robot_models/share/dave_robot_models/package.zsh'
+[0.653s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/namtruong/uuv_sim_home/install/dave_robot_models/share/colcon-core/packages/dave_robot_models)
+[0.653s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/namtruong/uuv_sim_home/src/uuv_simu' with build type 'ament_python'
+[0.653s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_simu', 'ament_prefix_path')
+[0.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/hook/ament_prefix_path.ps1'
+[0.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/hook/ament_prefix_path.dsv'
+[0.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/hook/ament_prefix_path.sh'
+[0.655s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.655s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.849s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/namtruong/uuv_sim_home/src/uuv_simu'
+[0.850s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.850s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.375s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: install_headers, register, symlink_data, build_scripts, install, develop, check, bdist_dumb, compile_catalog, alias, bdist, init_catalog, build_ext, dist_info, build, bdist_egg, install_egg_info, clean, install_scripts, upload_docs, sdist, setopt, saveopts, install_lib, build_clib, update_catalog, easy_install, build_py, rotate, bdist_rpm, extract_messages, upload, editable_wheel, test, install_data, egg_info
+[1.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/namtruong/uuv_sim_home/src/uuv_simu': CMAKE_PREFIX_PATH=/home/namtruong/uuv_sim_home/install/dave_robot_models:/home/namtruong/uuv_sim_home/install/multibeam_sonar_system:/home/namtruong/uuv_sim_home/install/multibeam_sonar:/home/namtruong/uuv_sim_home/install/dave_worlds:/home/namtruong/uuv_sim_home/install/dave_gz_model_plugins:/home/namtruong/uuv_sim_home/install/dave_ros_gz_plugins:/home/namtruong/uuv_sim_home/install/dave_object_models:/home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo:/home/namtruong/uuv_sim_home/install/dave_gz_world_plugins:/home/namtruong/uuv_sim_home/install/dave_gz_sensor_plugins:/home/namtruong/uuv_sim_home/install/dave_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/namtruong/uuv_sim_home/build/uuv_simu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uuv_simu build --build-base /home/namtruong/uuv_sim_home/build/uuv_simu/build install --record /home/namtruong/uuv_sim_home/build/uuv_simu/install.log --install-scripts $base/lib/uuv_simu --single-version-externally-managed install_data
+[1.855s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/uuv_simu' for CMake module files
+[1.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/namtruong/uuv_sim_home/src/uuv_simu' returned '0': CMAKE_PREFIX_PATH=/home/namtruong/uuv_sim_home/install/dave_robot_models:/home/namtruong/uuv_sim_home/install/multibeam_sonar_system:/home/namtruong/uuv_sim_home/install/multibeam_sonar:/home/namtruong/uuv_sim_home/install/dave_worlds:/home/namtruong/uuv_sim_home/install/dave_gz_model_plugins:/home/namtruong/uuv_sim_home/install/dave_ros_gz_plugins:/home/namtruong/uuv_sim_home/install/dave_object_models:/home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo:/home/namtruong/uuv_sim_home/install/dave_gz_world_plugins:/home/namtruong/uuv_sim_home/install/dave_gz_sensor_plugins:/home/namtruong/uuv_sim_home/install/dave_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/namtruong/uuv_sim_home/build/uuv_simu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uuv_simu build --build-base /home/namtruong/uuv_sim_home/build/uuv_simu/build install --record /home/namtruong/uuv_sim_home/build/uuv_simu/install.log --install-scripts $base/lib/uuv_simu --single-version-externally-managed install_data
+[1.856s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/uuv_simu' for CMake config files
+[1.857s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/uuv_simu/lib'
+[1.857s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/uuv_simu/bin'
+[1.857s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/uuv_simu/lib/pkgconfig/uuv_simu.pc'
+[1.857s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages'
+[1.857s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_simu', 'pythonpath')
+[1.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/hook/pythonpath.ps1'
+[1.858s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/hook/pythonpath.dsv'
+[1.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/hook/pythonpath.sh'
+[1.859s] Level 1:colcon.colcon_core.environment:checking '/home/namtruong/uuv_sim_home/install/uuv_simu/bin'
+[1.859s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_simu)
+[1.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/package.ps1'
+[1.859s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/package.dsv'
+[1.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/package.sh'
+[1.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/package.bash'
+[1.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/namtruong/uuv_sim_home/install/uuv_simu/share/uuv_simu/package.zsh'
+[1.861s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/namtruong/uuv_sim_home/install/uuv_simu/share/colcon-core/packages/uuv_simu)
+[1.861s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.861s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.861s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.861s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.867s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.867s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.867s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.867s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.AccessDenied: Failed to open socket: Operation not permitted
+[1.867s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.867s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/namtruong/uuv_sim_home/install/local_setup.ps1'
+[1.868s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/namtruong/uuv_sim_home/install/_local_setup_util_ps1.py'
+[1.869s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/namtruong/uuv_sim_home/install/setup.ps1'
+[1.870s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/namtruong/uuv_sim_home/install/local_setup.sh'
+[1.871s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/namtruong/uuv_sim_home/install/_local_setup_util_sh.py'
+[1.871s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/namtruong/uuv_sim_home/install/setup.sh'
+[1.873s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/namtruong/uuv_sim_home/install/local_setup.bash'
+[1.873s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/namtruong/uuv_sim_home/install/setup.bash'
+[1.874s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/namtruong/uuv_sim_home/install/local_setup.zsh'
+[1.874s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/namtruong/uuv_sim_home/install/setup.zsh'

@@ -1,0 +1,302 @@
+[0.025s] Invoking command in '/home/namtruong/uuv_sim_home/build/multibeam_sonar': CMAKE_PREFIX_PATH=/home/namtruong/uuv_sim_home/install/dave_interfaces:/home/namtruong/uuv_sim_home/install/multibeam_sonar_system:/home/namtruong/uuv_sim_home/install/multibeam_sonar:/home/namtruong/uuv_sim_home/install/dave_worlds:/home/namtruong/uuv_sim_home/install/dave_gz_model_plugins:/home/namtruong/uuv_sim_home/install/dave_ros_gz_plugins:/home/namtruong/uuv_sim_home/install/dave_robot_models:/home/namtruong/uuv_sim_home/install/dave_object_models:/home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo:/home/namtruong/uuv_sim_home/install/dave_gz_world_plugins:/home/namtruong/uuv_sim_home/install/dave_gz_sensor_plugins:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/namtruong/uuv_sim_home/install/dave_interfaces/lib:/home/namtruong/uuv_sim_home/install/dave_ros_gz_plugins/lib:/home/namtruong/uuv_sim_home/install/dave_gz_world_plugins/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages:/home/namtruong/uuv_sim_home/build/uuv_simu:/home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/multibeam_sonar -- -j16 -l16
+[0.068s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.288s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.370s] -- Found Threads: TRUE  
+[1.890s] -- The CUDA compiler identification is NVIDIA 12.0.140
+[1.900s] -- Detecting CUDA compiler ABI info
+[2.895s] -- Detecting CUDA compiler ABI info - done
+[2.919s] -- Check for working CUDA compiler: /usr/bin/nvcc - skipped
+[2.935s] -- Detecting CUDA compile features
+[2.935s] -- Detecting CUDA compile features - done
+[2.965s] -- Found CUDA: /usr (found version "12.0") 
+[2.966s] -- CUDA found, enabling CUDA support.
+[2.972s] -- Looking for gz-sim8 -- found version 8.11.0
+[2.972s] -- Searching for dependencies of gz-sim8
+[2.972s] -- Looking for sdformat14 -- found version 14.9.0
+[2.972s] -- Searching for dependencies of sdformat14
+[2.978s] -- Checking for module 'tinyxml2'
+[2.996s] --   Found tinyxml2, version 10.0.0
+[3.033s] -- Looking for gz-math7 -- found version 7.6.0
+[3.033s] -- Searching for dependencies of gz-math7
+[3.033s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.033s] -- Searching for dependencies of gz-utils2
+[3.035s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.035s] -- Searching for dependencies of gz-utils2
+[3.035s] -- Searching for <gz-utils2> component [cli]
+[3.035s] -- Looking for gz-utils2-cli -- found version 2.2.1
+[3.035s] -- Searching for dependencies of gz-utils2-cli
+[3.036s] -- Looking for gz-plugin2 -- found version 2.0.4
+[3.037s] -- Searching for dependencies of gz-plugin2
+[3.037s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.037s] -- Searching for <gz-plugin2> component [loader]
+[3.038s] -- Looking for gz-plugin2-loader -- found version 2.0.4
+[3.038s] -- Searching for dependencies of gz-plugin2-loader
+[3.038s] -- Searching for <gz-plugin2> component [register]
+[3.039s] -- Looking for gz-plugin2-register -- found version 2.0.4
+[3.039s] -- Searching for dependencies of gz-plugin2-register
+[3.040s] -- Looking for gz-transport13 -- found version 13.5.0
+[3.040s] -- Searching for dependencies of gz-transport13
+[3.075s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[3.081s] -- Checking for module 'libzmq >= 4'
+[3.098s] --   Found libzmq, version 4.3.5
+[3.156s] -- Checking for module 'uuid'
+[3.174s] --   Found uuid, version 2.39.3
+[3.219s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.219s] -- Looking for gz-msgs10 -- found version 10.3.2
+[3.219s] -- Searching for dependencies of gz-msgs10
+[3.242s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.243s] -- Looking for gz-math7 -- found version 7.6.0
+[3.251s] -- Searching for <gz-transport13> component [log]
+[3.252s] -- Looking for gz-transport13-log -- found version 13.5.0
+[3.252s] -- Searching for dependencies of gz-transport13-log
+[3.252s] -- Searching for <gz-transport13> component [parameters]
+[3.252s] -- Looking for gz-transport13-parameters -- found version 13.5.0
+[3.253s] -- Searching for dependencies of gz-transport13-parameters
+[3.253s] -- Looking for gz-msgs10 -- found version 10.3.2
+[3.254s] -- Looking for gz-common5 -- found version 5.8.0
+[3.254s] -- Searching for dependencies of gz-common5
+[3.254s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.254s] -- Looking for dlfcn.h - found
+[3.254s] -- Looking for libdl - found
+[3.263s] -- Searching for <gz-common5> component [av]
+[3.263s] -- Looking for gz-common5-av -- found version 5.8.0
+[3.263s] -- Searching for dependencies of gz-common5-av
+[3.270s] -- Checking for module 'libswscale'
+[3.290s] --   Found libswscale, version 7.5.100
+[3.341s] -- Checking for module 'libavdevice >= 56.4.100'
+[3.361s] --   Found libavdevice, version 60.3.100
+[3.428s] -- Checking for module 'libavformat'
+[3.449s] --   Found libavformat, version 60.16.100
+[3.505s] -- Checking for module 'libavcodec'
+[3.527s] --   Found libavcodec, version 60.31.102
+[3.579s] -- Checking for module 'libavutil'
+[3.599s] --   Found libavutil, version 58.29.100
+[3.643s] -- Searching for <gz-common5> component [events]
+[3.643s] -- Looking for gz-common5-events -- found version 5.8.0
+[3.643s] -- Searching for dependencies of gz-common5-events
+[3.644s] -- Looking for gz-math7 -- found version 7.6.0
+[3.644s] -- Searching for <gz-common5> component [graphics]
+[3.645s] -- Looking for gz-common5-graphics -- found version 5.8.0
+[3.645s] -- Searching for dependencies of gz-common5-graphics
+[3.645s] -- Looking for gz-math7 -- found version 7.6.0
+[3.647s] -- Searching for <gz-common5> component [io]
+[3.648s] -- Looking for gz-common5-io -- found version 5.8.0
+[3.648s] -- Searching for dependencies of gz-common5-io
+[3.648s] -- Searching for <gz-common5> component [profiler]
+[3.649s] -- Looking for gz-common5-profiler -- found version 5.8.0
+[3.649s] -- Searching for dependencies of gz-common5-profiler
+[3.650s] -- Looking for gz-fuel_tools9 -- found version 9.1.1
+[3.650s] -- Searching for dependencies of gz-fuel_tools9
+[3.696s] -- Checking for module 'jsoncpp'
+[3.716s] --   Found jsoncpp, version 1.9.5
+[3.777s] -- Checking for module 'yaml-0.1'
+[3.796s] --   Found yaml-0.1, version 0.2.5
+[3.842s] -- Checking for module 'libzip'
+[3.861s] --   Found libzip, version 1.7.3
+[3.901s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.902s] -- Looking for gz-common5 -- found version 5.8.0
+[3.902s] -- Searching for dependencies of gz-common5
+[3.902s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.902s] -- Looking for dlfcn.h - found
+[3.902s] -- Looking for libdl - found
+[3.911s] -- Searching for <gz-common5> component [testing]
+[3.911s] -- Looking for gz-common5-testing -- found version 5.8.0
+[3.912s] -- Searching for dependencies of gz-common5-testing
+[3.913s] -- Looking for gz-math7 -- found version 7.6.0
+[3.913s] -- Looking for gz-msgs10 -- found version 10.3.2
+[3.914s] -- Looking for gz-gui8 -- found version 8.4.0
+[3.914s] -- Searching for dependencies of gz-gui8
+[3.943s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.943s] -- Looking for gz-math7 -- found version 7.6.0
+[3.943s] -- Looking for gz-common5 -- found version 5.8.0
+[3.944s] -- Looking for gz-plugin2 -- found version 2.0.4
+[3.944s] -- Looking for gz-transport13 -- found version 13.5.0
+[3.944s] -- Looking for gz-rendering8 -- found version 8.2.3
+[3.944s] -- Searching for dependencies of gz-rendering8
+[3.945s] -- Looking for gz-math7 -- found version 7.6.0
+[3.945s] -- Searching for dependencies of gz-math7
+[3.945s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.945s] -- Searching for <gz-math7> component [eigen3]
+[3.946s] -- Looking for gz-math7-eigen3 -- found version 7.6.0
+[3.946s] -- Searching for dependencies of gz-math7-eigen3
+[3.948s] -- Looking for gz-common5 -- found version 5.8.0
+[3.948s] -- Searching for dependencies of gz-common5
+[3.948s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.948s] -- Looking for dlfcn.h - found
+[3.948s] -- Looking for libdl - found
+[3.956s] -- Searching for <gz-common5> component [graphics]
+[3.956s] -- Searching for <gz-common5> component [events]
+[3.956s] -- Searching for <gz-common5> component [geospatial]
+[3.957s] -- Looking for gz-common5-geospatial -- found version 5.8.0
+[3.957s] -- Searching for dependencies of gz-common5-geospatial
+[3.957s] -- Looking for gz-math7 -- found version 7.6.0
+[3.958s] -- Looking for gz-common5 -- found version 5.8.0
+[3.959s] -- Looking for gz-plugin2 -- found version 2.0.4
+[3.959s] -- Searching for dependencies of gz-plugin2
+[3.959s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.959s] -- Searching for <gz-plugin2> component [all]
+[3.960s] -- Looking for all libraries of gz-plugin2 -- found version 2.0.4
+[3.960s] -- Looking for gz-plugin2 -- found version 2.0.4
+[3.961s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.964s] -- Looking for gz-msgs10 -- found version 10.3.2
+[3.980s] -- Looking for gz-physics7 -- found version 7.6.0
+[3.980s] -- Searching for dependencies of gz-physics7
+[3.980s] -- Looking for gz-common5 -- found version 5.8.0
+[3.981s] -- Looking for gz-math7 -- found version 7.6.0
+[3.981s] -- Looking for gz-plugin2 -- found version 2.0.4
+[3.981s] -- Looking for gz-utils2 -- found version 2.2.1
+[3.982s] -- Searching for <gz-physics7> component [heightmap]
+[3.983s] -- Looking for gz-physics7-heightmap -- found version 7.6.0
+[3.983s] -- Searching for dependencies of gz-physics7-heightmap
+[3.983s] -- Looking for gz-common5 -- found version 5.8.0
+[3.984s] -- Searching for <gz-physics7> component [mesh]
+[3.984s] -- Looking for gz-physics7-mesh -- found version 7.6.0
+[3.984s] -- Searching for dependencies of gz-physics7-mesh
+[3.984s] -- Looking for gz-common5 -- found version 5.8.0
+[3.985s] -- Searching for <gz-physics7> component [sdf]
+[3.985s] -- Looking for gz-physics7-sdf -- found version 7.6.0
+[3.985s] -- Searching for dependencies of gz-physics7-sdf
+[3.985s] -- Looking for sdformat14 -- found version 14.9.0
+[3.986s] -- Looking for gz-sensors8 -- found version 8.2.2
+[3.986s] -- Searching for dependencies of gz-sensors8
+[4.008s] -- Looking for gz-math7 -- found version 7.6.0
+[4.008s] -- Looking for gz-common5 -- found version 5.8.0
+[4.009s] -- Looking for gz-transport13 -- found version 13.5.0
+[4.009s] -- Looking for gz-rendering8 -- found version 8.2.3
+[4.009s] -- Looking for gz-msgs10 -- found version 10.3.2
+[4.010s] -- Looking for sdformat14 -- found version 14.9.0
+[4.010s] -- Searching for <gz-sensors8> component [air_pressure]
+[4.010s] -- Looking for gz-sensors8-air_pressure -- found version 8.2.2
+[4.011s] -- Searching for dependencies of gz-sensors8-air_pressure
+[4.011s] -- Searching for <gz-sensors8> component [air_speed]
+[4.011s] -- Looking for gz-sensors8-air_speed -- found version 8.2.2
+[4.012s] -- Searching for dependencies of gz-sensors8-air_speed
+[4.012s] -- Searching for <gz-sensors8> component [altimeter]
+[4.013s] -- Looking for gz-sensors8-altimeter -- found version 8.2.2
+[4.013s] -- Searching for dependencies of gz-sensors8-altimeter
+[4.013s] -- Searching for <gz-sensors8> component [imu]
+[4.014s] -- Looking for gz-sensors8-imu -- found version 8.2.2
+[4.014s] -- Searching for dependencies of gz-sensors8-imu
+[4.014s] -- Searching for <gz-sensors8> component [force_torque]
+[4.015s] -- Looking for gz-sensors8-force_torque -- found version 8.2.2
+[4.015s] -- Searching for dependencies of gz-sensors8-force_torque
+[4.015s] -- Searching for <gz-sensors8> component [logical_camera]
+[4.016s] -- Looking for gz-sensors8-logical_camera -- found version 8.2.2
+[4.016s] -- Searching for dependencies of gz-sensors8-logical_camera
+[4.016s] -- Searching for <gz-sensors8> component [magnetometer]
+[4.017s] -- Looking for gz-sensors8-magnetometer -- found version 8.2.2
+[4.017s] -- Searching for dependencies of gz-sensors8-magnetometer
+[4.017s] -- Searching for <gz-sensors8> component [navsat]
+[4.018s] -- Looking for gz-sensors8-navsat -- found version 8.2.2
+[4.018s] -- Searching for dependencies of gz-sensors8-navsat
+[4.018s] -- Searching for <gz-sensors8> component [dvl]
+[4.019s] -- Looking for gz-sensors8-dvl -- found version 8.2.2
+[4.019s] -- Searching for dependencies of gz-sensors8-dvl
+[4.019s] -- Looking for gz-sensors8 -- found version 8.2.2
+[4.019s] -- Searching for dependencies of gz-sensors8
+[4.042s] -- Looking for gz-math7 -- found version 7.6.0
+[4.042s] -- Looking for gz-common5 -- found version 5.8.0
+[4.043s] -- Looking for gz-transport13 -- found version 13.5.0
+[4.043s] -- Looking for gz-rendering8 -- found version 8.2.3
+[4.044s] -- Looking for gz-msgs10 -- found version 10.3.2
+[4.044s] -- Looking for sdformat14 -- found version 14.9.0
+[4.044s] -- Searching for <gz-sensors8> component [rendering]
+[4.044s] -- Looking for gz-sensors8-rendering -- found version 8.2.2
+[4.045s] -- Searching for dependencies of gz-sensors8-rendering
+[4.046s] -- Searching for <gz-sensors8> component [rendering]
+[4.046s] -- Searching for <gz-sensors8> component [lidar]
+[4.046s] -- Looking for gz-sensors8-lidar -- found version 8.2.2
+[4.046s] -- Searching for dependencies of gz-sensors8-lidar
+[4.047s] -- Looking for gz-sensors8 -- found version 8.2.2
+[4.047s] -- Searching for <gz-sensors8> component [gpu_lidar]
+[4.048s] -- Looking for gz-sensors8-gpu_lidar -- found version 8.2.2
+[4.048s] -- Searching for dependencies of gz-sensors8-gpu_lidar
+[4.048s] -- Looking for gz-sensors8 -- found version 8.2.2
+[4.049s] -- Searching for <gz-sensors8> component [camera]
+[4.049s] -- Looking for gz-sensors8-camera -- found version 8.2.2
+[4.049s] -- Searching for dependencies of gz-sensors8-camera
+[4.050s] -- Looking for gz-sensors8 -- found version 8.2.2
+[4.050s] -- Searching for <gz-sensors8> component [boundingbox_camera]
+[4.051s] -- Looking for gz-sensors8-boundingbox_camera -- found version 8.2.2
+[4.051s] -- Searching for dependencies of gz-sensors8-boundingbox_camera
+[4.052s] -- Searching for <gz-sensors8> component [segmentation_camera]
+[4.052s] -- Looking for gz-sensors8-segmentation_camera -- found version 8.2.2
+[4.052s] -- Searching for dependencies of gz-sensors8-segmentation_camera
+[4.053s] -- Searching for <gz-sensors8> component [depth_camera]
+[4.053s] -- Looking for gz-sensors8-depth_camera -- found version 8.2.2
+[4.053s] -- Searching for dependencies of gz-sensors8-depth_camera
+[4.053s] -- Looking for gz-sensors8 -- found version 8.2.2
+[4.054s] -- Searching for <gz-sensors8> component [rgbd_camera]
+[4.054s] -- Looking for gz-sensors8-rgbd_camera -- found version 8.2.2
+[4.054s] -- Searching for dependencies of gz-sensors8-rgbd_camera
+[4.055s] -- Looking for gz-sensors8 -- found version 8.2.2
+[4.055s] -- Searching for <gz-sensors8> component [thermal_camera]
+[4.056s] -- Looking for gz-sensors8-thermal_camera -- found version 8.2.2
+[4.056s] -- Searching for dependencies of gz-sensors8-thermal_camera
+[4.056s] -- Looking for gz-sensors8 -- found version 8.2.2
+[4.057s] -- Searching for <gz-sensors8> component [wide_angle_camera]
+[4.057s] -- Looking for gz-sensors8-wide_angle_camera -- found version 8.2.2
+[4.057s] -- Searching for dependencies of gz-sensors8-wide_angle_camera
+[4.058s] -- Looking for gz-rendering8 -- found version 8.2.3
+[4.059s] -- Looking for gz-math7 -- found version 7.6.0
+[4.059s] -- Looking for gz-utils2 -- found version 2.2.1
+[4.082s] -- Looking for gz-sensors8 -- found version 8.2.2
+[4.082s] -- Looking for gz-rendering8 -- found version 8.2.3
+[4.082s] -- Searching for dependencies of gz-rendering8
+[4.082s] -- Looking for gz-math7 -- found version 7.6.0
+[4.083s] -- Looking for gz-common5 -- found version 5.8.0
+[4.083s] -- Looking for gz-plugin2 -- found version 2.0.4
+[4.084s] -- Looking for gz-utils2 -- found version 2.2.1
+[4.086s] -- Searching for <gz-rendering8> component [ogre]
+[4.086s] -- Looking for gz-rendering8-ogre -- found version 8.2.3
+[4.086s] -- Searching for dependencies of gz-rendering8-ogre
+[4.090s] -- Searching for <gz-rendering8> component [ogre2]
+[4.090s] -- Looking for gz-rendering8-ogre2 -- found version 8.2.3
+[4.090s] -- Searching for dependencies of gz-rendering8-ogre2
+[4.093s] -- Looking for gz-transport13 -- found version 13.5.0
+[4.093s] -- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+[4.116s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.125s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[4.136s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.150s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.210s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.211s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[4.281s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.350s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[4.405s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[4.416s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[4.425s] -- Found marine_acoustic_msgs: 2.1.0 (/opt/ros/jazzy/share/marine_acoustic_msgs/cmake)
+[4.443s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[4.540s] -- Configuring done (4.5s)
+[4.586s] -- Generating done (0.0s)
+[4.593s] -- Build files have been written to: /home/namtruong/uuv_sim_home/build/multibeam_sonar
+[4.652s] [ 50%] [32mBuilding CXX object CMakeFiles/multibeam_sonar.dir/MultibeamSonarSensor.cc.o[0m
+[4.652s] [ 50%] [32mBuilding CUDA object CMakeFiles/multibeam_sonar.dir/sonar_calculation_cuda.cu.o[0m
+[16.533s] [ 75%] [32m[1mLinking CUDA device code CMakeFiles/multibeam_sonar.dir/cmake_device_link.o[0m
+[16.562s] nvlink warning : Skipping incompatible '/usr/lib/x86_64-linux-gnu/libdl.a' when searching for -ldl
+[16.562s] nvlink warning : Skipping incompatible '/usr/lib/x86_64-linux-gnu/libpthread.a' when searching for -lpthread
+[16.564s] nvlink warning : Skipping incompatible '/usr/lib/x86_64-linux-gnu/librt.a' when searching for -lrt
+[16.620s] [100%] [32m[1mLinking CXX shared library libmultibeam_sonar.so[0m
+[17.401s] [100%] Built target multibeam_sonar
+[17.415s] Invoked command in '/home/namtruong/uuv_sim_home/build/multibeam_sonar' returned '0': CMAKE_PREFIX_PATH=/home/namtruong/uuv_sim_home/install/dave_interfaces:/home/namtruong/uuv_sim_home/install/multibeam_sonar_system:/home/namtruong/uuv_sim_home/install/multibeam_sonar:/home/namtruong/uuv_sim_home/install/dave_worlds:/home/namtruong/uuv_sim_home/install/dave_gz_model_plugins:/home/namtruong/uuv_sim_home/install/dave_ros_gz_plugins:/home/namtruong/uuv_sim_home/install/dave_robot_models:/home/namtruong/uuv_sim_home/install/dave_object_models:/home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo:/home/namtruong/uuv_sim_home/install/dave_gz_world_plugins:/home/namtruong/uuv_sim_home/install/dave_gz_sensor_plugins:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/namtruong/uuv_sim_home/install/dave_interfaces/lib:/home/namtruong/uuv_sim_home/install/dave_ros_gz_plugins/lib:/home/namtruong/uuv_sim_home/install/dave_gz_world_plugins/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages:/home/namtruong/uuv_sim_home/build/uuv_simu:/home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/multibeam_sonar -- -j16 -l16
+[17.416s] Invoking command in '/home/namtruong/uuv_sim_home/build/multibeam_sonar': CMAKE_PREFIX_PATH=/home/namtruong/uuv_sim_home/install/dave_interfaces:/home/namtruong/uuv_sim_home/install/multibeam_sonar_system:/home/namtruong/uuv_sim_home/install/multibeam_sonar:/home/namtruong/uuv_sim_home/install/dave_worlds:/home/namtruong/uuv_sim_home/install/dave_gz_model_plugins:/home/namtruong/uuv_sim_home/install/dave_ros_gz_plugins:/home/namtruong/uuv_sim_home/install/dave_robot_models:/home/namtruong/uuv_sim_home/install/dave_object_models:/home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo:/home/namtruong/uuv_sim_home/install/dave_gz_world_plugins:/home/namtruong/uuv_sim_home/install/dave_gz_sensor_plugins:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/namtruong/uuv_sim_home/install/dave_interfaces/lib:/home/namtruong/uuv_sim_home/install/dave_ros_gz_plugins/lib:/home/namtruong/uuv_sim_home/install/dave_gz_world_plugins/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages:/home/namtruong/uuv_sim_home/build/uuv_simu:/home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/namtruong/uuv_sim_home/build/multibeam_sonar
+[17.425s] -- Install configuration: ""
+[17.426s] -- Execute custom install script
+[17.426s] -- Symlinking: /home/namtruong/uuv_sim_home/install/multibeam_sonar/lib/multibeam_sonar/libmultibeam_sonar.so
+[17.437s] -- Symlinking: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/multibeam_sonar/environment/multibeam_sonar.dsv
+[17.448s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/ament_index/resource_index/package_run_dependencies/multibeam_sonar
+[17.448s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/ament_index/resource_index/parent_prefix_path/multibeam_sonar
+[17.448s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/multibeam_sonar/environment/ament_prefix_path.sh
+[17.448s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/multibeam_sonar/environment/ament_prefix_path.dsv
+[17.449s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/multibeam_sonar/environment/path.sh
+[17.449s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/multibeam_sonar/environment/path.dsv
+[17.449s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/multibeam_sonar/local_setup.bash
+[17.449s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/multibeam_sonar/local_setup.sh
+[17.449s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/multibeam_sonar/local_setup.zsh
+[17.449s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/multibeam_sonar/local_setup.dsv
+[17.449s] -- Symlinking: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/multibeam_sonar/package.dsv
+[17.461s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/ament_index/resource_index/packages/multibeam_sonar
+[17.461s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/multibeam_sonar/cmake/multibeam_sonarConfig.cmake
+[17.461s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/multibeam_sonar/cmake/multibeam_sonarConfig-version.cmake
+[17.461s] -- Up-to-date symlink: /home/namtruong/uuv_sim_home/install/multibeam_sonar/share/multibeam_sonar/package.xml
+[17.464s] Invoked command in '/home/namtruong/uuv_sim_home/build/multibeam_sonar' returned '0': CMAKE_PREFIX_PATH=/home/namtruong/uuv_sim_home/install/dave_interfaces:/home/namtruong/uuv_sim_home/install/multibeam_sonar_system:/home/namtruong/uuv_sim_home/install/multibeam_sonar:/home/namtruong/uuv_sim_home/install/dave_worlds:/home/namtruong/uuv_sim_home/install/dave_gz_model_plugins:/home/namtruong/uuv_sim_home/install/dave_ros_gz_plugins:/home/namtruong/uuv_sim_home/install/dave_robot_models:/home/namtruong/uuv_sim_home/install/dave_object_models:/home/namtruong/uuv_sim_home/install/dave_multibeam_sonar_demo:/home/namtruong/uuv_sim_home/install/dave_gz_world_plugins:/home/namtruong/uuv_sim_home/install/dave_gz_sensor_plugins:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/namtruong/uuv_sim_home/install/dave_interfaces/lib:/home/namtruong/uuv_sim_home/install/dave_ros_gz_plugins/lib:/home/namtruong/uuv_sim_home/install/dave_gz_world_plugins/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/namtruong/uuv_sim_home/install/dave_interfaces/lib/python3.12/site-packages:/home/namtruong/uuv_sim_home/build/uuv_simu:/home/namtruong/uuv_sim_home/install/uuv_simu/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/namtruong/uuv_sim_home/build/multibeam_sonar

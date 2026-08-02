@@ -2,6 +2,9 @@
 // with input from dave_interfaces:srv/GetOriginSphericalCoord.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "dave_interfaces/srv/get_origin_spherical_coord.hpp"
+
+
 #ifndef DAVE_INTERFACES__SRV__DETAIL__GET_ORIGIN_SPHERICAL_COORD__BUILDER_HPP_
 #define DAVE_INTERFACES__SRV__DETAIL__GET_ORIGIN_SPHERICAL_COORD__BUILDER_HPP_
 
@@ -103,6 +106,80 @@ inline
 auto build<::dave_interfaces::srv::GetOriginSphericalCoord_Response>()
 {
   return dave_interfaces::srv::builder::Init_GetOriginSphericalCoord_Response_latitude_deg();
+}
+
+}  // namespace dave_interfaces
+
+
+namespace dave_interfaces
+{
+
+namespace srv
+{
+
+namespace builder
+{
+
+class Init_GetOriginSphericalCoord_Event_response
+{
+public:
+  explicit Init_GetOriginSphericalCoord_Event_response(::dave_interfaces::srv::GetOriginSphericalCoord_Event & msg)
+  : msg_(msg)
+  {}
+  ::dave_interfaces::srv::GetOriginSphericalCoord_Event response(::dave_interfaces::srv::GetOriginSphericalCoord_Event::_response_type arg)
+  {
+    msg_.response = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::dave_interfaces::srv::GetOriginSphericalCoord_Event msg_;
+};
+
+class Init_GetOriginSphericalCoord_Event_request
+{
+public:
+  explicit Init_GetOriginSphericalCoord_Event_request(::dave_interfaces::srv::GetOriginSphericalCoord_Event & msg)
+  : msg_(msg)
+  {}
+  Init_GetOriginSphericalCoord_Event_response request(::dave_interfaces::srv::GetOriginSphericalCoord_Event::_request_type arg)
+  {
+    msg_.request = std::move(arg);
+    return Init_GetOriginSphericalCoord_Event_response(msg_);
+  }
+
+private:
+  ::dave_interfaces::srv::GetOriginSphericalCoord_Event msg_;
+};
+
+class Init_GetOriginSphericalCoord_Event_info
+{
+public:
+  Init_GetOriginSphericalCoord_Event_info()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_GetOriginSphericalCoord_Event_request info(::dave_interfaces::srv::GetOriginSphericalCoord_Event::_info_type arg)
+  {
+    msg_.info = std::move(arg);
+    return Init_GetOriginSphericalCoord_Event_request(msg_);
+  }
+
+private:
+  ::dave_interfaces::srv::GetOriginSphericalCoord_Event msg_;
+};
+
+}  // namespace builder
+
+}  // namespace srv
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::dave_interfaces::srv::GetOriginSphericalCoord_Event>()
+{
+  return dave_interfaces::srv::builder::Init_GetOriginSphericalCoord_Event_info();
 }
 
 }  // namespace dave_interfaces

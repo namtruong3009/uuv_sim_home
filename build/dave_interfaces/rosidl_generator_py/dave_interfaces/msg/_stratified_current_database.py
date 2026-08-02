@@ -2,6 +2,13 @@
 # with input from dave_interfaces:msg/StratifiedCurrentDatabase.idl
 # generated code does not contain a copyright notice
 
+# This is being done at the module level and not on the instance level to avoid looking
+# for the same variable multiple times on each instance. This variable is not supposed to
+# change during runtime so it makes sense to only look for it once.
+from os import getenv
+
+ros_python_check_fields = getenv('ROS_PYTHON_CHECK_FIELDS', default='')
+
 
 # Import statements for member types
 
@@ -95,6 +102,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
         '_world_start_time_day',
         '_world_start_time_hour',
         '_world_start_time_minute',
+        '_check_fields',
     ]
 
     _fields_and_field_types = {
@@ -125,6 +133,8 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
         'world_start_time_minute': 'int16',
     }
 
+    # This attribute is used to store an rosidl_parser.definition variable
+    # related to the data type of each of the components the message.
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Vector3')),  # noqa: E501
@@ -154,9 +164,14 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
     )
 
     def __init__(self, **kwargs):
-        assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
-            'Invalid arguments passed to constructor: %s' % \
-            ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        if 'check_fields' in kwargs:
+            self._check_fields = kwargs['check_fields']
+        else:
+            self._check_fields = ros_python_check_fields == '1'
+        if self._check_fields:
+            assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
+                'Invalid arguments passed to constructor: %s' % \
+                ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.depths = array.array('f', kwargs.get('depths', []))
         self.velocities = kwargs.get('velocities', [])
         self.time_gmt_year = array.array('h', kwargs.get('time_gmt_year', []))
@@ -188,7 +203,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
         typename.pop()
         typename.append(self.__class__.__name__)
         args = []
-        for s, t in zip(self.__slots__, self.SLOT_TYPES):
+        for s, t in zip(self.get_fields_and_field_types().keys(), self.SLOT_TYPES):
             field = getattr(self, s)
             fieldstr = repr(field)
             # We use Python array type for fields that can be directly stored
@@ -202,11 +217,12 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
                 if len(field) == 0:
                     fieldstr = '[]'
                 else:
-                    assert fieldstr.startswith('array(')
+                    if self._check_fields:
+                        assert fieldstr.startswith('array(')
                     prefix = "array('X', "
                     suffix = ')'
                     fieldstr = fieldstr[len(prefix):-len(suffix)]
-            args.append(s[1:] + '=' + fieldstr)
+            args.append(s + '=' + fieldstr)
         return '%s(%s)' % ('.'.join(typename), ', '.join(args))
 
     def __eq__(self, other):
@@ -276,12 +292,12 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @depths.setter
     def depths(self, value):
-        if isinstance(value, array.array):
-            assert value.typecode == 'f', \
-                "The 'depths' array.array() must have the type code of 'f'"
-            self._depths = value
-            return
-        if __debug__:
+        if self._check_fields:
+            if isinstance(value, array.array):
+                assert value.typecode == 'f', \
+                    "The 'depths' array.array() must have the type code of 'f'"
+                self._depths = value
+                return
             from collections.abc import Sequence
             from collections.abc import Set
             from collections import UserList
@@ -304,7 +320,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @velocities.setter
     def velocities(self, value):
-        if __debug__:
+        if self._check_fields:
             from geometry_msgs.msg import Vector3
             from collections.abc import Sequence
             from collections.abc import Set
@@ -328,12 +344,12 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @time_gmt_year.setter
     def time_gmt_year(self, value):
-        if isinstance(value, array.array):
-            assert value.typecode == 'h', \
-                "The 'time_gmt_year' array.array() must have the type code of 'h'"
-            self._time_gmt_year = value
-            return
-        if __debug__:
+        if self._check_fields:
+            if isinstance(value, array.array):
+                assert value.typecode == 'h', \
+                    "The 'time_gmt_year' array.array() must have the type code of 'h'"
+                self._time_gmt_year = value
+                return
             from collections.abc import Sequence
             from collections.abc import Set
             from collections import UserList
@@ -356,12 +372,12 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @time_gmt_month.setter
     def time_gmt_month(self, value):
-        if isinstance(value, array.array):
-            assert value.typecode == 'h', \
-                "The 'time_gmt_month' array.array() must have the type code of 'h'"
-            self._time_gmt_month = value
-            return
-        if __debug__:
+        if self._check_fields:
+            if isinstance(value, array.array):
+                assert value.typecode == 'h', \
+                    "The 'time_gmt_month' array.array() must have the type code of 'h'"
+                self._time_gmt_month = value
+                return
             from collections.abc import Sequence
             from collections.abc import Set
             from collections import UserList
@@ -384,12 +400,12 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @time_gmt_day.setter
     def time_gmt_day(self, value):
-        if isinstance(value, array.array):
-            assert value.typecode == 'h', \
-                "The 'time_gmt_day' array.array() must have the type code of 'h'"
-            self._time_gmt_day = value
-            return
-        if __debug__:
+        if self._check_fields:
+            if isinstance(value, array.array):
+                assert value.typecode == 'h', \
+                    "The 'time_gmt_day' array.array() must have the type code of 'h'"
+                self._time_gmt_day = value
+                return
             from collections.abc import Sequence
             from collections.abc import Set
             from collections import UserList
@@ -412,12 +428,12 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @time_gmt_hour.setter
     def time_gmt_hour(self, value):
-        if isinstance(value, array.array):
-            assert value.typecode == 'h', \
-                "The 'time_gmt_hour' array.array() must have the type code of 'h'"
-            self._time_gmt_hour = value
-            return
-        if __debug__:
+        if self._check_fields:
+            if isinstance(value, array.array):
+                assert value.typecode == 'h', \
+                    "The 'time_gmt_hour' array.array() must have the type code of 'h'"
+                self._time_gmt_hour = value
+                return
             from collections.abc import Sequence
             from collections.abc import Set
             from collections import UserList
@@ -440,12 +456,12 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @time_gmt_minute.setter
     def time_gmt_minute(self, value):
-        if isinstance(value, array.array):
-            assert value.typecode == 'h', \
-                "The 'time_gmt_minute' array.array() must have the type code of 'h'"
-            self._time_gmt_minute = value
-            return
-        if __debug__:
+        if self._check_fields:
+            if isinstance(value, array.array):
+                assert value.typecode == 'h', \
+                    "The 'time_gmt_minute' array.array() must have the type code of 'h'"
+                self._time_gmt_minute = value
+                return
             from collections.abc import Sequence
             from collections.abc import Set
             from collections import UserList
@@ -468,12 +484,12 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @tidevelocities.setter
     def tidevelocities(self, value):
-        if isinstance(value, array.array):
-            assert value.typecode == 'f', \
-                "The 'tidevelocities' array.array() must have the type code of 'f'"
-            self._tidevelocities = value
-            return
-        if __debug__:
+        if self._check_fields:
+            if isinstance(value, array.array):
+                assert value.typecode == 'f', \
+                    "The 'tidevelocities' array.array() must have the type code of 'f'"
+                self._tidevelocities = value
+                return
             from collections.abc import Sequence
             from collections.abc import Set
             from collections import UserList
@@ -496,7 +512,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @tideconstituents.setter
     def tideconstituents(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, bool), \
                 "The 'tideconstituents' field must be of type 'bool'"
@@ -509,7 +525,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @m2_amp.setter
     def m2_amp(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, float), \
                 "The 'm2_amp' field must be of type 'float'"
@@ -524,7 +540,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @m2_phase.setter
     def m2_phase(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, float), \
                 "The 'm2_phase' field must be of type 'float'"
@@ -539,7 +555,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @m2_speed.setter
     def m2_speed(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, float), \
                 "The 'm2_speed' field must be of type 'float'"
@@ -554,7 +570,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @s2_amp.setter
     def s2_amp(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, float), \
                 "The 's2_amp' field must be of type 'float'"
@@ -569,7 +585,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @s2_phase.setter
     def s2_phase(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, float), \
                 "The 's2_phase' field must be of type 'float'"
@@ -584,7 +600,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @s2_speed.setter
     def s2_speed(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, float), \
                 "The 's2_speed' field must be of type 'float'"
@@ -599,7 +615,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @n2_amp.setter
     def n2_amp(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, float), \
                 "The 'n2_amp' field must be of type 'float'"
@@ -614,7 +630,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @n2_phase.setter
     def n2_phase(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, float), \
                 "The 'n2_phase' field must be of type 'float'"
@@ -629,7 +645,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @n2_speed.setter
     def n2_speed(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, float), \
                 "The 'n2_speed' field must be of type 'float'"
@@ -644,7 +660,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @ebb_direction.setter
     def ebb_direction(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, float), \
                 "The 'ebb_direction' field must be of type 'float'"
@@ -659,7 +675,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @flood_direction.setter
     def flood_direction(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, float), \
                 "The 'flood_direction' field must be of type 'float'"
@@ -674,7 +690,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @world_start_time_year.setter
     def world_start_time_year(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, int), \
                 "The 'world_start_time_year' field must be of type 'int'"
@@ -689,7 +705,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @world_start_time_month.setter
     def world_start_time_month(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, int), \
                 "The 'world_start_time_month' field must be of type 'int'"
@@ -704,7 +720,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @world_start_time_day.setter
     def world_start_time_day(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, int), \
                 "The 'world_start_time_day' field must be of type 'int'"
@@ -719,7 +735,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @world_start_time_hour.setter
     def world_start_time_hour(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, int), \
                 "The 'world_start_time_hour' field must be of type 'int'"
@@ -734,7 +750,7 @@ class StratifiedCurrentDatabase(metaclass=Metaclass_StratifiedCurrentDatabase):
 
     @world_start_time_minute.setter
     def world_start_time_minute(self, value):
-        if __debug__:
+        if self._check_fields:
             assert \
                 isinstance(value, int), \
                 "The 'world_start_time_minute' field must be of type 'int'"

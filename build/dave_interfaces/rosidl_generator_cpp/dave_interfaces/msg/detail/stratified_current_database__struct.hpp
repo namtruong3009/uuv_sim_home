@@ -2,6 +2,9 @@
 // with input from dave_interfaces:msg/StratifiedCurrentDatabase.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "dave_interfaces/msg/stratified_current_database.hpp"
+
+
 #ifndef DAVE_INTERFACES__MSG__DETAIL__STRATIFIED_CURRENT_DATABASE__STRUCT_HPP_
 #define DAVE_INTERFACES__MSG__DETAIL__STRATIFIED_CURRENT_DATABASE__STRUCT_HPP_
 

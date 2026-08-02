@@ -2,6 +2,9 @@
 // with input from dave_interfaces:msg/DVL.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "dave_interfaces/msg/dvl.h"
+
+
 #ifndef DAVE_INTERFACES__MSG__DETAIL__DVL__TYPE_SUPPORT_H_
 #define DAVE_INTERFACES__MSG__DETAIL__DVL__TYPE_SUPPORT_H_
 
@@ -24,7 +27,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   dave_interfaces,
   msg,
   DVL
-)();
+)(void);
 
 #ifdef __cplusplus
 }

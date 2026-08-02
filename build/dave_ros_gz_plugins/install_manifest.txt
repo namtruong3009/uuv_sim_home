@@ -1,0 +1,4 @@
+/home/namtruong/uuv_sim_home/install/dave_ros_gz_plugins/lib/libSphericalCoords.so
+/home/namtruong/uuv_sim_home/install/dave_ros_gz_plugins/lib/libOceanCurrentPlugin.so
+/home/namtruong/uuv_sim_home/install/dave_ros_gz_plugins/share/dave_ros_gz_plugins/cmake/export_dave_ros_gz_pluginsExport.cmake
+/home/namtruong/uuv_sim_home/install/dave_ros_gz_plugins/share/dave_ros_gz_plugins/cmake/export_dave_ros_gz_pluginsExport-noconfig.cmake

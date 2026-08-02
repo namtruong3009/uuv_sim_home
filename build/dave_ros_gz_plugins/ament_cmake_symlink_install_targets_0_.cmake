@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/namtruong/uuv_sim_home/build/dave_ros_gz_plugins/libSphericalCoords.so" "/home/namtruong/uuv_sim_home/build/dave_ros_gz_plugins/libDVLBridge.so" "TARGETS" "SphericalCoords" "DVLBridge" "DESTINATION" "lib/dave_ros_gz_plugins")

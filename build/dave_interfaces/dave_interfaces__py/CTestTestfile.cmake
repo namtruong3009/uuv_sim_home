@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/namtruong/uuv_sim/build/dave_interfaces/dave_interfaces__py
-# Build directory: /home/namtruong/uuv_sim/build/dave_interfaces/dave_interfaces__py
+# Source directory: /home/namtruong/uuv_sim_home/build/dave_interfaces/dave_interfaces__py
+# Build directory: /home/namtruong/uuv_sim_home/build/dave_interfaces/dave_interfaces__py
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

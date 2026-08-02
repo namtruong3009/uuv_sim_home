@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/namtruong/uuv_sim_home/build/multibeam_sonar_system/libmultibeam_sonar_system.so" "TARGETS" "multibeam_sonar_system" "DESTINATION" "lib/multibeam_sonar_system")

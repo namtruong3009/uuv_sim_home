@@ -1,0 +1,65 @@
+[0.013s] Invoking command in '/home/namtruong/uuv_sim_home/build/dave_worlds': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/namtruong/uuv_sim_home/src/dave_worlds -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/namtruong/uuv_sim_home/install/dave_worlds
+[0.066s] -- The C compiler identification is GNU 13.3.0
+[0.122s] -- The CXX compiler identification is GNU 13.3.0
+[0.137s] -- Detecting C compiler ABI info
+[0.220s] -- Detecting C compiler ABI info - done
+[0.233s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.233s] -- Detecting C compile features
+[0.233s] -- Detecting C compile features - done
+[0.242s] -- Detecting CXX compiler ABI info
+[0.343s] -- Detecting CXX compiler ABI info - done
+[0.352s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.352s] -- Detecting CXX compile features
+[0.353s] -- Detecting CXX compile features - done
+[0.357s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.514s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.590s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.728s] -- Configuring done (0.7s)
+[0.732s] -- Generating done (0.0s)
+[0.734s] -- Build files have been written to: /home/namtruong/uuv_sim_home/build/dave_worlds
+[0.739s] Invoked command in '/home/namtruong/uuv_sim_home/build/dave_worlds' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/namtruong/uuv_sim_home/src/dave_worlds -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/namtruong/uuv_sim_home/install/dave_worlds
+[0.741s] Invoking command in '/home/namtruong/uuv_sim_home/build/dave_worlds': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/dave_worlds -- -j16 -l16
+[0.779s] Invoked command in '/home/namtruong/uuv_sim_home/build/dave_worlds' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/dave_worlds -- -j16 -l16
+[0.780s] Invoking command in '/home/namtruong/uuv_sim_home/build/dave_worlds': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/namtruong/uuv_sim_home/build/dave_worlds
+[0.787s] -- Install configuration: ""
+[0.788s] -- Execute custom install script
+[0.788s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/ACT1951_1_Annual_2021.csv
+[0.797s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/camera_tutorial.world
+[0.805s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/dave_Santorini.world
+[0.814s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/dave_bimanual_example.world
+[0.824s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/dave_electrical_mating.world
+[0.834s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/dave_graded_seabed.world
+[0.844s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/dave_integrated.world
+[0.854s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/dave_multibeam_sonar.world
+[0.864s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/dave_ocean_models.world
+[0.873s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/dave_ocean_waves.world
+[0.883s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/dave_ocean_waves_mossy_ground.world
+[0.894s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/dave_ocean_waves_sonar.world
+[0.903s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/dave_ocean_waves_sonar_integrated.world
+[0.912s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/dave_ocean_waves_transient_current.world
+[0.922s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/dave_plug_and_socket.world
+[0.932s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/dvl_world.world
+[0.942s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/new_dvl.world
+[0.951s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/ocean_current_plugin.world
+[0.960s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/transientOceanCurrentDatabase.csv
+[0.970s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/worlds/usbl_tutorial.world
+[0.981s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/media/materials/textures/dirt_diffusespecular.png
+[0.993s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/media/materials/textures/flat_normal.png
+[1.003s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/media/meshes/Santorini_heightmap.tif
+[1.016s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/environment/dave_worlds.dsv
+[1.027s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/ament_index/resource_index/package_run_dependencies/dave_worlds
+[1.040s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/ament_index/resource_index/parent_prefix_path/dave_worlds
+[1.049s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/environment/ament_prefix_path.sh
+[1.059s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/environment/ament_prefix_path.dsv
+[1.072s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/environment/path.sh
+[1.083s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/environment/path.dsv
+[1.094s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/local_setup.bash
+[1.103s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/local_setup.sh
+[1.114s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/local_setup.zsh
+[1.124s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/local_setup.dsv
+[1.134s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/package.dsv
+[1.143s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/ament_index/resource_index/packages/dave_worlds
+[1.153s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/cmake/dave_worldsConfig.cmake
+[1.162s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/cmake/dave_worldsConfig-version.cmake
+[1.172s] -- Symlinking: /home/namtruong/uuv_sim_home/install/dave_worlds/share/dave_worlds/package.xml
+[1.184s] Invoked command in '/home/namtruong/uuv_sim_home/build/dave_worlds' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/namtruong/uuv_sim_home/install/uuv_simu:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/namtruong/uuv_sim_home/build/dave_worlds

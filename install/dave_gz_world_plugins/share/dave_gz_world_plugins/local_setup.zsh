@@ -1,0 +1,1 @@
+/home/namtruong/uuv_sim_home/build/dave_gz_world_plugins/ament_cmake_environment_hooks/local_setup.zsh

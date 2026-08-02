@@ -9,11 +9,23 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "dave_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
+#include "dave_interfaces/msg/detail/usbl_command__struct.h"
+#include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_dave_interfaces
+bool cdr_serialize_dave_interfaces__msg__UsblCommand(
+  const dave_interfaces__msg__UsblCommand * ros_message,
+  eprosima::fastcdr::Cdr & cdr);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_dave_interfaces
+bool cdr_deserialize_dave_interfaces__msg__UsblCommand(
+  eprosima::fastcdr::Cdr &,
+  dave_interfaces__msg__UsblCommand * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_dave_interfaces
 size_t get_serialized_size_dave_interfaces__msg__UsblCommand(
@@ -22,6 +34,22 @@ size_t get_serialized_size_dave_interfaces__msg__UsblCommand(
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_dave_interfaces
 size_t max_serialized_size_dave_interfaces__msg__UsblCommand(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_dave_interfaces
+bool cdr_serialize_key_dave_interfaces__msg__UsblCommand(
+  const dave_interfaces__msg__UsblCommand * ros_message,
+  eprosima::fastcdr::Cdr & cdr);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_dave_interfaces
+size_t get_serialized_size_key_dave_interfaces__msg__UsblCommand(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_dave_interfaces
+size_t max_serialized_size_key_dave_interfaces__msg__UsblCommand(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

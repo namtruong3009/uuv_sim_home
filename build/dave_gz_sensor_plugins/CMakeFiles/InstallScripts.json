@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/namtruong/uuv_sim/build/dave_gz_sensor_plugins/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

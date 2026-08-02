@@ -1,0 +1,1 @@
+Invoking command in '/home/namtruong/uuv_sim_home/build/multibeam_sonar_system': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/namtruong/uuv_sim_home/build/multibeam_sonar_system -- -j16 -l16

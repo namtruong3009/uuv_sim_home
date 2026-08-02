@@ -2,6 +2,9 @@
 // with input from dave_interfaces:srv/SetCurrentVelocity.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "dave_interfaces/srv/set_current_velocity.h"
+
+
 #ifndef DAVE_INTERFACES__SRV__DETAIL__SET_CURRENT_VELOCITY__FUNCTIONS_H_
 #define DAVE_INTERFACES__SRV__DETAIL__SET_CURRENT_VELOCITY__FUNCTIONS_H_
 
@@ -13,10 +16,40 @@ extern "C"
 #include <stdbool.h>
 #include <stdlib.h>
 
+#include "rosidl_runtime_c/action_type_support_struct.h"
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_runtime_c/service_type_support_struct.h"
+#include "rosidl_runtime_c/type_description/type_description__struct.h"
+#include "rosidl_runtime_c/type_description/type_source__struct.h"
+#include "rosidl_runtime_c/type_hash.h"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "dave_interfaces/msg/rosidl_generator_c__visibility_control.h"
 
 #include "dave_interfaces/srv/detail/set_current_velocity__struct.h"
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_type_hash_t *
+dave_interfaces__srv__SetCurrentVelocity__get_type_hash(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeDescription *
+dave_interfaces__srv__SetCurrentVelocity__get_type_description(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeSource *
+dave_interfaces__srv__SetCurrentVelocity__get_individual_type_description_source(
+  const rosidl_service_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+dave_interfaces__srv__SetCurrentVelocity__get_type_description_sources(
+  const rosidl_service_type_support_t * type_support);
 
 /// Initialize srv/SetCurrentVelocity message.
 /**
@@ -53,7 +86,7 @@ dave_interfaces__srv__SetCurrentVelocity_Request__fini(dave_interfaces__srv__Set
  */
 ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
 dave_interfaces__srv__SetCurrentVelocity_Request *
-dave_interfaces__srv__SetCurrentVelocity_Request__create();
+dave_interfaces__srv__SetCurrentVelocity_Request__create(void);
 
 /// Destroy srv/SetCurrentVelocity message.
 /**
@@ -92,6 +125,30 @@ bool
 dave_interfaces__srv__SetCurrentVelocity_Request__copy(
   const dave_interfaces__srv__SetCurrentVelocity_Request * input,
   dave_interfaces__srv__SetCurrentVelocity_Request * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_type_hash_t *
+dave_interfaces__srv__SetCurrentVelocity_Request__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeDescription *
+dave_interfaces__srv__SetCurrentVelocity_Request__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeSource *
+dave_interfaces__srv__SetCurrentVelocity_Request__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+dave_interfaces__srv__SetCurrentVelocity_Request__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of srv/SetCurrentVelocity messages.
 /**
@@ -205,7 +262,7 @@ dave_interfaces__srv__SetCurrentVelocity_Response__fini(dave_interfaces__srv__Se
  */
 ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
 dave_interfaces__srv__SetCurrentVelocity_Response *
-dave_interfaces__srv__SetCurrentVelocity_Response__create();
+dave_interfaces__srv__SetCurrentVelocity_Response__create(void);
 
 /// Destroy srv/SetCurrentVelocity message.
 /**
@@ -244,6 +301,30 @@ bool
 dave_interfaces__srv__SetCurrentVelocity_Response__copy(
   const dave_interfaces__srv__SetCurrentVelocity_Response * input,
   dave_interfaces__srv__SetCurrentVelocity_Response * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_type_hash_t *
+dave_interfaces__srv__SetCurrentVelocity_Response__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeDescription *
+dave_interfaces__srv__SetCurrentVelocity_Response__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeSource *
+dave_interfaces__srv__SetCurrentVelocity_Response__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+dave_interfaces__srv__SetCurrentVelocity_Response__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of srv/SetCurrentVelocity messages.
 /**
@@ -322,6 +403,181 @@ dave_interfaces__srv__SetCurrentVelocity_Response__Sequence__copy(
   const dave_interfaces__srv__SetCurrentVelocity_Response__Sequence * input,
   dave_interfaces__srv__SetCurrentVelocity_Response__Sequence * output);
 
+/// Initialize srv/SetCurrentVelocity message.
+/**
+ * If the init function is called twice for the same message without
+ * calling fini inbetween previously allocated memory will be leaked.
+ * \param[in,out] msg The previously allocated message pointer.
+ * Fields without a default value will not be initialized by this function.
+ * You might want to call memset(msg, 0, sizeof(
+ * dave_interfaces__srv__SetCurrentVelocity_Event
+ * )) before or use
+ * dave_interfaces__srv__SetCurrentVelocity_Event__create()
+ * to allocate and initialize the message.
+ * \return true if initialization was successful, otherwise false
+ */
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+bool
+dave_interfaces__srv__SetCurrentVelocity_Event__init(dave_interfaces__srv__SetCurrentVelocity_Event * msg);
+
+/// Finalize srv/SetCurrentVelocity message.
+/**
+ * \param[in,out] msg The allocated message pointer.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+void
+dave_interfaces__srv__SetCurrentVelocity_Event__fini(dave_interfaces__srv__SetCurrentVelocity_Event * msg);
+
+/// Create srv/SetCurrentVelocity message.
+/**
+ * It allocates the memory for the message, sets the memory to zero, and
+ * calls
+ * dave_interfaces__srv__SetCurrentVelocity_Event__init().
+ * \return The pointer to the initialized message if successful,
+ * otherwise NULL
+ */
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+dave_interfaces__srv__SetCurrentVelocity_Event *
+dave_interfaces__srv__SetCurrentVelocity_Event__create(void);
+
+/// Destroy srv/SetCurrentVelocity message.
+/**
+ * It calls
+ * dave_interfaces__srv__SetCurrentVelocity_Event__fini()
+ * and frees the memory of the message.
+ * \param[in,out] msg The allocated message pointer.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+void
+dave_interfaces__srv__SetCurrentVelocity_Event__destroy(dave_interfaces__srv__SetCurrentVelocity_Event * msg);
+
+/// Check for srv/SetCurrentVelocity message equality.
+/**
+ * \param[in] lhs The message on the left hand size of the equality operator.
+ * \param[in] rhs The message on the right hand size of the equality operator.
+ * \return true if messages are equal, otherwise false.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+bool
+dave_interfaces__srv__SetCurrentVelocity_Event__are_equal(const dave_interfaces__srv__SetCurrentVelocity_Event * lhs, const dave_interfaces__srv__SetCurrentVelocity_Event * rhs);
+
+/// Copy a srv/SetCurrentVelocity message.
+/**
+ * This functions performs a deep copy, as opposed to the shallow copy that
+ * plain assignment yields.
+ *
+ * \param[in] input The source message pointer.
+ * \param[out] output The target message pointer, which must
+ *   have been initialized before calling this function.
+ * \return true if successful, or false if either pointer is null
+ *   or memory allocation fails.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+bool
+dave_interfaces__srv__SetCurrentVelocity_Event__copy(
+  const dave_interfaces__srv__SetCurrentVelocity_Event * input,
+  dave_interfaces__srv__SetCurrentVelocity_Event * output);
+
+/// Retrieve pointer to the hash of the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_type_hash_t *
+dave_interfaces__srv__SetCurrentVelocity_Event__get_type_hash(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeDescription *
+dave_interfaces__srv__SetCurrentVelocity_Event__get_type_description(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the single raw source text that defined this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeSource *
+dave_interfaces__srv__SetCurrentVelocity_Event__get_individual_type_description_source(
+  const rosidl_message_type_support_t * type_support);
+
+/// Retrieve pointer to the recursive raw sources that defined the description of this type.
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+const rosidl_runtime_c__type_description__TypeSource__Sequence *
+dave_interfaces__srv__SetCurrentVelocity_Event__get_type_description_sources(
+  const rosidl_message_type_support_t * type_support);
+
+/// Initialize array of srv/SetCurrentVelocity messages.
+/**
+ * It allocates the memory for the number of elements and calls
+ * dave_interfaces__srv__SetCurrentVelocity_Event__init()
+ * for each element of the array.
+ * \param[in,out] array The allocated array pointer.
+ * \param[in] size The size / capacity of the array.
+ * \return true if initialization was successful, otherwise false
+ * If the array pointer is valid and the size is zero it is guaranteed
+ # to return true.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+bool
+dave_interfaces__srv__SetCurrentVelocity_Event__Sequence__init(dave_interfaces__srv__SetCurrentVelocity_Event__Sequence * array, size_t size);
+
+/// Finalize array of srv/SetCurrentVelocity messages.
+/**
+ * It calls
+ * dave_interfaces__srv__SetCurrentVelocity_Event__fini()
+ * for each element of the array and frees the memory for the number of
+ * elements.
+ * \param[in,out] array The initialized array pointer.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+void
+dave_interfaces__srv__SetCurrentVelocity_Event__Sequence__fini(dave_interfaces__srv__SetCurrentVelocity_Event__Sequence * array);
+
+/// Create array of srv/SetCurrentVelocity messages.
+/**
+ * It allocates the memory for the array and calls
+ * dave_interfaces__srv__SetCurrentVelocity_Event__Sequence__init().
+ * \param[in] size The size / capacity of the array.
+ * \return The pointer to the initialized array if successful, otherwise NULL
+ */
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+dave_interfaces__srv__SetCurrentVelocity_Event__Sequence *
+dave_interfaces__srv__SetCurrentVelocity_Event__Sequence__create(size_t size);
+
+/// Destroy array of srv/SetCurrentVelocity messages.
+/**
+ * It calls
+ * dave_interfaces__srv__SetCurrentVelocity_Event__Sequence__fini()
+ * on the array,
+ * and frees the memory of the array.
+ * \param[in,out] array The initialized array pointer.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+void
+dave_interfaces__srv__SetCurrentVelocity_Event__Sequence__destroy(dave_interfaces__srv__SetCurrentVelocity_Event__Sequence * array);
+
+/// Check for srv/SetCurrentVelocity message array equality.
+/**
+ * \param[in] lhs The message array on the left hand size of the equality operator.
+ * \param[in] rhs The message array on the right hand size of the equality operator.
+ * \return true if message arrays are equal in size and content, otherwise false.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+bool
+dave_interfaces__srv__SetCurrentVelocity_Event__Sequence__are_equal(const dave_interfaces__srv__SetCurrentVelocity_Event__Sequence * lhs, const dave_interfaces__srv__SetCurrentVelocity_Event__Sequence * rhs);
+
+/// Copy an array of srv/SetCurrentVelocity messages.
+/**
+ * This functions performs a deep copy, as opposed to the shallow copy that
+ * plain assignment yields.
+ *
+ * \param[in] input The source array pointer.
+ * \param[out] output The target array pointer, which must
+ *   have been initialized before calling this function.
+ * \return true if successful, or false if either pointer
+ *   is null or memory allocation fails.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_dave_interfaces
+bool
+dave_interfaces__srv__SetCurrentVelocity_Event__Sequence__copy(
+  const dave_interfaces__srv__SetCurrentVelocity_Event__Sequence * input,
+  dave_interfaces__srv__SetCurrentVelocity_Event__Sequence * output);
 #ifdef __cplusplus
 }
 #endif

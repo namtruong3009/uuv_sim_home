@@ -88,7 +88,7 @@ dave_interfaces__msg__UsblResponse__copy(
 }
 
 dave_interfaces__msg__UsblResponse *
-dave_interfaces__msg__UsblResponse__create()
+dave_interfaces__msg__UsblResponse__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   dave_interfaces__msg__UsblResponse * msg = (dave_interfaces__msg__UsblResponse *)allocator.allocate(sizeof(dave_interfaces__msg__UsblResponse), allocator.state);
@@ -125,6 +125,9 @@ dave_interfaces__msg__UsblResponse__Sequence__init(dave_interfaces__msg__UsblRes
   dave_interfaces__msg__UsblResponse * data = NULL;
 
   if (size) {
+    if (size > SIZE_MAX / sizeof(dave_interfaces__msg__UsblResponse)) {
+      return false;
+    }
     data = (dave_interfaces__msg__UsblResponse *)allocator.zero_allocate(size, sizeof(dave_interfaces__msg__UsblResponse), allocator.state);
     if (!data) {
       return false;
@@ -230,6 +233,9 @@ dave_interfaces__msg__UsblResponse__Sequence__copy(
     return false;
   }
   if (output->capacity < input->size) {
+    if (input->size > SIZE_MAX / sizeof(dave_interfaces__msg__UsblResponse)) {
+      return false;
+    }
     const size_t allocation_size =
       input->size * sizeof(dave_interfaces__msg__UsblResponse);
     rcutils_allocator_t allocator = rcutils_get_default_allocator();

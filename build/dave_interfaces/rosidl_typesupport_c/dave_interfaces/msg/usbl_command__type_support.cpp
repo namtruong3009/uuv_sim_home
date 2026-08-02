@@ -6,6 +6,7 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "dave_interfaces/msg/detail/usbl_command__struct.h"
 #include "dave_interfaces/msg/detail/usbl_command__type_support.h"
+#include "dave_interfaces/msg/detail/usbl_command__functions.h"
 #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 #include "rosidl_typesupport_c/type_support_map.h"
@@ -72,6 +73,9 @@ static const rosidl_message_type_support_t UsblCommand_message_type_support_hand
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_UsblCommand_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
+  &dave_interfaces__msg__UsblCommand__get_type_hash,
+  &dave_interfaces__msg__UsblCommand__get_type_description,
+  &dave_interfaces__msg__UsblCommand__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
